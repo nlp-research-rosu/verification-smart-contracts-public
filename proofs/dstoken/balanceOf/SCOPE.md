@@ -2,7 +2,7 @@
 
 ## Program boundary
 
-The entry computation is direct EVM execution (`#execute`) from program counter 0 of the exact 6,955-byte runtime in `/app/contract.bin` (SHA-256 `65b311134fbf066c074dfd609dc8e1048629e20e885636da2ea3b52932231a82`). The claims cover dispatcher selection of `balanceOf(address)`, the generated nonpayable-value guard, ABI argument decoding, Solidity mapping-slot calculation, `SLOAD`, ABI return encoding, and the terminal `RETURN` or `REVERT`; there are no source-level loops in this function.
+The entry computation is direct EVM execution (`#execute`) from program counter 0 of the exact 6,955-byte runtime in `contract.bin` (SHA-256 `65b311134fbf066c074dfd609dc8e1048629e20e885636da2ea3b52932231a82`). The claims cover dispatcher selection of `balanceOf(address)`, the generated nonpayable-value guard, ABI argument decoding, Solidity mapping-slot calculation, `SLOAD`, ABI return encoding, and the terminal `RETURN` or `REVERT`; there are no source-level loops in this function.
 
 The source implementation is `return _balances[src]`. Inspection of the supplied runtime pins `_balances` to Solidity mapping base slot 1: the selected function body pushes slot 1 before hashing the 32-byte address key and slot word.
 

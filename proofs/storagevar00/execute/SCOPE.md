@@ -2,7 +2,7 @@
 
 ## Program boundary
 
-The entry computation is direct EVM runtime execution from `#execute` at program counter 0, using the exact 161 bytes in `/app/contract.bin` (SHA-256 `d4f641117a2c9887cd8788c822a2b80852c6664e52f60f2b27e5e6300dbf2172`). The claims cover the canonical ABI call to Solidity `storagevar00.execute()` through normal `RETURN`, and its nonpayable rejection through `REVERT` when the call value is nonzero. Constructor behavior, deployment, other selectors, short or trailing calldata, and transaction-level accounting are outside this function boundary.
+The entry computation is direct EVM runtime execution from `#execute` at program counter 0, using the exact 161 bytes in [contract.bin](contract.bin) (SHA-256 `d4f641117a2c9887cd8788c822a2b80852c6664e52f60f2b27e5e6300dbf2172`). The claims cover the canonical ABI call to Solidity `storagevar00.execute()` through normal `RETURN`, and its nonpayable rejection through `REVERT` when the call value is nonzero. Constructor behavior, deployment, other selectors, short or trailing calldata, and transaction-level accounting are outside this function boundary.
 
 ## Input domain
 

@@ -5,7 +5,7 @@
 The entry computation starts at the pinned runtime EVM entry convention with
 the exact runtime in `<program>`, its computed valid jump destinations,
 program counter 0, and empty EVM stack and memory. The runtime image is the
-exact 2,091 bytes of `/app/contract.bin`, embedded directly in `spec.k`. The
+exact 2,091 bytes of [contract.bin](contract.bin), embedded directly in `spec.k`. The
 canonical ABI calldata is for `totalSupply()` (selector `0x18160ddd`).
 
 The runtime dispatcher recognizes only `approve(address,uint256)`

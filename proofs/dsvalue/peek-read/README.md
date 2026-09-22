@@ -50,7 +50,7 @@ Offsets are hexadecimal. These excerpts identify dispatch; the claims execute th
 
 A zero-value `peek()` call returns the stored value and `has != 0` as two ABI words. A zero-value `read()` call returns the value when the has byte is nonzero, and otherwise reverts with `Error("haz-not")`. Successful read decreases gas metadata by exactly 2,043 under the recorded infinite-gas model. Nonzero call value causes an empty revert for either selector. All five claims preserve storage.
 
-The 5 symbolic claims are stated in [spec.k](spec.k). [PROOF.md](PROOF.md) records the successful proof and independent KIT proof audit. Audit reports and retained checks are in [audits/](audits/) and [logs/](logs/).
+The 5 symbolic claims are stated in [spec.k](spec.k). [PROOF.md](PROOF.md) records their results and the independent proof audit. The specification review and proof audit are in [audits/](audits/).
 
 ### Scope
 
@@ -66,4 +66,4 @@ With `kprover`, Python 3 and access to Prover configured, run from this director
 ./prove.sh
 ```
 
-The command starts a fresh session, checks the pinned semantics revision and proves the unchanged specification. Results are saved under `.kprover/`; independent audit checks are recorded separately.
+The command starts a fresh session, checks the pinned semantics revision and proves the unchanged specification. Results are saved under `.kprover/`; the independent audit conclusions are recorded in [PROOF.md](PROOF.md) and [audits/](audits/).

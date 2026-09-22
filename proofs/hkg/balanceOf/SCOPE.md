@@ -2,7 +2,7 @@
 
 ## Program boundary
 
-The target is the exact 2,091-byte runtime image in `/app/contract.bin`
+The target is the exact 2,091-byte runtime image in [contract.bin](contract.bin)
 (SHA-256 `71204113356f7543f06b867ef7e7eeacfb6d512f8f7c5eb5166a2f3022d46d73`),
 entered at program counter 0 with an empty word stack and memory. The theorem
 executes the runtime bytecode under pinned KIT semantics `evm` revision

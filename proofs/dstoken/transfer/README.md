@@ -52,7 +52,7 @@ nonzero call value reverts.  A stopped token, insufficient source balance, or
 destination overflow raises the compiler's invalid-instruction assertion path;
 the enclosing call reports failure and rolls back all storage effects.
 
-The 12 symbolic claims are stated in [spec.k](spec.k). [PROOF.md](PROOF.md) records the successful proof and independent KIT proof audit. Audit reports and retained checks are in [audits/](audits/) and [logs/](logs/).
+The 12 symbolic claims are stated in [spec.k](spec.k). The validated result and limitations are summarized in [PROOF.md](PROOF.md); the final independent specification and proof audits are in [audits/](audits/).
 
 ### Scope
 

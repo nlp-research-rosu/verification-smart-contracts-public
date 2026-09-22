@@ -3,7 +3,7 @@
 ## Program boundary
 
 The claims enter the EVM runtime at `#execute`, program counter zero, with the
-exact 2,091-byte contents of `/app/contract.bin` supplied by
+exact 2,091-byte contents of [contract.bin](contract.bin) supplied by
 `#binRuntime(HKG)`.  Canonical ABI calldata selects
 `transferFrom(address,address,uint256)`.  The theorem includes selector
 dispatch, ABI decoding, every opcode in the selected function body, all SLOAD
@@ -54,7 +54,7 @@ changing storage or emitting a log.
 ## Chosen contract readings
 
 - “Implemented behavior” means the supplied runtime bytecode is authoritative;
-  `/app/contract.sol` supplies names, types, storage layout, and intent.
+  [contract.sol](contract.sol) supplies names, types, storage layout, and intent.
 - Successful and unsuccessful calls mean Solidity-level boolean success and
   failure.  This implementation returns normally in both cases; neither branch
   reverts.

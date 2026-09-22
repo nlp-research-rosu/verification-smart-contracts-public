@@ -34,7 +34,8 @@ For a canonical zero-value call, the runtime returns the allowance stored in
 nonzero value, the compiler-generated nonpayable guard reverts with empty
 output and does not mutate storage.
 
-The 2 symbolic claims are stated in [spec.k](spec.k). [PROOF.md](PROOF.md) records the successful proof and independent KIT proof audit. Audit reports and retained checks are in [audits/](audits/) and [logs/](logs/).
+The 2 symbolic claims are stated in [spec.k](spec.k). [PROOF.md](PROOF.md) records the validated proof result; independent proof and specification reviews are in
+[audits/](audits/).
 
 ### Scope
 
@@ -50,4 +51,7 @@ With `kprover`, Python 3 and access to Prover configured, run from this director
 ./prove.sh
 ```
 
-The command starts a fresh session, checks the pinned semantics revision and proves the unchanged specification. Results are saved under `.kprover/`; independent audit checks are recorded separately.
+The command starts a fresh session, checks the pinned semantics revision,
+and proves the unchanged specification. New results are saved under `.kprover/`;
+this package retains proof and audit conclusions rather than session
+transcripts.

@@ -1,6 +1,6 @@
 # Verification status
 
-| Contract | Function | Proof | KIT Audit (subagent) |
+| Contract | Function | Proof | Independent KIT audit |
 | --- | --- | --- | --- |
 | hkg | [allowance](proofs/hkg/allowance/) | Proved | PASS |
 | hkg | [approve](proofs/hkg/approve/) | Proved | PASS |

@@ -2,7 +2,7 @@
 
 ## Program boundary
 
-The theorem executes the exact 6,955-byte runtime image in `/app/contract.bin`
+The theorem executes the exact 6,955-byte runtime image in `contract.bin`
 (SHA-256 `65b311134fbf066c074dfd609dc8e1048629e20e885636da2ea3b52932231a82`)
 from EVM program counter 0 with an empty stack and memory.  The
 candidate-specific `DSTOKEN-BIN` definition binds `#binRuntime(DSTOKEN)`

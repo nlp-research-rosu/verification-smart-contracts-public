@@ -31,7 +31,7 @@ Offsets are hexadecimal. These excerpts identify dispatch; the claims execute th
 
 If execution terminates from the stated runtime-entry configuration, a canonical zero-value call returns exactly the balance stored for the symbolic address and does not change storage. The same canonical call with any nonzero valid call value reverts with empty output and does not change storage.
 
-The 2 symbolic claims are stated in [spec.k](spec.k). [PROOF.md](PROOF.md) records the successful proof and independent KIT proof audit. Audit reports and retained checks are in [audits/](audits/) and [logs/](logs/).
+The 2 symbolic claims are stated in [spec.k](spec.k). The validated result and limitations are summarized in [PROOF.md](PROOF.md); the final independent specification and proof audits are in [audits/](audits/).
 
 ### Scope
 
