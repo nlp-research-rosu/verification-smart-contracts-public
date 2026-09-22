@@ -1,0 +1,13 @@
+{
+  "attemptsUsed": 7,
+  "projectRoot": "../../..",
+  "runsUsed": 0,
+  "semantics": {
+    "commit": "4f4c3843076c",
+    "id": "evm",
+    "repo": "https://github.com/nlp-research-rosu/semantics-evm"
+  },
+  "sessionId": "9de91c94-5dde-4768-8d0d-ed007c7d6069",
+  "validationsUsed": 4,
+  "workspaceDir": "../construction/session-9de91c94-5dde-4768-8d0d-ed007c7d6069"
+}

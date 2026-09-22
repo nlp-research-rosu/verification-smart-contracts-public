@@ -1,0 +1,36 @@
+{
+  "stderr": "[Warning] Compiler: Variable '?FINAL_STACK' defined but not used. Prefix\nvariable name with underscore if this is intentional.\n\tSource(/data/tasks/31a27d98-845d-49d6-8e70-c71f9bed9d5e/input/spec-mutation.k)\n\tLocation(17,31,17,43)\n\t17 |\t    <wordStack> .WordStack => ?FINAL_STACK </wordStack>\n\t   .\t                              ^~~~~~~~~~~~\n[Warning] Compiler: Variable '?FINAL_MEMORY' defined but not used. Prefix\nvariable name with underscore if this is intentional.\n\tSource(/data/tasks/31a27d98-845d-49d6-8e70-c71f9bed9d5e/input/spec-mutation.k)\n\tLocation(18,26,18,39)\n\t18 |\t    <localMem> .Bytes => ?FINAL_MEMORY </localMem>\n\t   .\t                         ^~~~~~~~~~~~~\n[Warning] Compiler: Variable '?FINAL_PC' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/31a27d98-845d-49d6-8e70-c71f9bed9d5e/input/spec-mutation.k)\n\tLocation(19,15,19,24)\n\t19 |\t    <pc> 0 => ?FINAL_PC </pc>\n\t   .\t              ^~~~~~~~~\n[Warning] Compiler: Variable 'LOGS' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/31a27d98-845d-49d6-8e70-c71f9bed9d5e/input/spec-mutation.k)\n\tLocation(21,11,21,15)\n\t21 |\t    <log> LOGS </log>\n\t   .\t          ^~~~\n[Warning] Compiler: Variable 'STORAGE' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/31a27d98-845d-49d6-8e70-c71f9bed9d5e/input/spec-mutation.k)\n\tLocation(24,17,24,24)\n\t24 |\t      <storage> STORAGE </storage>\n\t   .\t                ^~~~~~~\n",
+  "stdout": "kore-exec /data/definitions/7_1_337-haskell-evm-4f4c3843076c-928d5ea5baba6e410c3482bb175c00506daf73d596a5da883cbfdeb8596f4913/definition/definition.kore --module VERIFICATION --prove /tmp/.kprove-2026-09-15-10-08-02-095-764b60d8-d0d8-4402-8651-653bcdc5937a/spec.kore --spec-module SPEC-MUTATION --output /tmp/.kprove-2026-09-15-10-08-02-095-764b60d8-d0d8-4402-8651-653bcdc5937a/result.kore\n",
+  "task": {
+    "createdAt": "2026-09-15T15:07:57.061235Z",
+    "error": null,
+    "finishedAt": "2026-09-15T15:08:25.602383Z",
+    "id": "31a27d98-845d-49d6-8e70-c71f9bed9d5e",
+    "kind": "proofDryRun",
+    "result": {
+      "definitionId": "7_1_337-haskell-evm-4f4c3843076c-928d5ea5baba6e410c3482bb175c00506daf73d596a5da883cbfdeb8596f4913",
+      "valid": true
+    },
+    "semantics": {
+      "commit": "4f4c3843076c",
+      "id": "evm"
+    },
+    "startedAt": "2026-09-15T15:08:01.083637Z",
+    "status": "completed",
+    "timing": {
+      "executionMilliseconds": 24518,
+      "queueMilliseconds": 4022,
+      "totalMilliseconds": 28541
+    },
+    "toolRuns": [
+      {
+        "durationMilliseconds": 23716,
+        "exitCode": 0,
+        "finishedAt": "2026-09-15T15:08:25.309603Z",
+        "outcome": "success",
+        "startedAt": "2026-09-15T15:08:01.592982Z",
+        "tool": "kprove"
+      }
+    ]
+  }
+}

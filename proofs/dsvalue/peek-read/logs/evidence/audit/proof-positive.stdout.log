@@ -1,0 +1,5 @@
+PROOF PASSED: SPEC.peek
+PROOF PASSED: SPEC.peek-nonpayable-revert
+PROOF PASSED: SPEC.read-success
+PROOF PASSED: SPEC.read-revert
+PROOF PASSED: SPEC.read-nonpayable-revert

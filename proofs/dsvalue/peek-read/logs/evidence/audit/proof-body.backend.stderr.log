@@ -1,0 +1,2 @@
+WARNING 2026-09-21 15:17:49,559 kevm_pyk.__main__ - Ignoring --equation-max-local-steps for non-booster server: kore-rpc
+WARNING 2026-09-21 15:19:20,179 pyk.proof.proof - Terminating proof early because fail_fast is set: BODY-CHECK.read-body-mutated

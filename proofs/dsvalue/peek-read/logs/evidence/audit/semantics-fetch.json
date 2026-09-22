@@ -1,0 +1,10 @@
+{
+  "entryFile": "<retained-kprover-config>",
+  "semantics": {
+    "commit": "4f4c3843076c",
+    "id": "evm",
+    "repo": "https://github.com/nlp-research-rosu/semantics-evm"
+  },
+  "sourceDir": "<retained-kprover-config>",
+  "status": "ready"
+}

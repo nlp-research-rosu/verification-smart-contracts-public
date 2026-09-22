@@ -1,0 +1,2 @@
+WARNING 2026-09-21 17:31:59,098 kevm_pyk.__main__ - Ignoring --equation-max-local-steps for non-booster server: kore-rpc
+WARNING 2026-09-21 17:34:36,516 pyk.proof.proof - Terminating proof early because fail_fast is set: AUDIT-FALSE.false-return-two

@@ -1,0 +1,466 @@
+{
+  "auditSessionId": "1780f457-da0a-48bc-b9fe-eaf832efe9fb",
+  "semantics": {
+    "commit": "4f4c3843076c",
+    "id": "evm",
+    "repo": "https://github.com/nlp-research-rosu/semantics-evm"
+  },
+  "operations": [
+    {
+      "operation": "proof-001",
+      "taskId": "487c0300-1608-4ca7-a68e-f0a7cc13e39f",
+      "kind": "proof",
+      "status": "completed",
+      "result": {
+        "definitionId": "7_1_337-haskell-evm-4f4c3843076c-fd3640fd71c354e23b052f9a0352d394630cbc122b18e1aee6d3a66700fdc6f9",
+        "outcome": "proved",
+        "residual": null
+      },
+      "timing": {
+        "executionMilliseconds": 1696355,
+        "queueMilliseconds": 5079,
+        "totalMilliseconds": 1701435
+      },
+      "toolRuns": [
+        {
+          "durationMilliseconds": 1695141,
+          "exitCode": 0,
+          "finishedAt": "2026-09-21T22:27:25.842339Z",
+          "outcome": "success",
+          "startedAt": "2026-09-21T21:59:10.700716Z",
+          "tool": "kprove"
+        }
+      ],
+      "evidence": "session-1780f457-da0a-48bc-b9fe-eaf832efe9fb/proof-001/result.json",
+      "stdout": "proof-001-stdout.txt",
+      "stderr": "proof-001-stderr.txt",
+      "proofPassedLines": [
+        "PROOF PASSED: SPEC.raw-transfer-failure-insufficient-balance",
+        "PROOF PASSED: SPEC.transfer-success-distinct",
+        "PROOF PASSED: SPEC.transfer-failure-insufficient-balance",
+        "PROOF PASSED: SPEC.raw-transfer-failure-stopped",
+        "PROOF PASSED: SPEC.transfer-success-same-slot",
+        "PROOF PASSED: SPEC.raw-transfer-failure-overflow",
+        "PROOF PASSED: SPEC.transfer-failure-nonpayable",
+        "PROOF PASSED: SPEC.transfer-failure-stopped",
+        "PROOF PASSED: SPEC.transfer-failure-overflow",
+        "PROOF PASSED: SPEC.raw-transfer-failure-nonpayable",
+        "PROOF PASSED: SPEC.raw-transfer-success-same-slot",
+        "PROOF PASSED: SPEC.raw-transfer-success-distinct"
+      ],
+      "name": "replay",
+      "command": [
+        "kprover",
+        "prove",
+        "--session",
+        "1780f457-da0a-48bc-b9fe-eaf832efe9fb",
+        "--spec",
+        "inputs/spec.k",
+        "--spec-module",
+        "SPEC",
+        "--verification",
+        "inputs/verification.k",
+        "--verification-module",
+        "VERIFICATION",
+        "--source",
+        "inputs/dstoken-bin.k"
+      ],
+      "cliExitCode": 0,
+      "clientElapsedSeconds": 1713.84366106987,
+      "invocation": "replay-invocation.json"
+    },
+    {
+      "operation": "proof-002",
+      "taskId": "fca12717-e5a1-401a-89f2-ee935a1a712b",
+      "kind": "proof",
+      "status": "completed",
+      "result": {
+        "definitionId": "7_1_337-haskell-evm-4f4c3843076c-fd3640fd71c354e23b052f9a0352d394630cbc122b18e1aee6d3a66700fdc6f9",
+        "outcome": "proved",
+        "residual": null
+      },
+      "timing": {
+        "executionMilliseconds": 162643,
+        "queueMilliseconds": 4856,
+        "totalMilliseconds": 167500
+      },
+      "toolRuns": [
+        {
+          "durationMilliseconds": 161431,
+          "exitCode": 0,
+          "finishedAt": "2026-09-21T22:31:10.676149Z",
+          "outcome": "success",
+          "startedAt": "2026-09-21T22:28:29.245Z",
+          "tool": "kprove"
+        }
+      ],
+      "evidence": "session-1780f457-da0a-48bc-b9fe-eaf832efe9fb/proof-002/result.json",
+      "stdout": "proof-002-stdout.txt",
+      "stderr": "proof-002-stderr.txt",
+      "proofPassedLines": [
+        "PROOF PASSED: AUDIT-WITNESS.ground-self-transfer"
+      ],
+      "name": "witness",
+      "command": [
+        "kprover",
+        "prove",
+        "--session",
+        "1780f457-da0a-48bc-b9fe-eaf832efe9fb",
+        "--spec",
+        "inputs/witness.k",
+        "--spec-module",
+        "AUDIT-WITNESS",
+        "--verification",
+        "inputs/verification.k",
+        "--verification-module",
+        "VERIFICATION",
+        "--source",
+        "inputs/dstoken-bin.k"
+      ],
+      "cliExitCode": 0,
+      "clientElapsedSeconds": 169.8270230293274,
+      "invocation": "witness-invocation.json"
+    },
+    {
+      "operation": "proof-003",
+      "taskId": "a6f79d35-ae0f-425d-89e3-5f7f871512af",
+      "kind": "proof",
+      "status": "completed",
+      "result": {
+        "definitionId": "7_1_337-haskell-evm-4f4c3843076c-fd3640fd71c354e23b052f9a0352d394630cbc122b18e1aee6d3a66700fdc6f9",
+        "outcome": "notProved",
+        "residual": null
+      },
+      "timing": {
+        "executionMilliseconds": 168686,
+        "queueMilliseconds": 4441,
+        "totalMilliseconds": 173127
+      },
+      "toolRuns": [
+        {
+          "durationMilliseconds": 167468,
+          "exitCode": 1,
+          "finishedAt": "2026-09-21T22:34:46.236739Z",
+          "outcome": "exit_error",
+          "startedAt": "2026-09-21T22:31:58.768435Z",
+          "tool": "kprove"
+        }
+      ],
+      "evidence": "session-1780f457-da0a-48bc-b9fe-eaf832efe9fb/proof-003/result.json",
+      "stdout": "proof-003-stdout.txt",
+      "stderr": "proof-003-stderr.txt",
+      "proofPassedLines": [],
+      "name": "false",
+      "command": [
+        "kprover",
+        "prove",
+        "--session",
+        "1780f457-da0a-48bc-b9fe-eaf832efe9fb",
+        "--spec",
+        "inputs/false.k",
+        "--spec-module",
+        "AUDIT-FALSE",
+        "--verification",
+        "inputs/verification.k",
+        "--verification-module",
+        "VERIFICATION",
+        "--source",
+        "inputs/dstoken-bin.k"
+      ],
+      "cliExitCode": 1,
+      "clientElapsedSeconds": 179.53164720535278,
+      "invocation": "false-invocation.json"
+    },
+    {
+      "operation": "proof-004",
+      "taskId": "e7de0ffb-acbe-4f90-b592-edbdab05c743",
+      "kind": "proof",
+      "status": "completed",
+      "result": {
+        "definitionId": "7_1_337-haskell-evm-4f4c3843076c-68b38f1d5768563570cf16756847ff42972a45d657cbd1d6c375ea9036a2bcea",
+        "outcome": "notProved",
+        "residual": null
+      },
+      "timing": {
+        "executionMilliseconds": 168505,
+        "queueMilliseconds": 4798,
+        "totalMilliseconds": 173304
+      },
+      "toolRuns": [
+        {
+          "durationMilliseconds": 167428,
+          "exitCode": 1,
+          "finishedAt": "2026-09-21T22:41:07.234439Z",
+          "outcome": "exit_error",
+          "startedAt": "2026-09-21T22:38:19.805448Z",
+          "tool": "kprove"
+        }
+      ],
+      "evidence": "session-1780f457-da0a-48bc-b9fe-eaf832efe9fb/proof-004/result.json",
+      "stdout": "proof-004-stdout.txt",
+      "stderr": "proof-004-stderr.txt",
+      "proofPassedLines": [],
+      "name": "body",
+      "command": [
+        "kprover",
+        "prove",
+        "--session",
+        "1780f457-da0a-48bc-b9fe-eaf832efe9fb",
+        "--spec",
+        "inputs/body-spec.k",
+        "--spec-module",
+        "AUDIT-BODY",
+        "--verification",
+        "inputs/body-verification.k",
+        "--verification-module",
+        "VERIFICATION",
+        "--source",
+        "inputs/body-dstoken-bin.k"
+      ],
+      "cliExitCode": 1,
+      "clientElapsedSeconds": 179.5856568813324,
+      "invocation": "body-invocation.json"
+    },
+    {
+      "operation": "validation-001",
+      "taskId": "4bff38cf-6ae2-4e9d-88e9-2e955c893b31",
+      "kind": "proofDryRun",
+      "status": "completed",
+      "result": {
+        "definitionId": "7_1_337-haskell-evm-4f4c3843076c-fd3640fd71c354e23b052f9a0352d394630cbc122b18e1aee6d3a66700fdc6f9",
+        "valid": true
+      },
+      "timing": {
+        "executionMilliseconds": 27549,
+        "queueMilliseconds": 4723,
+        "totalMilliseconds": 32273
+      },
+      "toolRuns": [
+        {
+          "durationMilliseconds": 26336,
+          "exitCode": 0,
+          "finishedAt": "2026-09-21T21:58:18.549125Z",
+          "outcome": "success",
+          "startedAt": "2026-09-21T21:57:52.212321Z",
+          "tool": "kprove"
+        }
+      ],
+      "evidence": "session-1780f457-da0a-48bc-b9fe-eaf832efe9fb/validation-001/result.json",
+      "stdout": "validation-001-stdout.txt",
+      "stderr": "validation-001-stderr.txt",
+      "proofPassedLines": [],
+      "name": "replay-validation",
+      "command": [
+        "kprover",
+        "validate",
+        "--session",
+        "1780f457-da0a-48bc-b9fe-eaf832efe9fb",
+        "--spec",
+        "inputs/spec.k",
+        "--spec-module",
+        "SPEC",
+        "--verification",
+        "inputs/verification.k",
+        "--verification-module",
+        "VERIFICATION",
+        "--source",
+        "inputs/dstoken-bin.k"
+      ],
+      "cliExitCode": 0,
+      "clientElapsedSeconds": 39.84272313117981,
+      "invocation": "replay-validation-invocation.json"
+    },
+    {
+      "operation": "validation-002",
+      "taskId": "f03306ab-d5e7-45ae-aeea-8b29db7379f0",
+      "kind": "proofDryRun",
+      "status": "completed",
+      "result": {
+        "definitionId": "7_1_337-haskell-evm-4f4c3843076c-fd3640fd71c354e23b052f9a0352d394630cbc122b18e1aee6d3a66700fdc6f9",
+        "valid": true
+      },
+      "timing": {
+        "executionMilliseconds": 27304,
+        "queueMilliseconds": 4802,
+        "totalMilliseconds": 32106
+      },
+      "toolRuns": [
+        {
+          "durationMilliseconds": 26092,
+          "exitCode": 0,
+          "finishedAt": "2026-09-21T22:28:10.399114Z",
+          "outcome": "success",
+          "startedAt": "2026-09-21T22:27:44.306934Z",
+          "tool": "kprove"
+        }
+      ],
+      "evidence": "session-1780f457-da0a-48bc-b9fe-eaf832efe9fb/validation-002/result.json",
+      "stdout": "validation-002-stdout.txt",
+      "stderr": "validation-002-stderr.txt",
+      "proofPassedLines": [],
+      "name": "witness-validation",
+      "command": [
+        "kprover",
+        "validate",
+        "--session",
+        "1780f457-da0a-48bc-b9fe-eaf832efe9fb",
+        "--spec",
+        "inputs/witness.k",
+        "--spec-module",
+        "AUDIT-WITNESS",
+        "--verification",
+        "inputs/verification.k",
+        "--verification-module",
+        "VERIFICATION",
+        "--source",
+        "inputs/dstoken-bin.k"
+      ],
+      "cliExitCode": 0,
+      "clientElapsedSeconds": 1630.779130935669,
+      "invocation": "witness-validation-invocation.json"
+    },
+    {
+      "operation": "validation-003",
+      "taskId": "a08038f3-8dbd-4018-b444-0864254d49ad",
+      "kind": "proofDryRun",
+      "status": "completed",
+      "result": {
+        "definitionId": "7_1_337-haskell-evm-4f4c3843076c-fd3640fd71c354e23b052f9a0352d394630cbc122b18e1aee6d3a66700fdc6f9",
+        "valid": true
+      },
+      "timing": {
+        "executionMilliseconds": 25586,
+        "queueMilliseconds": 4745,
+        "totalMilliseconds": 30332
+      },
+      "toolRuns": [
+        {
+          "durationMilliseconds": 24518,
+          "exitCode": 0,
+          "finishedAt": "2026-09-21T22:31:43.584179Z",
+          "outcome": "success",
+          "startedAt": "2026-09-21T22:31:19.065921Z",
+          "tool": "kprove"
+        }
+      ],
+      "evidence": "session-1780f457-da0a-48bc-b9fe-eaf832efe9fb/validation-003/result.json",
+      "stdout": "validation-003-stdout.txt",
+      "stderr": "validation-003-stderr.txt",
+      "proofPassedLines": [],
+      "name": "false-validation",
+      "command": [
+        "kprover",
+        "validate",
+        "--session",
+        "1780f457-da0a-48bc-b9fe-eaf832efe9fb",
+        "--spec",
+        "inputs/false.k",
+        "--spec-module",
+        "AUDIT-FALSE",
+        "--verification",
+        "inputs/verification.k",
+        "--verification-module",
+        "VERIFICATION",
+        "--source",
+        "inputs/dstoken-bin.k"
+      ],
+      "cliExitCode": 0,
+      "clientElapsedSeconds": 40.04755115509033,
+      "invocation": "false-validation-invocation.json"
+    },
+    {
+      "operation": "validation-004",
+      "taskId": "80175f9c-91a2-486a-9ec4-39e52bc5e5a6",
+      "kind": "proofDryRun",
+      "status": "failed",
+      "result": null,
+      "timing": {
+        "executionMilliseconds": 647,
+        "queueMilliseconds": 4929,
+        "totalMilliseconds": 5577
+      },
+      "toolRuns": [],
+      "evidence": "session-1780f457-da0a-48bc-b9fe-eaf832efe9fb/validation-004/result.json",
+      "stdout": "validation-004-stdout.txt",
+      "stderr": "validation-004-stderr.txt",
+      "proofPassedLines": [],
+      "name": "body-validation",
+      "command": [
+        "kprover",
+        "validate",
+        "--session",
+        "1780f457-da0a-48bc-b9fe-eaf832efe9fb",
+        "--spec",
+        "inputs/body/spec.k",
+        "--spec-module",
+        "AUDIT-BODY",
+        "--verification",
+        "inputs/body/verification.k",
+        "--verification-module",
+        "VERIFICATION",
+        "--source",
+        "inputs/body/dstoken-bin.k"
+      ],
+      "cliExitCode": 1,
+      "clientElapsedSeconds": 18.073219060897827,
+      "invocation": "body-validation-invocation.json"
+    },
+    {
+      "operation": "validation-005",
+      "taskId": "a13ee45e-2af9-4b69-9e88-80646110ae2f",
+      "kind": "proofDryRun",
+      "status": "completed",
+      "result": {
+        "definitionId": "7_1_337-haskell-evm-4f4c3843076c-68b38f1d5768563570cf16756847ff42972a45d657cbd1d6c375ea9036a2bcea",
+        "valid": true
+      },
+      "timing": {
+        "executionMilliseconds": 87113,
+        "queueMilliseconds": 5136,
+        "totalMilliseconds": 92249
+      },
+      "toolRuns": [
+        {
+          "durationMilliseconds": 55436,
+          "exitCode": 0,
+          "finishedAt": "2026-09-21T22:37:05.145743Z",
+          "outcome": "success",
+          "startedAt": "2026-09-21T22:36:09.709257Z",
+          "tool": "kompile"
+        },
+        {
+          "durationMilliseconds": 26889,
+          "exitCode": 0,
+          "finishedAt": "2026-09-21T22:37:34.227020Z",
+          "outcome": "success",
+          "startedAt": "2026-09-21T22:37:07.337581Z",
+          "tool": "kprove"
+        }
+      ],
+      "evidence": "session-1780f457-da0a-48bc-b9fe-eaf832efe9fb/validation-005/result.json",
+      "stdout": "validation-005-stdout.txt",
+      "stderr": "validation-005-stderr.txt",
+      "proofPassedLines": [],
+      "name": "body-root-validation",
+      "command": [
+        "kprover",
+        "validate",
+        "--session",
+        "1780f457-da0a-48bc-b9fe-eaf832efe9fb",
+        "--spec",
+        "inputs/body-spec.k",
+        "--spec-module",
+        "AUDIT-BODY",
+        "--verification",
+        "inputs/body-verification.k",
+        "--verification-module",
+        "VERIFICATION",
+        "--source",
+        "inputs/body-dstoken-bin.k"
+      ],
+      "cliExitCode": 0,
+      "clientElapsedSeconds": 104.32367777824402,
+      "invocation": "body-root-validation-invocation.json"
+    }
+  ]
+}

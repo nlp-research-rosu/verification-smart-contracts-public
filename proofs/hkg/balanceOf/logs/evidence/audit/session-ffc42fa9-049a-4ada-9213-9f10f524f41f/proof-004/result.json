@@ -1,0 +1,37 @@
+{
+  "stderr": "WARNING 2026-09-21 14:56:44,681 kevm_pyk.__main__ - Ignoring --equation-max-local-steps for non-booster server: kore-rpc\nWARNING 2026-09-21 14:57:34,861 pyk.proof.proof - Terminating proof early because fail_fast is set: FALSE-STATUS.nonpayable-revert\n",
+  "stdout": "PROOF FAILED: FALSE-STATUS.nonpayable-revert\n1 Failure nodes. (0 pending and 1 failing)\n\nFailing nodes:\n\n  Node id: 3\n  Failure reason:\n    Matching failed.\n    The following cells failed matching individually (antecedent #Implies consequent):\n    STATUSCODE_CELL: EVMC_REVERT #Implies EVMC_SUCCESS\n  Path condition:\n    #Top\n\nJoin the Runtime Verification Discord server (https://discord.com/invite/CurfmXNtbN) or Telegram group (https://t.me/rv_kontrol) for support.\n",
+  "task": {
+    "createdAt": "2026-09-21T19:56:38.008169Z",
+    "error": null,
+    "finishedAt": "2026-09-21T19:57:44.070785Z",
+    "id": "261d046e-f133-4e3e-bb98-f0eb2cf8d72a",
+    "kind": "proof",
+    "result": {
+      "definitionId": "7_1_337-haskell-evm-4f4c3843076c-none",
+      "outcome": "notProved",
+      "residual": null
+    },
+    "semantics": {
+      "commit": "4f4c3843076c",
+      "id": "evm"
+    },
+    "startedAt": "2026-09-21T19:56:43.803644Z",
+    "status": "completed",
+    "timing": {
+      "executionMilliseconds": 60267,
+      "queueMilliseconds": 5795,
+      "totalMilliseconds": 66062
+    },
+    "toolRuns": [
+      {
+        "durationMilliseconds": 59474,
+        "exitCode": 1,
+        "finishedAt": "2026-09-21T19:57:43.781124Z",
+        "outcome": "exit_error",
+        "startedAt": "2026-09-21T19:56:44.306361Z",
+        "tool": "kprove"
+      }
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "stderr": "WARNING 2026-09-21 14:51:17,103 kevm_pyk.__main__ - Ignoring --equation-max-local-steps for non-booster server: kore-rpc\n",
+  "stdout": "PROOF PASSED: WITNESS.zero-balance\nPROOF PASSED: WITNESS.maximum-balance\nPROOF PASSED: WITNESS.nonpayable-revert\n",
+  "task": {
+    "createdAt": "2026-09-21T19:51:11.547615Z",
+    "error": null,
+    "finishedAt": "2026-09-21T19:53:13.630378Z",
+    "id": "8292acf3-6cee-46b2-8475-df2dfbc5e775",
+    "kind": "proof",
+    "result": {
+      "definitionId": "7_1_337-haskell-evm-4f4c3843076c-none",
+      "outcome": "proved",
+      "residual": null
+    },
+    "semantics": {
+      "commit": "4f4c3843076c",
+      "id": "evm"
+    },
+    "startedAt": "2026-09-21T19:51:16.259367Z",
+    "status": "completed",
+    "timing": {
+      "executionMilliseconds": 117371,
+      "queueMilliseconds": 4711,
+      "totalMilliseconds": 122082
+    },
+    "toolRuns": [
+      {
+        "durationMilliseconds": 116444,
+        "exitCode": 0,
+        "finishedAt": "2026-09-21T19:53:13.201635Z",
+        "outcome": "success",
+        "startedAt": "2026-09-21T19:51:16.757239Z",
+        "tool": "kprove"
+      }
+    ]
+  }
+}

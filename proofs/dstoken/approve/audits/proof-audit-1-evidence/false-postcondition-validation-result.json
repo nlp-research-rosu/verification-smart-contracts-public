@@ -1,0 +1,36 @@
+{
+  "stderr": "[Warning] Compiler: Variable 'B2' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/definitions/.7_1_337-haskell-evm-4f4c3843076c-0c9c406c3ac9e3c1a89f0b592cd2649f69591fbded11b7fc113aac9b751c75c7.a17d48ec-f1c1-4af2-9fe7-5a334771b454/source/lemmas/bytes-simplification.k)\n\tLocation(301,25,301,27)\n[Warning] Compiler: Variable '?WS' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/0e77d7c8-9654-4855-b3c8-9f9a3b207032/input/false-postcondition.k)\n\tLocation(22,31,22,34)\n\t22 |\t    <wordStack> .WordStack => ?WS:WordStack </wordStack>\n\t   .\t                              ^~~\n[Warning] Compiler: Variable '?MEM' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/0e77d7c8-9654-4855-b3c8-9f9a3b207032/input/false-postcondition.k)\n\tLocation(23,26,23,30)\n\t23 |\t    <localMem> .Bytes => ?MEM:Bytes </localMem>\n\t   .\t                         ^~~~\n[Warning] Compiler: Variable '?PC' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/0e77d7c8-9654-4855-b3c8-9f9a3b207032/input/false-postcondition.k)\n\tLocation(24,15,24,18)\n\t24 |\t    <pc> 0 => ?PC:Int </pc>\n\t   .\t              ^~~\n[Warning] Compiler: Variable '?GAS' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/0e77d7c8-9654-4855-b3c8-9f9a3b207032/input/false-postcondition.k)\n\tLocation(25,22,25,26)\n\t25 |\t    <gas> #gas(0) => ?GAS:Gas </gas>\n\t   .\t                     ^~~~\n[Warning] Compiler: Variable '?MEMUSED' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/0e77d7c8-9654-4855-b3c8-9f9a3b207032/input/false-postcondition.k)\n\tLocation(26,23,26,31)\n\t26 |\t    <memoryUsed> 0 => ?MEMUSED:Int </memoryUsed>\n\t   .\t                      ^~~~~~~~\n",
+  "stdout": "kore-exec /data/definitions/7_1_337-haskell-evm-4f4c3843076c-0c9c406c3ac9e3c1a89f0b592cd2649f69591fbded11b7fc113aac9b751c75c7/definition/definition.kore --module VERIFICATION --prove /tmp/.kprove-2026-09-17-03-20-24-242-6af7e997-a5d6-4359-8cf9-95941b5b89f2/spec.kore --spec-module AUDIT-FALSE-SPEC --output /tmp/.kprove-2026-09-17-03-20-24-242-6af7e997-a5d6-4359-8cf9-95941b5b89f2/result.kore\n",
+  "task": {
+    "createdAt": "2026-09-17T08:20:19.680913Z",
+    "error": null,
+    "finishedAt": "2026-09-17T08:20:48.849090Z",
+    "id": "0e77d7c8-9654-4855-b3c8-9f9a3b207032",
+    "kind": "proofDryRun",
+    "result": {
+      "definitionId": "7_1_337-haskell-evm-4f4c3843076c-0c9c406c3ac9e3c1a89f0b592cd2649f69591fbded11b7fc113aac9b751c75c7",
+      "valid": true
+    },
+    "semantics": {
+      "commit": "4f4c3843076c",
+      "id": "evm"
+    },
+    "startedAt": "2026-09-17T08:20:23.274405Z",
+    "status": "completed",
+    "timing": {
+      "executionMilliseconds": 25574,
+      "queueMilliseconds": 3593,
+      "totalMilliseconds": 29168
+    },
+    "toolRuns": [
+      {
+        "durationMilliseconds": 24774,
+        "exitCode": 0,
+        "finishedAt": "2026-09-17T08:20:48.556508Z",
+        "outcome": "success",
+        "startedAt": "2026-09-17T08:20:23.782497Z",
+        "tool": "kprove"
+      }
+    ]
+  }
+}

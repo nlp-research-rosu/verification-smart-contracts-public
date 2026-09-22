@@ -1,0 +1,28 @@
+[Warning] Compiler: Variable 'B2' defined but not used. Prefix variable name
+with underscore if this is intentional.
+	Source(/data/definitions/.7_1_337-haskell-evm-4f4c3843076c-d76ea99a76d8fb05adc33d318541e5b1294ccbb7d6bfaa692a4726dcccaa3e90.a7583b44-f142-4f89-8033-07c678bb3c0e/source/lemmas/bytes-simplification.k)
+	Location(301,25,301,27)
+[Warning] Compiler: Variable '?FINAL_PC' defined but not used. Prefix variable
+name with underscore if this is intentional.
+	Source(/data/tasks/79cf5bc4-e7b6-4d67-9f8e-710e493fb4f2/input/false-post.k)
+	Location(12,15,12,24)
+	12 |	    <pc> 0 => ?FINAL_PC:Int </pc>
+	   .	              ^~~~~~~~~
+[Warning] Compiler: Variable '?FINAL_STACK' defined but not used. Prefix
+variable name with underscore if this is intentional.
+	Source(/data/tasks/79cf5bc4-e7b6-4d67-9f8e-710e493fb4f2/input/false-post.k)
+	Location(13,31,13,43)
+	13 |	    <wordStack> .WordStack => ?FINAL_STACK:WordStack </wordStack>
+	   .	                              ^~~~~~~~~~~~
+[Warning] Compiler: Variable '?FINAL_MEMORY' defined but not used. Prefix
+variable name with underscore if this is intentional.
+	Source(/data/tasks/79cf5bc4-e7b6-4d67-9f8e-710e493fb4f2/input/false-post.k)
+	Location(14,26,14,39)
+	14 |	    <localMem> .Bytes => ?FINAL_MEMORY:Bytes </localMem>
+	   .	                         ^~~~~~~~~~~~~
+[Warning] Compiler: Variable '?FINAL_MEMORY_USED' defined but not used. Prefix
+variable name with underscore if this is intentional.
+	Source(/data/tasks/79cf5bc4-e7b6-4d67-9f8e-710e493fb4f2/input/false-post.k)
+	Location(15,23,15,41)
+	15 |	    <memoryUsed> 0 => ?FINAL_MEMORY_USED:Int </memoryUsed>
+	   .	                      ^~~~~~~~~~~~~~~~~~

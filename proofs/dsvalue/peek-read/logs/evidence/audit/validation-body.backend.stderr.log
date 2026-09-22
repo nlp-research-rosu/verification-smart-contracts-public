@@ -1,0 +1,47 @@
+[Warning] Compiler: Variable 'B2' defined but not used. Prefix variable name
+with underscore if this is intentional.
+	Source(/data/definitions/.7_1_337-haskell-evm-4f4c3843076c-ab21c3a454077877d498832f01275b24e47d75beca0e09b1736a7732f3380d13.128dce29-a25b-4688-b5d5-329b9b20fe51/source/lemmas/bytes-simplification.k)
+	Location(301,25,301,27)
+	301 |	      ( B1:Bytes +Bytes B2:Bytes ) [ I:Int ] => B1 [ I ]
+	    .	                        ^~
+[Warning] Compiler: Non exhaustive match detected:
+`_<Gas__GAS-SYNTAX_Bool_Gas_Gas`(infGas(_),_)
+	Source(/data/definitions/.7_1_337-haskell-evm-4f4c3843076c-ab21c3a454077877d498832f01275b24e47d75beca0e09b1736a7732f3380d13.128dce29-a25b-4688-b5d5-329b9b20fe51/source/gas.md)
+	Location(23,21,23,54)
+	23 |	    syntax Bool ::= Gas  "<Gas" Gas [function, total]
+	   .	                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[Warning] Compiler: Non exhaustive match detected:
+`_<=Gas__GAS-SYNTAX_Bool_Gas_Gas`(infGas(_),infGas(_))
+	Source(/data/definitions/.7_1_337-haskell-evm-4f4c3843076c-ab21c3a454077877d498832f01275b24e47d75beca0e09b1736a7732f3380d13.128dce29-a25b-4688-b5d5-329b9b20fe51/source/gas.md)
+	Location(24,21,24,54)
+	24 |	                  | Gas "<=Gas" Gas [function, total]
+	   .	                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[Warning] Compiler: Variable 'B2' defined but not used. Prefix variable name
+with underscore if this is intentional.
+	Source(/data/definitions/.7_1_337-haskell-evm-4f4c3843076c-ab21c3a454077877d498832f01275b24e47d75beca0e09b1736a7732f3380d13.128dce29-a25b-4688-b5d5-329b9b20fe51/source/lemmas/bytes-simplification.k)
+	Location(301,25,301,27)
+[Warning] Compiler: Variable '?FINAL_PC' defined but not used. Prefix variable
+name with underscore if this is intentional.
+	Source(/data/tasks/641dd7a4-1a38-48d7-ad7b-0edf4b94e0d3/input/body-check.k)
+	Location(12,15,12,24)
+	12 |	    <pc> 0 => ?FINAL_PC:Int </pc>
+	   .	              ^~~~~~~~~
+[Warning] Compiler: Variable '?FINAL_STACK' defined but not used. Prefix
+variable name with underscore if this is intentional.
+	Source(/data/tasks/641dd7a4-1a38-48d7-ad7b-0edf4b94e0d3/input/body-check.k)
+	Location(13,31,13,43)
+	13 |	    <wordStack> .WordStack => ?FINAL_STACK:WordStack </wordStack>
+	   .	                              ^~~~~~~~~~~~
+[Warning] Compiler: Variable '?FINAL_MEMORY' defined but not used. Prefix
+variable name with underscore if this is intentional.
+	Source(/data/tasks/641dd7a4-1a38-48d7-ad7b-0edf4b94e0d3/input/body-check.k)
+	Location(14,26,14,39)
+	14 |	    <localMem> .Bytes => ?FINAL_MEMORY:Bytes </localMem>
+	   .	                         ^~~~~~~~~~~~~
+[Warning] Compiler: Variable '?FINAL_MEMORY_USED' defined but not used. Prefix
+variable name with underscore if this is intentional.
+	Source(/data/tasks/641dd7a4-1a38-48d7-ad7b-0edf4b94e0d3/input/body-check.k)
+	Location(15,23,15,41)
+	15 |	    <memoryUsed> 0 => ?FINAL_MEMORY_USED:Int </memoryUsed>
+	   .	                      ^~~~~~~~~~~~~~~~~~

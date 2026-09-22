@@ -1,0 +1,36 @@
+{
+  "stderr": "[Warning] Compiler: Variable 'B2' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/definitions/.7_1_337-haskell-evm-4f4c3843076c-8de2aa8e95f822c67b82152ab4108caea672b57b3d82ef2b3fe48239db915512.6c284aa6-3856-48f0-be2f-0b4b3d543f68/source/lemmas/bytes-simplification.k)\n\tLocation(301,25,301,27)\n[Warning] Compiler: Variable '?FINALSTACK' defined but not used. Prefix\nvariable name with underscore if this is intentional.\n\tSource(/data/tasks/164dc472-ea18-4d01-aef9-8a2b6edfc5fa/input/spec.k)\n\tLocation(19,31,19,42)\n\t19 |\t    <wordStack> .WordStack => ?FINALSTACK:WordStack </wordStack>\n\t   .\t                              ^~~~~~~~~~~\n[Warning] Compiler: Variable '?FINALMEM' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/164dc472-ea18-4d01-aef9-8a2b6edfc5fa/input/spec.k)\n\tLocation(20,26,20,35)\n\t20 |\t    <localMem> .Bytes => ?FINALMEM:Bytes </localMem>\n\t   .\t                         ^~~~~~~~~\n[Warning] Compiler: Variable '?FINALPC' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/164dc472-ea18-4d01-aef9-8a2b6edfc5fa/input/spec.k)\n\tLocation(21,15,21,23)\n\t21 |\t    <pc> 0 => ?FINALPC:Int </pc>\n\t   .\t              ^~~~~~~~\n[Warning] Compiler: Variable '?FINALMEMUSED' defined but not used. Prefix\nvariable name with underscore if this is intentional.\n\tSource(/data/tasks/164dc472-ea18-4d01-aef9-8a2b6edfc5fa/input/spec.k)\n\tLocation(22,23,22,36)\n\t22 |\t    <memoryUsed> 0 => ?FINALMEMUSED:Int </memoryUsed>\n\t   .\t                      ^~~~~~~~~~~~~\n[Warning] Compiler: Variable '?FINALSTACK' defined but not used. Prefix\nvariable name with underscore if this is intentional.\n\tSource(/data/tasks/164dc472-ea18-4d01-aef9-8a2b6edfc5fa/input/spec.k)\n\tLocation(68,31,68,42)\n\t68 |\t    <wordStack> .WordStack => ?FINALSTACK:WordStack </wordStack>\n\t   .\t                              ^~~~~~~~~~~\n[Warning] Compiler: Variable '?FINALMEM' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/164dc472-ea18-4d01-aef9-8a2b6edfc5fa/input/spec.k)\n\tLocation(69,26,69,35)\n\t69 |\t    <localMem> .Bytes => ?FINALMEM:Bytes </localMem>\n\t   .\t                         ^~~~~~~~~\n[Warning] Compiler: Variable '?FINALPC' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/164dc472-ea18-4d01-aef9-8a2b6edfc5fa/input/spec.k)\n\tLocation(70,15,70,23)\n\t70 |\t    <pc> 0 => ?FINALPC:Int </pc>\n\t   .\t              ^~~~~~~~\n[Warning] Compiler: Variable '?FINALMEMUSED' defined but not used. Prefix\nvariable name with underscore if this is intentional.\n\tSource(/data/tasks/164dc472-ea18-4d01-aef9-8a2b6edfc5fa/input/spec.k)\n\tLocation(71,23,71,36)\n\t71 |\t    <memoryUsed> 0 => ?FINALMEMUSED:Int </memoryUsed>\n\t   .\t                      ^~~~~~~~~~~~~\n[Warning] Compiler: Variable 'LOGS' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/164dc472-ea18-4d01-aef9-8a2b6edfc5fa/input/spec.k)\n\tLocation(74,11,74,15)\n\t74 |\t    <log> LOGS:List </log>\n\t   .\t          ^~~~\n[Warning] Compiler: Variable '?FINALSTACK' defined but not used. Prefix\nvariable name with underscore if this is intentional.\n\tSource(/data/tasks/164dc472-ea18-4d01-aef9-8a2b6edfc5fa/input/spec.k)\n\tLocation(103,31,103,42)\n\t103 |\t    <wordStack> .WordStack => ?FINALSTACK:WordStack </wordStack>\n\t    .\t                              ^~~~~~~~~~~\n[Warning] Compiler: Variable '?FINALMEM' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/164dc472-ea18-4d01-aef9-8a2b6edfc5fa/input/spec.k)\n\tLocation(104,26,104,35)\n\t104 |\t    <localMem> .Bytes => ?FINALMEM:Bytes </localMem>\n\t    .\t                         ^~~~~~~~~\n[Warning] Compiler: Variable '?FINALPC' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/164dc472-ea18-4d01-aef9-8a2b6edfc5fa/input/spec.k)\n\tLocation(105,15,105,23)\n\t105 |\t    <pc> 0 => ?FINALPC:Int </pc>\n\t    .\t              ^~~~~~~~\n[Warning] Compiler: Variable '?FINALMEMUSED' defined but not used. Prefix\nvariable name with underscore if this is intentional.\n\tSource(/data/tasks/164dc472-ea18-4d01-aef9-8a2b6edfc5fa/input/spec.k)\n\tLocation(106,23,106,36)\n\t106 |\t    <memoryUsed> 0 => ?FINALMEMUSED:Int </memoryUsed>\n\t    .\t                      ^~~~~~~~~~~~~\n[Warning] Compiler: Variable 'LOGS' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/164dc472-ea18-4d01-aef9-8a2b6edfc5fa/input/spec.k)\n\tLocation(109,11,109,15)\n\t109 |\t    <log> LOGS:List </log>\n\t    .\t          ^~~~\n[Warning] Compiler: Variable 'STORAGE' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/164dc472-ea18-4d01-aef9-8a2b6edfc5fa/input/spec.k)\n\tLocation(113,19,113,26)\n\t113 |\t        <storage> STORAGE:Map </storage>\n\t    .\t                  ^~~~~~~\n",
+  "stdout": "kore-exec /data/definitions/7_1_337-haskell-evm-4f4c3843076c-8de2aa8e95f822c67b82152ab4108caea672b57b3d82ef2b3fe48239db915512/definition/definition.kore --module VERIFICATION --prove /tmp/.kprove-2026-09-15-15-35-09-615-49726c4f-c02c-402d-9d48-94fd30ae83b5/spec.kore --spec-module SPEC --output /tmp/.kprove-2026-09-15-15-35-09-615-49726c4f-c02c-402d-9d48-94fd30ae83b5/result.kore\n",
+  "task": {
+    "createdAt": "2026-09-15T20:34:58.962544Z",
+    "error": null,
+    "finishedAt": "2026-09-15T20:35:36.252571Z",
+    "id": "164dc472-ea18-4d01-aef9-8a2b6edfc5fa",
+    "kind": "proofDryRun",
+    "result": {
+      "definitionId": "7_1_337-haskell-evm-4f4c3843076c-8de2aa8e95f822c67b82152ab4108caea672b57b3d82ef2b3fe48239db915512",
+      "valid": true
+    },
+    "semantics": {
+      "commit": "4f4c3843076c",
+      "id": "evm"
+    },
+    "startedAt": "2026-09-15T20:35:06.824601Z",
+    "status": "completed",
+    "timing": {
+      "executionMilliseconds": 29427,
+      "queueMilliseconds": 7862,
+      "totalMilliseconds": 37290
+    },
+    "toolRuns": [
+      {
+        "durationMilliseconds": 26844,
+        "exitCode": 0,
+        "finishedAt": "2026-09-15T20:35:35.962749Z",
+        "outcome": "success",
+        "startedAt": "2026-09-15T20:35:09.118637Z",
+        "tool": "kprove"
+      }
+    ]
+  }
+}

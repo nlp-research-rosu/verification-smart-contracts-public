@@ -1,0 +1,36 @@
+{
+  "stderr": "[Warning] Compiler: Variable '?FINALSTACK' defined but not used. Prefix\nvariable name with underscore if this is intentional.\n\tSource(/data/tasks/5482aac6-49cd-4f63-a24d-919ffaa1233c/input/spec.k)\n\tLocation(19,31,19,42)\n\t19 |\t    <wordStack> .WordStack => ?FINALSTACK:WordStack </wordStack>\n\t   .\t                              ^~~~~~~~~~~\n[Warning] Compiler: Variable '?FINALMEM' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/5482aac6-49cd-4f63-a24d-919ffaa1233c/input/spec.k)\n\tLocation(20,26,20,35)\n\t20 |\t    <localMem> .Bytes => ?FINALMEM:Bytes </localMem>\n\t   .\t                         ^~~~~~~~~\n[Warning] Compiler: Variable '?FINALPC' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/5482aac6-49cd-4f63-a24d-919ffaa1233c/input/spec.k)\n\tLocation(21,15,21,23)\n\t21 |\t    <pc> 0 => ?FINALPC:Int </pc>\n\t   .\t              ^~~~~~~~\n[Warning] Compiler: Variable '?FINALMEMUSED' defined but not used. Prefix\nvariable name with underscore if this is intentional.\n\tSource(/data/tasks/5482aac6-49cd-4f63-a24d-919ffaa1233c/input/spec.k)\n\tLocation(23,23,23,36)\n\t23 |\t    <memoryUsed> 0 => ?FINALMEMUSED:Int </memoryUsed>\n\t   .\t                      ^~~~~~~~~~~~~\n[Warning] Compiler: Variable '?FINALSTACK' defined but not used. Prefix\nvariable name with underscore if this is intentional.\n\tSource(/data/tasks/5482aac6-49cd-4f63-a24d-919ffaa1233c/input/spec.k)\n\tLocation(53,31,53,42)\n\t53 |\t    <wordStack> .WordStack => ?FINALSTACK:WordStack </wordStack>\n\t   .\t                              ^~~~~~~~~~~\n[Warning] Compiler: Variable '?FINALMEM' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/5482aac6-49cd-4f63-a24d-919ffaa1233c/input/spec.k)\n\tLocation(54,26,54,35)\n\t54 |\t    <localMem> .Bytes => ?FINALMEM:Bytes </localMem>\n\t   .\t                         ^~~~~~~~~\n[Warning] Compiler: Variable '?FINALPC' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/5482aac6-49cd-4f63-a24d-919ffaa1233c/input/spec.k)\n\tLocation(55,15,55,23)\n\t55 |\t    <pc> 0 => ?FINALPC:Int </pc>\n\t   .\t              ^~~~~~~~\n[Warning] Compiler: Variable '?FINALMEMUSED' defined but not used. Prefix\nvariable name with underscore if this is intentional.\n\tSource(/data/tasks/5482aac6-49cd-4f63-a24d-919ffaa1233c/input/spec.k)\n\tLocation(57,23,57,36)\n\t57 |\t    <memoryUsed> 0 => ?FINALMEMUSED:Int </memoryUsed>\n\t   .\t                      ^~~~~~~~~~~~~\n[Warning] Compiler: Variable 'STORAGE' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/5482aac6-49cd-4f63-a24d-919ffaa1233c/input/spec.k)\n\tLocation(63,17,63,24)\n\t63 |\t      <storage> STORAGE </storage>\n\t   .\t                ^~~~~~~\n",
+  "stdout": "kore-exec /data/definitions/7_1_337-haskell-evm-4f4c3843076c-none/definition/definition.kore --module EDSL --prove /tmp/.kprove-2026-09-21-14-46-30-716-0db87928-8b9b-413a-bfb2-4d3c78a529ac/spec.kore --spec-module SPEC --output /tmp/.kprove-2026-09-21-14-46-30-716-0db87928-8b9b-413a-bfb2-4d3c78a529ac/result.kore\n",
+  "task": {
+    "createdAt": "2026-09-21T19:46:24.722319Z",
+    "error": null,
+    "finishedAt": "2026-09-21T19:46:54.054731Z",
+    "id": "5482aac6-49cd-4f63-a24d-919ffaa1233c",
+    "kind": "proofDryRun",
+    "result": {
+      "definitionId": "7_1_337-haskell-evm-4f4c3843076c-none",
+      "valid": true
+    },
+    "semantics": {
+      "commit": "4f4c3843076c",
+      "id": "evm"
+    },
+    "startedAt": "2026-09-21T19:46:29.453534Z",
+    "status": "completed",
+    "timing": {
+      "executionMilliseconds": 24601,
+      "queueMilliseconds": 4731,
+      "totalMilliseconds": 29332
+    },
+    "toolRuns": [
+      {
+        "durationMilliseconds": 23386,
+        "exitCode": 0,
+        "finishedAt": "2026-09-21T19:46:53.624672Z",
+        "outcome": "success",
+        "startedAt": "2026-09-21T19:46:30.237944Z",
+        "tool": "kprove"
+      }
+    ]
+  }
+}

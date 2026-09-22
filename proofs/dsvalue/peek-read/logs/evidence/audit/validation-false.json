@@ -1,0 +1,41 @@
+{
+  "budget": {
+    "limit": 20,
+    "remaining": 16,
+    "used": 4
+  },
+  "evidenceDir": "session-2c58a1ff-a790-457f-8840-7959eb7f879f/validation-004",
+  "sessionId": "2c58a1ff-a790-457f-8840-7959eb7f879f",
+  "task": {
+    "createdAt": "2026-09-21T20:13:24.792983Z",
+    "error": null,
+    "finishedAt": "2026-09-21T20:13:55.380525Z",
+    "id": "79cf5bc4-e7b6-4d67-9f8e-710e493fb4f2",
+    "kind": "proofDryRun",
+    "result": {
+      "definitionId": "7_1_337-haskell-evm-4f4c3843076c-d76ea99a76d8fb05adc33d318541e5b1294ccbb7d6bfaa692a4726dcccaa3e90",
+      "valid": true
+    },
+    "semantics": {
+      "commit": "4f4c3843076c",
+      "id": "evm"
+    },
+    "startedAt": "2026-09-21T20:13:29.105650Z",
+    "status": "completed",
+    "timing": {
+      "executionMilliseconds": 26274,
+      "queueMilliseconds": 4312,
+      "totalMilliseconds": 30587
+    },
+    "toolRuns": [
+      {
+        "durationMilliseconds": 25049,
+        "exitCode": 0,
+        "finishedAt": "2026-09-21T20:13:54.945754Z",
+        "outcome": "success",
+        "startedAt": "2026-09-21T20:13:29.896670Z",
+        "tool": "kprove"
+      }
+    ]
+  }
+}

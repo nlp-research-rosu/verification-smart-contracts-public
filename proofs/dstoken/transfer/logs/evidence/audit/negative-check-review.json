@@ -1,0 +1,34 @@
+[
+  {
+    "name": "false",
+    "taskId": "a6f79d35-ae0f-425d-89e3-5f7f871512af",
+    "outcome": "notProved",
+    "cliExitCode": 1,
+    "kExitCode": 1,
+    "structuredResidual": null,
+    "actualAbiWord": 1,
+    "requiredAbiWord": 2,
+    "matchingFailureCell": "OUTPUT_CELL",
+    "pendingNodes": 0,
+    "failingNodes": 1,
+    "groundPathCondition": "#Top",
+    "meaning": "The ground path is reachable; #Top here is not a successful proof result.",
+    "evidence": "audit/proof-003-stdout.txt"
+  },
+  {
+    "name": "body",
+    "taskId": "e7de0ffb-acbe-4f90-b592-edbdab05c743",
+    "outcome": "notProved",
+    "cliExitCode": 1,
+    "kExitCode": 1,
+    "structuredResidual": null,
+    "actualAbiWord": 0,
+    "requiredAbiWord": 1,
+    "matchingFailureCell": "OUTPUT_CELL",
+    "pendingNodes": 0,
+    "failingNodes": 1,
+    "groundPathCondition": "#Top",
+    "meaning": "The ground path is reachable; #Top here is not a successful proof result.",
+    "evidence": "audit/proof-004-stdout.txt"
+  }
+]

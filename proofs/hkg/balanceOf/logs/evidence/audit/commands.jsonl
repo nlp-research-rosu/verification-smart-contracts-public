@@ -1,0 +1,18 @@
+{"name": "config", "argv": ["kprover", "config"], "exitCode": 0}
+{"name": "health", "argv": ["kprover", "health"], "exitCode": 0}
+{"name": "start", "argv": ["kprover", "session", "start", "--project", "../../..", "--semantics", "evm"], "exitCode": 0}
+{"name": "semantics", "argv": ["kprover", "semantics", "fetch", "evm"], "exitCode": 0}
+{"name": "show", "argv": ["kprover", "session", "show", "ffc42fa9-049a-4ada-9213-9f10f524f41f"], "exitCode": 0}
+{"name": "unchanged-validation", "argv": ["kprover", "validate", "--session", "ffc42fa9-049a-4ada-9213-9f10f524f41f", "--semantics", "evm", "--spec", "inputs/spec.k", "--spec-module", "SPEC", "--source", "inputs/verification.k"], "exitCode": 0}
+{"name": "unchanged-proof", "argv": ["kprover", "prove", "--session", "ffc42fa9-049a-4ada-9213-9f10f524f41f", "--semantics", "evm", "--spec", "inputs/spec.k", "--spec-module", "SPEC", "--source", "inputs/verification.k"], "exitCode": 0}
+{"name": "witness-validation", "argv": ["kprover", "validate", "--session", "ffc42fa9-049a-4ada-9213-9f10f524f41f", "--semantics", "evm", "--spec", "inputs/witness.k", "--spec-module", "WITNESS", "--source", "inputs/verification.k"], "exitCode": 0}
+{"name": "false-result-validation", "argv": ["kprover", "validate", "--session", "ffc42fa9-049a-4ada-9213-9f10f524f41f", "--semantics", "evm", "--spec", "inputs/false-result.k", "--spec-module", "FALSE-RESULT", "--source", "inputs/verification.k"], "exitCode": 0}
+{"name": "witness-proof", "argv": ["kprover", "prove", "--session", "ffc42fa9-049a-4ada-9213-9f10f524f41f", "--semantics", "evm", "--spec", "inputs/witness.k", "--spec-module", "WITNESS", "--source", "inputs/verification.k"], "exitCode": 0}
+{"name": "false-status-validation", "argv": ["kprover", "validate", "--session", "ffc42fa9-049a-4ada-9213-9f10f524f41f", "--semantics", "evm", "--spec", "inputs/false-status.k", "--spec-module", "FALSE-STATUS", "--source", "inputs/verification.k"], "exitCode": 0}
+{"name": "body-mutant-validation", "argv": ["kprover", "validate", "--session", "ffc42fa9-049a-4ada-9213-9f10f524f41f", "--semantics", "evm", "--spec", "inputs/body-mutant.k", "--spec-module", "BODY-MUTANT", "--source", "inputs/verification.k"], "exitCode": 0}
+{"name": "false-result-proof", "argv": ["kprover", "prove", "--session", "ffc42fa9-049a-4ada-9213-9f10f524f41f", "--semantics", "evm", "--spec", "inputs/false-result.k", "--spec-module", "FALSE-RESULT", "--source", "inputs/verification.k"], "exitCode": 1}
+{"name": "reference-context-validation", "argv": ["kprover", "validate", "--session", "ffc42fa9-049a-4ada-9213-9f10f524f41f", "--semantics", "evm", "--spec", "inputs/reference-context.k", "--spec-module", "REFERENCE-CONTEXT", "--source", "inputs/verification.k"], "exitCode": 0}
+{"name": "false-status-proof", "argv": ["kprover", "prove", "--session", "ffc42fa9-049a-4ada-9213-9f10f524f41f", "--semantics", "evm", "--spec", "inputs/false-status.k", "--spec-module", "FALSE-STATUS", "--source", "inputs/verification.k"], "exitCode": 1}
+{"name": "body-mutant-proof", "argv": ["kprover", "prove", "--session", "ffc42fa9-049a-4ada-9213-9f10f524f41f", "--semantics", "evm", "--spec", "inputs/body-mutant.k", "--spec-module", "BODY-MUTANT", "--source", "inputs/verification.k"], "exitCode": 1}
+{"name": "reference-context-proof", "argv": ["kprover", "prove", "--session", "ffc42fa9-049a-4ada-9213-9f10f524f41f", "--semantics", "evm", "--spec", "inputs/reference-context.k", "--spec-module", "REFERENCE-CONTEXT", "--source", "inputs/verification.k"], "exitCode": 0}
+{"name": "final-show", "argv": ["kprover", "session", "show", "ffc42fa9-049a-4ada-9213-9f10f524f41f"], "exitCode": 0}

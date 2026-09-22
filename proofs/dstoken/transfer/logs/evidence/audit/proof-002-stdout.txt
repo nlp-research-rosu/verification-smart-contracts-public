@@ -1,0 +1,1 @@
+PROOF PASSED: AUDIT-WITNESS.ground-self-transfer

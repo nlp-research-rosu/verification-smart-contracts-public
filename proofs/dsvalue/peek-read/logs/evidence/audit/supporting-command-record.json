@@ -1,0 +1,70 @@
+[
+  {
+    "command": [
+      "kprover",
+      "session",
+      "show",
+      "70c7b8c6-5023-41b0-b803-fb2317fcfa33"
+    ],
+    "exitCode": 0,
+    "resultSummary": "Pinned evm 4f4c3843076c, attemptsUsed1, validationsUsed1, runsUsed0."
+  },
+  {
+    "command": [
+      "kprover",
+      "config"
+    ],
+    "exitCode": 0,
+    "resultSummary": "9000 seconds per task; 20 proof, 20 validation, 3 run limits; polling10s; request timeout60s."
+  },
+  {
+    "command": [
+      "kprover",
+      "health"
+    ],
+    "exitCode": 0,
+    "stdout": {
+      "status": "ok",
+      "kVersion": "7.1.337"
+    }
+  },
+  {
+    "command": [
+      "kprover",
+      "session",
+      "start",
+      "--project",
+      ".",
+      "--semantics",
+      "evm"
+    ],
+    "exitCode": 0,
+    "stdoutFile": "session-start.json"
+  },
+  {
+    "command": [
+      "kprover",
+      "semantics",
+      "fetch",
+      "evm"
+    ],
+    "exitCode": 0,
+    "stdoutFile": "semantics-fetch.json"
+  },
+  {
+    "command": [
+      "python3",
+      "audit-work/inspect-inputs.py"
+    ],
+    "exitCode": 0,
+    "stdoutFile": "inspection-result.json"
+  },
+  {
+    "command": [
+      "python3",
+      "audit-work/collect-evidence.py"
+    ],
+    "exitCode": 0,
+    "outputFile": "evidence-index.json"
+  }
+]

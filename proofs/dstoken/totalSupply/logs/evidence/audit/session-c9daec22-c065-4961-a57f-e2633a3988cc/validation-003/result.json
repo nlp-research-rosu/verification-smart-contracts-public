@@ -1,0 +1,27 @@
+{
+  "stderr": "",
+  "stdout": "",
+  "task": {
+    "createdAt": "2026-09-17T07:29:11.837080Z",
+    "error": {
+      "code": "DEFINITION_PREPARATION_FAILED",
+      "message": "Required verification source body-mutation/edsl.md is missing."
+    },
+    "finishedAt": "2026-09-17T07:29:15.798479Z",
+    "id": "d70f75fe-d0f4-43fb-8241-93c7acdd7057",
+    "kind": "proofDryRun",
+    "result": null,
+    "semantics": {
+      "commit": "4f4c3843076c",
+      "id": "evm"
+    },
+    "startedAt": "2026-09-17T07:29:15.292141Z",
+    "status": "failed",
+    "timing": {
+      "executionMilliseconds": 506,
+      "queueMilliseconds": 3455,
+      "totalMilliseconds": 3961
+    },
+    "toolRuns": []
+  }
+}

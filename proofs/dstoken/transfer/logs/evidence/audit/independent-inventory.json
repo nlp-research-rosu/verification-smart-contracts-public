@@ -1,0 +1,76 @@
+{
+  "runtimeSize": 6955,
+  "runtimeSha256": "65b311134fbf066c074dfd609dc8e1048629e20e885636da2ea3b52932231a82",
+  "candidate": {
+    "spec.k": "182fe9220e5684f3aa27e3daf1cd74278bab5b98dfc71a022ffc7f752eccd00e",
+    "verification.k": "ce17116341d12b53b73f3647b5ca0d47d4ed585e616f17da1fd7ba82aaa5c958",
+    "dstoken-bin.k": "78737fd159dccebcc4e30de66927b7908a4370e9b98317f6519415983b2535f2"
+  },
+  "references": {
+    "candidate/dstoken-bin.k": {
+      "sha256": "78737fd159dccebcc4e30de66927b7908a4370e9b98317f6519415983b2535f2",
+      "identicalRuntimeConstants": 1
+    },
+    "reference/specs/transfer-failure-1-a-spec.k": {
+      "sha256": "a249057bd043b5b6cea2a620b376f2fe4ca1d7ae8c0c3d0ac66b17bde0554965",
+      "identicalRuntimeConstants": 3
+    },
+    "reference/specs/transfer-failure-1-b-spec.k": {
+      "sha256": "37b4d871213aae0a9c74f502e95a441af3d01f55a748d124b5553bfebf6359b1",
+      "identicalRuntimeConstants": 3
+    },
+    "reference/specs/transfer-failure-1-c-spec.k": {
+      "sha256": "eca95d8b215fd3a83608696fdb5cc35dd231e0057c5d8d3bb0b7d12fbcfbdf78",
+      "identicalRuntimeConstants": 3
+    },
+    "reference/specs/transfer-failure-2-a-spec.k": {
+      "sha256": "de7121a4276d78da3c2fc68df94603d6c678f1b4b14f316e21f6673750439034",
+      "identicalRuntimeConstants": 3
+    },
+    "reference/specs/transfer-failure-2-b-spec.k": {
+      "sha256": "aa0e8e2f50206dd3ec626761dd8c690fe28b466b99dc46eac672cbcdd8591720",
+      "identicalRuntimeConstants": 3
+    },
+    "reference/specs/transfer-success-1-spec.k": {
+      "sha256": "89cbb29f71389fef0d3388f4bbc1ae9665c611f3ff9fabf4405558acffa24eea",
+      "identicalRuntimeConstants": 3
+    },
+    "reference/specs/transfer-success-2-spec.k": {
+      "sha256": "4a38532861e5071cd41c5f28128feae5402309fd9861a6f7d34bb2760a7ac0f8",
+      "identicalRuntimeConstants": 3
+    }
+  },
+  "claims": [
+    "raw-transfer-failure-nonpayable",
+    "raw-transfer-success-distinct",
+    "raw-transfer-success-same-slot",
+    "raw-transfer-failure-stopped",
+    "raw-transfer-failure-insufficient-balance",
+    "raw-transfer-failure-overflow",
+    "transfer-success-distinct",
+    "transfer-success-same-slot",
+    "transfer-failure-nonpayable",
+    "transfer-failure-stopped",
+    "transfer-failure-insufficient-balance",
+    "transfer-failure-overflow"
+  ],
+  "localTheory": {
+    "programConstant": "DSTOKEN",
+    "equations": [
+      "#binRuntime(DSTOKEN) => #parseByteStack(original runtime hex)"
+    ],
+    "otherLocalRules": [],
+    "trustedClaims": [],
+    "operationalBridges": [],
+    "programDerivedOpaqueValues": []
+  },
+  "entryForms": {
+    "raw": "#execute with exact program, valid jump destinations and pc=0",
+    "wholeCall": "#pushCallStack ~> #pushWorldState ~> #mkCall ... exact program ... ~> #return 0 0"
+  },
+  "approvedBaseline": {
+    "spec-audit-4.md": "b7e0838b3956aa87e7b840a3c43eb14e487a520035ba88cfb1edaedb027b63fc",
+    "spec-audit-3.md": "8354c73b6a191fe77e194ef0b53de43507529d8e6e424ffee14a352e2235fd7a",
+    "note": "Baseline reports approve the same-slot two-write form; they do not contain a complete historical source snapshot."
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "taskId": "487c0300-1608-4ca7-a68e-f0a7cc13e39f",
+  "allTwelveLabelsExactlyMatched": true,
+  "outcome": "proved",
+  "structuredResidual": null,
+  "cliExitCode": 0,
+  "rawTopArtifactPresent": false,
+  "actualProofPassedLines": [
+    "PROOF PASSED: SPEC.raw-transfer-failure-insufficient-balance",
+    "PROOF PASSED: SPEC.transfer-success-distinct",
+    "PROOF PASSED: SPEC.transfer-failure-insufficient-balance",
+    "PROOF PASSED: SPEC.raw-transfer-failure-stopped",
+    "PROOF PASSED: SPEC.transfer-success-same-slot",
+    "PROOF PASSED: SPEC.raw-transfer-failure-overflow",
+    "PROOF PASSED: SPEC.transfer-failure-nonpayable",
+    "PROOF PASSED: SPEC.transfer-failure-stopped",
+    "PROOF PASSED: SPEC.transfer-failure-overflow",
+    "PROOF PASSED: SPEC.raw-transfer-failure-nonpayable",
+    "PROOF PASSED: SPEC.raw-transfer-success-same-slot",
+    "PROOF PASSED: SPEC.raw-transfer-success-distinct"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "stderr": "[Warning] Compiler: Variable 'B2' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/definitions/.7_1_337-haskell-evm-4f4c3843076c-d76ea99a76d8fb05adc33d318541e5b1294ccbb7d6bfaa692a4726dcccaa3e90.a7583b44-f142-4f89-8033-07c678bb3c0e/source/lemmas/bytes-simplification.k)\n\tLocation(301,25,301,27)\n[Warning] Compiler: Variable '?FINAL_PC' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/79cf5bc4-e7b6-4d67-9f8e-710e493fb4f2/input/false-post.k)\n\tLocation(12,15,12,24)\n\t12 |\t    <pc> 0 => ?FINAL_PC:Int </pc>\n\t   .\t              ^~~~~~~~~\n[Warning] Compiler: Variable '?FINAL_STACK' defined but not used. Prefix\nvariable name with underscore if this is intentional.\n\tSource(/data/tasks/79cf5bc4-e7b6-4d67-9f8e-710e493fb4f2/input/false-post.k)\n\tLocation(13,31,13,43)\n\t13 |\t    <wordStack> .WordStack => ?FINAL_STACK:WordStack </wordStack>\n\t   .\t                              ^~~~~~~~~~~~\n[Warning] Compiler: Variable '?FINAL_MEMORY' defined but not used. Prefix\nvariable name with underscore if this is intentional.\n\tSource(/data/tasks/79cf5bc4-e7b6-4d67-9f8e-710e493fb4f2/input/false-post.k)\n\tLocation(14,26,14,39)\n\t14 |\t    <localMem> .Bytes => ?FINAL_MEMORY:Bytes </localMem>\n\t   .\t                         ^~~~~~~~~~~~~\n[Warning] Compiler: Variable '?FINAL_MEMORY_USED' defined but not used. Prefix\nvariable name with underscore if this is intentional.\n\tSource(/data/tasks/79cf5bc4-e7b6-4d67-9f8e-710e493fb4f2/input/false-post.k)\n\tLocation(15,23,15,41)\n\t15 |\t    <memoryUsed> 0 => ?FINAL_MEMORY_USED:Int </memoryUsed>\n\t   .\t                      ^~~~~~~~~~~~~~~~~~\n",
+  "stdout": "kore-exec /data/definitions/7_1_337-haskell-evm-4f4c3843076c-d76ea99a76d8fb05adc33d318541e5b1294ccbb7d6bfaa692a4726dcccaa3e90/definition/definition.kore --module VERIFICATION --prove /tmp/.kprove-2026-09-21-15-13-30-373-dd39af8f-fb86-4c90-b73e-f6650028d433/spec.kore --spec-module FALSE-POST --output /tmp/.kprove-2026-09-21-15-13-30-373-dd39af8f-fb86-4c90-b73e-f6650028d433/result.kore\n",
+  "task": {
+    "createdAt": "2026-09-21T20:13:24.792983Z",
+    "error": null,
+    "finishedAt": "2026-09-21T20:13:55.380525Z",
+    "id": "79cf5bc4-e7b6-4d67-9f8e-710e493fb4f2",
+    "kind": "proofDryRun",
+    "result": {
+      "definitionId": "7_1_337-haskell-evm-4f4c3843076c-d76ea99a76d8fb05adc33d318541e5b1294ccbb7d6bfaa692a4726dcccaa3e90",
+      "valid": true
+    },
+    "semantics": {
+      "commit": "4f4c3843076c",
+      "id": "evm"
+    },
+    "startedAt": "2026-09-21T20:13:29.105650Z",
+    "status": "completed",
+    "timing": {
+      "executionMilliseconds": 26274,
+      "queueMilliseconds": 4312,
+      "totalMilliseconds": 30587
+    },
+    "toolRuns": [
+      {
+        "durationMilliseconds": 25049,
+        "exitCode": 0,
+        "finishedAt": "2026-09-21T20:13:54.945754Z",
+        "outcome": "success",
+        "startedAt": "2026-09-21T20:13:29.896670Z",
+        "tool": "kprove"
+      }
+    ]
+  }
+}

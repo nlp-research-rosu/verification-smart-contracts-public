@@ -1,0 +1,37 @@
+{
+  "stderr": "WARNING 2026-09-17 03:06:59,383 kevm_pyk.__main__ - Ignoring --equation-max-local-steps for non-booster server: kore-rpc\n",
+  "stdout": "PROOF PASSED: SPEC.balanceOf-nonzero-value-reverts\n",
+  "task": {
+    "createdAt": "2026-09-17T08:06:54.532092Z",
+    "error": null,
+    "finishedAt": "2026-09-17T08:08:24.767797Z",
+    "id": "8993885f-4be8-46fe-8593-fc47640a4f20",
+    "kind": "proof",
+    "result": {
+      "definitionId": "7_1_337-haskell-evm-4f4c3843076c-5ad9ed35c5149600a77e121b0b3264f316bc8c426734d04308df3307c80a0b7d",
+      "outcome": "proved",
+      "residual": null
+    },
+    "semantics": {
+      "commit": "4f4c3843076c",
+      "id": "evm"
+    },
+    "startedAt": "2026-09-17T08:06:58.251331Z",
+    "status": "completed",
+    "timing": {
+      "executionMilliseconds": 86516,
+      "queueMilliseconds": 3719,
+      "totalMilliseconds": 90235
+    },
+    "toolRuns": [
+      {
+        "durationMilliseconds": 85426,
+        "exitCode": 0,
+        "finishedAt": "2026-09-17T08:08:24.475875Z",
+        "outcome": "success",
+        "startedAt": "2026-09-17T08:06:59.049445Z",
+        "tool": "kprove"
+      }
+    ]
+  }
+}

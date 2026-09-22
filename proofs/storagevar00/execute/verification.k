@@ -1,0 +1,16 @@
+requires "edsl.md"
+requires "lemmas/lemmas.k"
+
+module VERIFICATION-SUMMARIES
+  imports EDSL
+
+  // Exact 161-byte runtime image supplied in /app/contract.bin.
+  syntax Bytes ::= "#storageVar00Runtime" [function, total]
+  rule #storageVar00Runtime => #parseByteStack("608060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806361461954146044575b600080fd5b348015604f57600080fd5b506056606c565b6040518082815260200191505060405180910390f35b6000805490509056fea165627a7a7230582042a42ab720fca3a1db0ba7ac19c662cf1a6fb8fdb252593eb42de55a510e09470029")
+endmodule
+
+module VERIFICATION
+  imports VERIFICATION-SUMMARIES
+  imports EDSL
+  imports LEMMAS
+endmodule

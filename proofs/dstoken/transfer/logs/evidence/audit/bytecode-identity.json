@@ -1,0 +1,42 @@
+{
+  "programSha256": "65b311134fbf066c074dfd609dc8e1048629e20e885636da2ea3b52932231a82",
+  "size": 6955,
+  "candidateMatches": true,
+  "references": {
+    "reference/specs/transfer-failure-1-a-spec.k": {
+      "sha256": "a249057bd043b5b6cea2a620b376f2fe4ca1d7ae8c0c3d0ac66b17bde0554965",
+      "runtimeConstants": 3,
+      "allRuntimeConstantsMatchProgram": true
+    },
+    "reference/specs/transfer-failure-1-b-spec.k": {
+      "sha256": "37b4d871213aae0a9c74f502e95a441af3d01f55a748d124b5553bfebf6359b1",
+      "runtimeConstants": 3,
+      "allRuntimeConstantsMatchProgram": true
+    },
+    "reference/specs/transfer-failure-1-c-spec.k": {
+      "sha256": "eca95d8b215fd3a83608696fdb5cc35dd231e0057c5d8d3bb0b7d12fbcfbdf78",
+      "runtimeConstants": 3,
+      "allRuntimeConstantsMatchProgram": true
+    },
+    "reference/specs/transfer-failure-2-a-spec.k": {
+      "sha256": "de7121a4276d78da3c2fc68df94603d6c678f1b4b14f316e21f6673750439034",
+      "runtimeConstants": 3,
+      "allRuntimeConstantsMatchProgram": true
+    },
+    "reference/specs/transfer-failure-2-b-spec.k": {
+      "sha256": "aa0e8e2f50206dd3ec626761dd8c690fe28b466b99dc46eac672cbcdd8591720",
+      "runtimeConstants": 3,
+      "allRuntimeConstantsMatchProgram": true
+    },
+    "reference/specs/transfer-success-1-spec.k": {
+      "sha256": "89cbb29f71389fef0d3388f4bbc1ae9665c611f3ff9fabf4405558acffa24eea",
+      "runtimeConstants": 3,
+      "allRuntimeConstantsMatchProgram": true
+    },
+    "reference/specs/transfer-success-2-spec.k": {
+      "sha256": "4a38532861e5071cd41c5f28128feae5402309fd9861a6f7d34bb2760a7ac0f8",
+      "runtimeConstants": 3,
+      "allRuntimeConstantsMatchProgram": true
+    }
+  }
+}

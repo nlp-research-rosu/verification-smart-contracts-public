@@ -1,0 +1,10 @@
+{
+  "falsePost": "Ground read with has=1 and slot2=42 requires output word43",
+  "bodyMutation": {
+    "byteOffset": 1415,
+    "original": 2,
+    "mutated": 3,
+    "effect": "peek helper SLOAD loads slot3 instead of slot2; read witness retains output42 with slot3=43"
+  },
+  "contextProbe": "Generalize two positive claims to arbitrary initial output/status and K continuation"
+}

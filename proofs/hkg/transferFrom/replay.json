@@ -1,0 +1,7 @@
+{
+  "specModule": "SPEC",
+  "verificationModule": "VERIFICATION",
+  "sources": [
+    "hkg-bin-runtime.k"
+  ]
+}

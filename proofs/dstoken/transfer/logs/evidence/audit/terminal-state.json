@@ -1,0 +1,36 @@
+{
+  "auditSessionId": "1780f457-da0a-48bc-b9fe-eaf832efe9fb",
+  "proofsUsed": 4,
+  "proofLimit": 20,
+  "validationsUsed": 5,
+  "validationLimit": 20,
+  "runsUsed": 0,
+  "acceptedTasks": 9,
+  "allAcceptedTasksTerminal": true,
+  "checkedLocalPids": [
+    8000,
+    10357,
+    10819,
+    13219,
+    13699,
+    14166,
+    20448,
+    21418,
+    33068,
+    34090,
+    35475,
+    35989,
+    36962,
+    39344
+  ],
+  "allCheckedLocalProcessesTerminal": true,
+  "psExitCode": 1,
+  "psStdout": "",
+  "frozenInputSha256": {
+    "spec.k": "182fe9220e5684f3aa27e3daf1cd74278bab5b98dfc71a022ffc7f752eccd00e",
+    "verification.k": "ce17116341d12b53b73f3647b5ca0d47d4ed585e616f17da1fd7ba82aaa5c958",
+    "dstoken-bin.k": "78737fd159dccebcc4e30de66927b7908a4370e9b98317f6519415983b2535f2",
+    "SCOPE.md": "e8485cf0164df3402cbaa3f03d2d52bc43d194cf10d94ffd1ae01481c25e06ad",
+    "prove.sh": "8bc2377b7f3107bb00a004f46a691f868929feab508563292e1e6acd4f0ed4f6"
+  }
+}

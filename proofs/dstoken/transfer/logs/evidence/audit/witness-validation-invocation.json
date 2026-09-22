@@ -1,0 +1,24 @@
+{
+  "command": [
+    "kprover",
+    "validate",
+    "--session",
+    "1780f457-da0a-48bc-b9fe-eaf832efe9fb",
+    "--spec",
+    "inputs/witness.k",
+    "--spec-module",
+    "AUDIT-WITNESS",
+    "--verification",
+    "inputs/verification.k",
+    "--verification-module",
+    "VERIFICATION",
+    "--source",
+    "inputs/dstoken-bin.k"
+  ],
+  "XDG_CONFIG_HOME": "<retained-kprover-config>",
+  "startedAtEpoch": 1790028067.722295,
+  "pid": 13699,
+  "exitCode": 0,
+  "finishedAtEpoch": 1790029698.5014248,
+  "elapsedSeconds": 1630.779130935669
+}

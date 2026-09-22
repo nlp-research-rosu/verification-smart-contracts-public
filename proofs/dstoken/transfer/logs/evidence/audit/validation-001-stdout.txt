@@ -1,0 +1,1 @@
+kore-exec /data/definitions/7_1_337-haskell-evm-4f4c3843076c-fd3640fd71c354e23b052f9a0352d394630cbc122b18e1aee6d3a66700fdc6f9/definition/definition.kore --module VERIFICATION --prove /tmp/.kprove-2026-09-21-16-57-52-629-ef4a0e1b-b68f-4eac-8e2d-de3a214ac1f2/spec.kore --spec-module SPEC --output /tmp/.kprove-2026-09-21-16-57-52-629-ef4a0e1b-b68f-4eac-8e2d-de3a214ac1f2/result.kore

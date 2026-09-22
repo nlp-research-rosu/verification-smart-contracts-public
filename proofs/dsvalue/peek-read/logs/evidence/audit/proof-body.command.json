@@ -1,0 +1,20 @@
+{
+  "command": [
+    "kprover",
+    "prove",
+    "--session",
+    "2c58a1ff-a790-457f-8840-7959eb7f879f",
+    "--spec",
+    "inputs/body-check.k",
+    "--spec-module",
+    "BODY-CHECK",
+    "--verification",
+    "inputs/verification-body.k",
+    "--verification-module",
+    "VERIFICATION"
+  ],
+  "XDG_CONFIG_HOME": "<retained-kprover-config>",
+  "started": "2026-09-21T20:17:43.999744+00:00",
+  "exitCode": 1,
+  "finished": "2026-09-21T20:19:39.197417+00:00"
+}

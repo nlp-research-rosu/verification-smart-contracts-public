@@ -1,0 +1,42 @@
+{
+  "budget": {
+    "limit": 20,
+    "remaining": 15,
+    "used": 5
+  },
+  "evidenceDir": "session-2c58a1ff-a790-457f-8840-7959eb7f879f/proof-005",
+  "sessionId": "2c58a1ff-a790-457f-8840-7959eb7f879f",
+  "task": {
+    "createdAt": "2026-09-21T20:17:44.132724Z",
+    "error": null,
+    "finishedAt": "2026-09-21T20:19:29.881497Z",
+    "id": "cac891d0-367e-4f40-9b31-adece3d46a96",
+    "kind": "proof",
+    "result": {
+      "definitionId": "7_1_337-haskell-evm-4f4c3843076c-ab21c3a454077877d498832f01275b24e47d75beca0e09b1736a7732f3380d13",
+      "outcome": "notProved",
+      "residual": null
+    },
+    "semantics": {
+      "commit": "4f4c3843076c",
+      "id": "evm"
+    },
+    "startedAt": "2026-09-21T20:17:48.712452Z",
+    "status": "completed",
+    "timing": {
+      "executionMilliseconds": 101169,
+      "queueMilliseconds": 4579,
+      "totalMilliseconds": 105748
+    },
+    "toolRuns": [
+      {
+        "durationMilliseconds": 100382,
+        "exitCode": 1,
+        "finishedAt": "2026-09-21T20:19:29.595898Z",
+        "outcome": "exit_error",
+        "startedAt": "2026-09-21T20:17:49.213355Z",
+        "tool": "kprove"
+      }
+    ]
+  }
+}

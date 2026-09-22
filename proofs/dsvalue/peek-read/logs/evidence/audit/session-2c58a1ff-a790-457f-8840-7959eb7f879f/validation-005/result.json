@@ -1,0 +1,44 @@
+{
+  "stderr": "[Warning] Compiler: Variable 'B2' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/definitions/.7_1_337-haskell-evm-4f4c3843076c-ab21c3a454077877d498832f01275b24e47d75beca0e09b1736a7732f3380d13.128dce29-a25b-4688-b5d5-329b9b20fe51/source/lemmas/bytes-simplification.k)\n\tLocation(301,25,301,27)\n\t301 |\t      ( B1:Bytes +Bytes B2:Bytes ) [ I:Int ] => B1 [ I ]\n\t    .\t                        ^~\n[Warning] Compiler: Non exhaustive match detected:\n`_<Gas__GAS-SYNTAX_Bool_Gas_Gas`(infGas(_),_)\n\tSource(/data/definitions/.7_1_337-haskell-evm-4f4c3843076c-ab21c3a454077877d498832f01275b24e47d75beca0e09b1736a7732f3380d13.128dce29-a25b-4688-b5d5-329b9b20fe51/source/gas.md)\n\tLocation(23,21,23,54)\n\t23 |\t    syntax Bool ::= Gas  \"<Gas\" Gas [function, total]\n\t   .\t                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n[Warning] Compiler: Non exhaustive match detected:\n`_<=Gas__GAS-SYNTAX_Bool_Gas_Gas`(infGas(_),infGas(_))\n\tSource(/data/definitions/.7_1_337-haskell-evm-4f4c3843076c-ab21c3a454077877d498832f01275b24e47d75beca0e09b1736a7732f3380d13.128dce29-a25b-4688-b5d5-329b9b20fe51/source/gas.md)\n\tLocation(24,21,24,54)\n\t24 |\t                  | Gas \"<=Gas\" Gas [function, total]\n\t   .\t                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n[Warning] Compiler: Variable 'B2' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/definitions/.7_1_337-haskell-evm-4f4c3843076c-ab21c3a454077877d498832f01275b24e47d75beca0e09b1736a7732f3380d13.128dce29-a25b-4688-b5d5-329b9b20fe51/source/lemmas/bytes-simplification.k)\n\tLocation(301,25,301,27)\n[Warning] Compiler: Variable '?FINAL_PC' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/641dd7a4-1a38-48d7-ad7b-0edf4b94e0d3/input/body-check.k)\n\tLocation(12,15,12,24)\n\t12 |\t    <pc> 0 => ?FINAL_PC:Int </pc>\n\t   .\t              ^~~~~~~~~\n[Warning] Compiler: Variable '?FINAL_STACK' defined but not used. Prefix\nvariable name with underscore if this is intentional.\n\tSource(/data/tasks/641dd7a4-1a38-48d7-ad7b-0edf4b94e0d3/input/body-check.k)\n\tLocation(13,31,13,43)\n\t13 |\t    <wordStack> .WordStack => ?FINAL_STACK:WordStack </wordStack>\n\t   .\t                              ^~~~~~~~~~~~\n[Warning] Compiler: Variable '?FINAL_MEMORY' defined but not used. Prefix\nvariable name with underscore if this is intentional.\n\tSource(/data/tasks/641dd7a4-1a38-48d7-ad7b-0edf4b94e0d3/input/body-check.k)\n\tLocation(14,26,14,39)\n\t14 |\t    <localMem> .Bytes => ?FINAL_MEMORY:Bytes </localMem>\n\t   .\t                         ^~~~~~~~~~~~~\n[Warning] Compiler: Variable '?FINAL_MEMORY_USED' defined but not used. Prefix\nvariable name with underscore if this is intentional.\n\tSource(/data/tasks/641dd7a4-1a38-48d7-ad7b-0edf4b94e0d3/input/body-check.k)\n\tLocation(15,23,15,41)\n\t15 |\t    <memoryUsed> 0 => ?FINAL_MEMORY_USED:Int </memoryUsed>\n\t   .\t                      ^~~~~~~~~~~~~~~~~~\n",
+  "stdout": "kore-exec /data/definitions/7_1_337-haskell-evm-4f4c3843076c-ab21c3a454077877d498832f01275b24e47d75beca0e09b1736a7732f3380d13/definition/definition.kore --module VERIFICATION --prove /tmp/.kprove-2026-09-21-15-17-06-804-b55cdecf-6e6b-4d76-b79d-0e6143392056/spec.kore --spec-module BODY-CHECK --output /tmp/.kprove-2026-09-21-15-17-06-804-b55cdecf-6e6b-4d76-b79d-0e6143392056/result.kore\n",
+  "task": {
+    "createdAt": "2026-09-21T20:15:59.900979Z",
+    "error": null,
+    "finishedAt": "2026-09-21T20:17:33.336797Z",
+    "id": "641dd7a4-1a38-48d7-ad7b-0edf4b94e0d3",
+    "kind": "proofDryRun",
+    "result": {
+      "definitionId": "7_1_337-haskell-evm-4f4c3843076c-ab21c3a454077877d498832f01275b24e47d75beca0e09b1736a7732f3380d13",
+      "valid": true
+    },
+    "semantics": {
+      "commit": "4f4c3843076c",
+      "id": "evm"
+    },
+    "startedAt": "2026-09-21T20:16:04.832439Z",
+    "status": "completed",
+    "timing": {
+      "executionMilliseconds": 88504,
+      "queueMilliseconds": 4931,
+      "totalMilliseconds": 93435
+    },
+    "toolRuns": [
+      {
+        "durationMilliseconds": 57171,
+        "exitCode": 0,
+        "finishedAt": "2026-09-21T20:17:04.277251Z",
+        "outcome": "success",
+        "startedAt": "2026-09-21T20:16:07.106087Z",
+        "tool": "kompile"
+      },
+      {
+        "durationMilliseconds": 26606,
+        "exitCode": 0,
+        "finishedAt": "2026-09-21T20:17:32.905084Z",
+        "outcome": "success",
+        "startedAt": "2026-09-21T20:17:06.298471Z",
+        "tool": "kprove"
+      }
+    ]
+  }
+}

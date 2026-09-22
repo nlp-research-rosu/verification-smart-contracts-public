@@ -1,0 +1,544 @@
+[
+  {
+    "record": {
+      "stderr": "WARNING 2026-09-17 03:14:59,679 kevm_pyk.__main__ - Ignoring --equation-max-local-steps for non-booster server: kore-rpc\n",
+      "stdout": "PROOF PASSED: SPEC.approve-stopped\nPROOF PASSED: SPEC.approve-nonpayable\nPROOF PASSED: SPEC.approve-success\n",
+      "task": {
+        "createdAt": "2026-09-17T08:14:54.389299Z",
+        "error": null,
+        "finishedAt": "2026-09-17T08:19:16.586390Z",
+        "id": "48fd473b-2887-48bc-8b45-40fbce4a3410",
+        "kind": "proof",
+        "result": {
+          "definitionId": "7_1_337-haskell-evm-4f4c3843076c-0c9c406c3ac9e3c1a89f0b592cd2649f69591fbded11b7fc113aac9b751c75c7",
+          "outcome": "proved",
+          "residual": null
+        },
+        "semantics": {
+          "commit": "4f4c3843076c",
+          "id": "evm"
+        },
+        "startedAt": "2026-09-17T08:14:58.674887Z",
+        "status": "completed",
+        "timing": {
+          "executionMilliseconds": 257911,
+          "queueMilliseconds": 4285,
+          "totalMilliseconds": 262197
+        },
+        "toolRuns": [
+          {
+            "durationMilliseconds": 256966,
+            "exitCode": 0,
+            "finishedAt": "2026-09-17T08:19:16.293535Z",
+            "outcome": "success",
+            "startedAt": "2026-09-17T08:14:59.327202Z",
+            "tool": "kprove"
+          }
+        ]
+      }
+    },
+    "kind": "proof",
+    "role": "audit",
+    "operation": "proof-001",
+    "session": "6c5683d6-10ee-4844-b98a-d8fbcc8c2caf"
+  },
+  {
+    "record": {
+      "stderr": "WARNING 2026-09-17 03:21:10,584 kevm_pyk.__main__ - Ignoring --equation-max-local-steps for non-booster server: kore-rpc\nWARNING 2026-09-17 03:23:21,446 pyk.proof.proof - Terminating proof early because fail_fast is set: AUDIT-FALSE-SPEC.approve-success-false-output\n",
+      "stdout": "PROOF FAILED: AUDIT-FALSE-SPEC.approve-success-false-output\n1 Failure nodes. (0 pending and 1 failing)\n\nFailing nodes:\n\n  Node id: 4\n  Failure reason:\n    Matching failed.\n    The following cells failed matching individually (antecedent #Implies consequent):\n    OUTPUT_CELL: b\"\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x01\" #Implies b\"\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\"\n  Path condition:\n    #Top\n\nJoin the Runtime Verification Discord server (https://discord.com/invite/CurfmXNtbN) or Telegram group (https://t.me/rv_kontrol) for support.\n",
+      "task": {
+        "createdAt": "2026-09-17T08:21:05.509059Z",
+        "error": null,
+        "finishedAt": "2026-09-17T08:23:34.394803Z",
+        "id": "aaaf04c1-1ce2-49f3-8073-129c0e37bdaf",
+        "kind": "proof",
+        "result": {
+          "definitionId": "7_1_337-haskell-evm-4f4c3843076c-0c9c406c3ac9e3c1a89f0b592cd2649f69591fbded11b7fc113aac9b751c75c7",
+          "outcome": "notProved",
+          "residual": null
+        },
+        "semantics": {
+          "commit": "4f4c3843076c",
+          "id": "evm"
+        },
+        "startedAt": "2026-09-17T08:21:09.560321Z",
+        "status": "completed",
+        "timing": {
+          "executionMilliseconds": 144834,
+          "queueMilliseconds": 4051,
+          "totalMilliseconds": 148885
+        },
+        "toolRuns": [
+          {
+            "durationMilliseconds": 143887,
+            "exitCode": 1,
+            "finishedAt": "2026-09-17T08:23:34.102920Z",
+            "outcome": "exit_error",
+            "startedAt": "2026-09-17T08:21:10.215081Z",
+            "tool": "kprove"
+          }
+        ]
+      }
+    },
+    "kind": "proof",
+    "role": "audit",
+    "operation": "proof-002",
+    "session": "6c5683d6-10ee-4844-b98a-d8fbcc8c2caf"
+  },
+  {
+    "record": {
+      "stderr": "[Warning] Compiler: Variable 'B2' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/definitions/.7_1_337-haskell-evm-4f4c3843076c-0c9c406c3ac9e3c1a89f0b592cd2649f69591fbded11b7fc113aac9b751c75c7.a17d48ec-f1c1-4af2-9fe7-5a334771b454/source/lemmas/bytes-simplification.k)\n\tLocation(301,25,301,27)\n[Warning] Compiler: Variable '?WS' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/7dd58f0c-c5d4-49f6-95d7-0323fa443d34/input/spec.k)\n\tLocation(19,31,19,34)\n\t19 |\t    <wordStack> .WordStack => ?WS:WordStack </wordStack>\n\t   .\t                              ^~~\n[Warning] Compiler: Variable '?MEM' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/7dd58f0c-c5d4-49f6-95d7-0323fa443d34/input/spec.k)\n\tLocation(20,26,20,30)\n\t20 |\t    <localMem> .Bytes => ?MEM:Bytes </localMem>\n\t   .\t                         ^~~~\n[Warning] Compiler: Variable '?PC' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/7dd58f0c-c5d4-49f6-95d7-0323fa443d34/input/spec.k)\n\tLocation(21,15,21,18)\n\t21 |\t    <pc> 0 => ?PC:Int </pc>\n\t   .\t              ^~~\n[Warning] Compiler: Variable '?GAS' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/7dd58f0c-c5d4-49f6-95d7-0323fa443d34/input/spec.k)\n\tLocation(22,22,22,26)\n\t22 |\t    <gas> #gas(0) => ?GAS:Gas </gas>\n\t   .\t                     ^~~~\n[Warning] Compiler: Variable '?MEMUSED' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/7dd58f0c-c5d4-49f6-95d7-0323fa443d34/input/spec.k)\n\tLocation(23,23,23,31)\n\t23 |\t    <memoryUsed> 0 => ?MEMUSED:Int </memoryUsed>\n\t   .\t                      ^~~~~~~~\n[Warning] Compiler: Variable '?WS' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/7dd58f0c-c5d4-49f6-95d7-0323fa443d34/input/spec.k)\n\tLocation(63,31,63,34)\n\t63 |\t    <wordStack> .WordStack => ?WS:WordStack </wordStack>\n\t   .\t                              ^~~\n[Warning] Compiler: Variable '?MEM' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/7dd58f0c-c5d4-49f6-95d7-0323fa443d34/input/spec.k)\n\tLocation(64,26,64,30)\n\t64 |\t    <localMem> .Bytes => ?MEM:Bytes </localMem>\n\t   .\t                         ^~~~\n[Warning] Compiler: Variable '?PC' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/7dd58f0c-c5d4-49f6-95d7-0323fa443d34/input/spec.k)\n\tLocation(65,15,65,18)\n\t65 |\t    <pc> 0 => ?PC:Int </pc>\n\t   .\t              ^~~\n[Warning] Compiler: Variable '?GAS' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/7dd58f0c-c5d4-49f6-95d7-0323fa443d34/input/spec.k)\n\tLocation(66,22,66,26)\n\t66 |\t    <gas> #gas(0) => ?GAS:Gas </gas>\n\t   .\t                     ^~~~\n[Warning] Compiler: Variable '?MEMUSED' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/7dd58f0c-c5d4-49f6-95d7-0323fa443d34/input/spec.k)\n\tLocation(67,23,67,31)\n\t67 |\t    <memoryUsed> 0 => ?MEMUSED:Int </memoryUsed>\n\t   .\t                      ^~~~~~~~\n[Warning] Compiler: Variable 'LOGS' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/7dd58f0c-c5d4-49f6-95d7-0323fa443d34/input/spec.k)\n\tLocation(70,11,70,15)\n\t70 |\t    <log> LOGS </log>\n\t   .\t          ^~~~\n[Warning] Compiler: Variable '?WS' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/7dd58f0c-c5d4-49f6-95d7-0323fa443d34/input/spec.k)\n\tLocation(97,31,97,34)\n\t97 |\t    <wordStack> .WordStack => ?WS:WordStack </wordStack>\n\t   .\t                              ^~~\n[Warning] Compiler: Variable '?MEM' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/7dd58f0c-c5d4-49f6-95d7-0323fa443d34/input/spec.k)\n\tLocation(98,26,98,30)\n\t98 |\t    <localMem> .Bytes => ?MEM:Bytes </localMem>\n\t   .\t                         ^~~~\n[Warning] Compiler: Variable '?PC' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/7dd58f0c-c5d4-49f6-95d7-0323fa443d34/input/spec.k)\n\tLocation(99,15,99,18)\n\t99 |\t    <pc> 0 => ?PC:Int </pc>\n\t   .\t              ^~~\n[Warning] Compiler: Variable '?GAS' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/7dd58f0c-c5d4-49f6-95d7-0323fa443d34/input/spec.k)\n\tLocation(100,22,100,26)\n\t100 |\t    <gas> #gas(0) => ?GAS:Gas </gas>\n\t    .\t                     ^~~~\n[Warning] Compiler: Variable '?MEMUSED' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/7dd58f0c-c5d4-49f6-95d7-0323fa443d34/input/spec.k)\n\tLocation(101,23,101,31)\n\t101 |\t    <memoryUsed> 0 => ?MEMUSED:Int </memoryUsed>\n\t    .\t                      ^~~~~~~~\n[Warning] Compiler: Variable 'LOGS' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/7dd58f0c-c5d4-49f6-95d7-0323fa443d34/input/spec.k)\n\tLocation(104,11,104,15)\n\t104 |\t    <log> LOGS </log>\n\t    .\t          ^~~~\n[Warning] Compiler: Variable 'STORAGE' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/7dd58f0c-c5d4-49f6-95d7-0323fa443d34/input/spec.k)\n\tLocation(108,17,108,24)\n\t108 |\t      <storage> STORAGE </storage>\n\t    .\t                ^~~~~~~\n",
+      "stdout": "kore-exec /data/definitions/7_1_337-haskell-evm-4f4c3843076c-0c9c406c3ac9e3c1a89f0b592cd2649f69591fbded11b7fc113aac9b751c75c7/definition/definition.kore --module VERIFICATION --prove /tmp/.kprove-2026-09-17-03-14-10-800-8cb931e6-7478-48c5-8655-7a1e6ceea2c9/spec.kore --spec-module SPEC --output /tmp/.kprove-2026-09-17-03-14-10-800-8cb931e6-7478-48c5-8655-7a1e6ceea2c9/result.kore\n",
+      "task": {
+        "createdAt": "2026-09-17T08:14:05.461970Z",
+        "error": null,
+        "finishedAt": "2026-09-17T08:14:37.090997Z",
+        "id": "7dd58f0c-c5d4-49f6-95d7-0323fa443d34",
+        "kind": "proofDryRun",
+        "result": {
+          "definitionId": "7_1_337-haskell-evm-4f4c3843076c-0c9c406c3ac9e3c1a89f0b592cd2649f69591fbded11b7fc113aac9b751c75c7",
+          "valid": true
+        },
+        "semantics": {
+          "commit": "4f4c3843076c",
+          "id": "evm"
+        },
+        "startedAt": "2026-09-17T08:14:09.602442Z",
+        "status": "completed",
+        "timing": {
+          "executionMilliseconds": 27488,
+          "queueMilliseconds": 4140,
+          "totalMilliseconds": 31629
+        },
+        "toolRuns": [
+          {
+            "durationMilliseconds": 26395,
+            "exitCode": 0,
+            "finishedAt": "2026-09-17T08:14:36.653680Z",
+            "outcome": "success",
+            "startedAt": "2026-09-17T08:14:10.257719Z",
+            "tool": "kprove"
+          }
+        ]
+      }
+    },
+    "kind": "validation",
+    "role": "audit",
+    "operation": "validation-001",
+    "session": "6c5683d6-10ee-4844-b98a-d8fbcc8c2caf"
+  },
+  {
+    "record": {
+      "stderr": "[Warning] Compiler: Variable 'B2' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/definitions/.7_1_337-haskell-evm-4f4c3843076c-0c9c406c3ac9e3c1a89f0b592cd2649f69591fbded11b7fc113aac9b751c75c7.a17d48ec-f1c1-4af2-9fe7-5a334771b454/source/lemmas/bytes-simplification.k)\n\tLocation(301,25,301,27)\n[Warning] Compiler: Variable '?WS' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/0e77d7c8-9654-4855-b3c8-9f9a3b207032/input/false-postcondition.k)\n\tLocation(22,31,22,34)\n\t22 |\t    <wordStack> .WordStack => ?WS:WordStack </wordStack>\n\t   .\t                              ^~~\n[Warning] Compiler: Variable '?MEM' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/0e77d7c8-9654-4855-b3c8-9f9a3b207032/input/false-postcondition.k)\n\tLocation(23,26,23,30)\n\t23 |\t    <localMem> .Bytes => ?MEM:Bytes </localMem>\n\t   .\t                         ^~~~\n[Warning] Compiler: Variable '?PC' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/0e77d7c8-9654-4855-b3c8-9f9a3b207032/input/false-postcondition.k)\n\tLocation(24,15,24,18)\n\t24 |\t    <pc> 0 => ?PC:Int </pc>\n\t   .\t              ^~~\n[Warning] Compiler: Variable '?GAS' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/0e77d7c8-9654-4855-b3c8-9f9a3b207032/input/false-postcondition.k)\n\tLocation(25,22,25,26)\n\t25 |\t    <gas> #gas(0) => ?GAS:Gas </gas>\n\t   .\t                     ^~~~\n[Warning] Compiler: Variable '?MEMUSED' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/0e77d7c8-9654-4855-b3c8-9f9a3b207032/input/false-postcondition.k)\n\tLocation(26,23,26,31)\n\t26 |\t    <memoryUsed> 0 => ?MEMUSED:Int </memoryUsed>\n\t   .\t                      ^~~~~~~~\n",
+      "stdout": "kore-exec /data/definitions/7_1_337-haskell-evm-4f4c3843076c-0c9c406c3ac9e3c1a89f0b592cd2649f69591fbded11b7fc113aac9b751c75c7/definition/definition.kore --module VERIFICATION --prove /tmp/.kprove-2026-09-17-03-20-24-242-6af7e997-a5d6-4359-8cf9-95941b5b89f2/spec.kore --spec-module AUDIT-FALSE-SPEC --output /tmp/.kprove-2026-09-17-03-20-24-242-6af7e997-a5d6-4359-8cf9-95941b5b89f2/result.kore\n",
+      "task": {
+        "createdAt": "2026-09-17T08:20:19.680913Z",
+        "error": null,
+        "finishedAt": "2026-09-17T08:20:48.849090Z",
+        "id": "0e77d7c8-9654-4855-b3c8-9f9a3b207032",
+        "kind": "proofDryRun",
+        "result": {
+          "definitionId": "7_1_337-haskell-evm-4f4c3843076c-0c9c406c3ac9e3c1a89f0b592cd2649f69591fbded11b7fc113aac9b751c75c7",
+          "valid": true
+        },
+        "semantics": {
+          "commit": "4f4c3843076c",
+          "id": "evm"
+        },
+        "startedAt": "2026-09-17T08:20:23.274405Z",
+        "status": "completed",
+        "timing": {
+          "executionMilliseconds": 25574,
+          "queueMilliseconds": 3593,
+          "totalMilliseconds": 29168
+        },
+        "toolRuns": [
+          {
+            "durationMilliseconds": 24774,
+            "exitCode": 0,
+            "finishedAt": "2026-09-17T08:20:48.556508Z",
+            "outcome": "success",
+            "startedAt": "2026-09-17T08:20:23.782497Z",
+            "tool": "kprove"
+          }
+        ]
+      }
+    },
+    "kind": "validation",
+    "role": "audit",
+    "operation": "validation-002",
+    "session": "6c5683d6-10ee-4844-b98a-d8fbcc8c2caf"
+  },
+  {
+    "record": {
+      "stderr": "WARNING 2026-09-17 02:58:34,179 kevm_pyk.__main__ - Ignoring --equation-max-local-steps for non-booster server: kore-rpc\nWARNING 2026-09-17 03:01:16,629 pyk.proof.proof - Terminating proof early because fail_fast is set: SPEC.approve-stopped\nWARNING 2026-09-17 03:04:18,600 pyk.proof.proof - Terminating proof early because fail_fast is set: SPEC.approve-success\n",
+      "stdout": "PROOF FAILED: SPEC.approve-stopped\n2 Failure nodes. (1 pending and 1 failing)\n\nPending nodes:\n\nID: 7:\n\nFailing nodes:\n\n  Node id: 6\n  Failure reason:\n    Matching failed.\n    The following cells failed matching individually (antecedent #Implies consequent):\n    OUTPUT_CELL: b\"\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x01\" #Implies b\"\"\n    STATUSCODE_CELL: EVMC_SUCCESS #Implies EVMC_INVALID_INSTRUCTION\n  Path condition:\n    { b\"\\x00\" #Equals #range ( #buf ( 32 , #lookup ( STORAGE:Map , 4 ) /Int pow160 ) , maxUInt5 , 1 ) }\n\nJoin the Runtime Verification Discord server (https://discord.com/invite/CurfmXNtbN) or Telegram group (https://t.me/rv_kontrol) for support.\nPROOF PASSED: SPEC.approve-nonpayable\nPROOF FAILED: SPEC.approve-success\n1 Failure nodes. (0 pending and 1 failing)\n\nFailing nodes:\n\n  Node id: 7\n  Failure reason:\n    Matching failed.\n    The following cells failed matching individually (antecedent #Implies consequent):\n    OUTPUT_CELL: b\"\" #Implies b\"\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x01\"\n    STATUSCODE_CELL: EVMC_INVALID_INSTRUCTION #Implies EVMC_SUCCESS\n    LOG_CELL: LOGS:List #Implies LOGS:List ListItem ( { ACCT:Int | ListItem ( 4238056678808933066457772256406219440718756300954938350892797929791311314944 ) ListItem ( CALLER_ID:Int ) ListItem ( GUY:Int ) ListItem ( WAD:Int ) | b\"\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00@\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00D\\t^\\xa7\\xb3\" +Bytes #buf ( 32 , GUY:Int ) +Bytes #buf ( 32 , WAD:Int ) } ) ListItem ( { ACCT:Int | ListItem ( 63486140976153616755203102783360879283472101686154884697241723088393386309925 ) ListItem ( CALLER_ID:Int ) ListItem ( GUY:Int ) | #buf ( 32 , WAD:Int ) } )\n    ACCOUNTS_CELL: <account>\n      <code>\n        b\"```@R`\\x046\\x10a\\x01\\x1dW`\\x005|\\x01\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x90\\x04c\\xff\\xff\\xff\\xff\\x16\\x80c\\x06\\xfd\\xde\\x03\\x14a\\x01\\\"W\\x80c\\x07\\xdah\\xf5\\x14a\\x01SW\\x80c\\t^\\xa7\\xb3\\x14a\\x01hW\\x80c\\x13\\xaf@5\\x14a\\x01\\xc2W\\x80c\\x18\\x16\\r\\xdd\\x14a\\x01\\xfbW\\x80c#\\xb8r\\xdd\\x14a\\x02$W\\x80c1<\\xe5g\\x14a\\x02\\x9dW\\x80c4R\\xf5\\x1d\\x14a\\x02\\xc6W\\x80cZ\\xc8\\x01\\xfe\\x14a\\x032W\\x80ci\\xd3\\xe2\\x0e\\x14a\\x03YW\\x80cp\\xa0\\x821\\x14a\\x03\\x8eW\\x80cu\\xf1+!\\x14a\\x03\\xdbW\\x80cz\\x9e^K\\x14a\\x04\\x08W\\x80c\\x84\\x02\\x18\\x1f\\x14a\\x04AW\\x80c\\x8d\\xa5\\xcb[\\x14a\\x04\\xadW\\x80c\\x90\\xbc\\x16\\x93\\x14a\\x05\\x02W\\x80c\\x95\\xd8\\x9bA\\x14a\\x057W\\x80c\\xa9\\x05\\x9c\\xbb\\x14a\\x05hW\\x80c\\xbe\\x9aeU\\x14a\\x05\\xc2W\\x80c\\xbf~!O\\x14a\\x05\\xd7W\\x80c\\xddb\\xed>\\x14a\\x06,W[`\\x00\\x80\\xfd[4\\x15a\\x01-W`\\x00\\x80\\xfd[a\\x015a\\x06\\x98V[`@Q\\x80\\x82`\\x00\\x19\\x16`\\x00\\x19\\x16\\x81R` \\x01\\x91PP`@Q\\x80\\x91\\x03\\x90\\xf3[4\\x15a\\x01^W`\\x00\\x80\\xfd[a\\x01fa\\x06\\x9eV[\\x00[4\\x15a\\x01sW`\\x00\\x80\\xfd[a\\x01\\xa8`\\x04\\x80\\x805s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x90` \\x01\\x90\\x91\\x90\\x805\\x90` \\x01\\x90\\x91\\x90PPa\\x07\\x9eV[`@Q\\x80\\x82\\x15\\x15\\x15\\x15\\x81R` \\x01\\x91PP`@Q\\x80\\x91\\x03\\x90\\xf3[4\\x15a\\x01\\xcdW`\\x00\\x80\\xfd[a\\x01\\xf9`\\x04\\x80\\x805s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x90` \\x01\\x90\\x91\\x90PPa\\x08xV[\\x00[4\\x15a\\x02\\x06W`\\x00\\x80\\xfd[a\\x02\\x0ea\\tWV[`@Q\\x80\\x82\\x81R` \\x01\\x91PP`@Q\\x80\\x91\\x03\\x90\\xf3[4\\x15a\\x02/W`\\x00\\x80\\xfd[a\\x02\\x83`\\x04\\x80\\x805s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x90` \\x01\\x90\\x91\\x90\\x805s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x90` \\x01\\x90\\x91\\x90\\x805\\x90` \\x01\\x90\\x91\\x90PPa\\t`V[`@Q\\x80\\x82\\x15\\x15\\x15\\x15\\x81R` \\x01\\x91PP`@Q\\x80\\x91\\x03\\x90\\xf3[4\\x15a\\x02\\xa8W`\\x00\\x80\\xfd[a\\x02\\xb0a\\n<V[`@Q\\x80\\x82\\x81R` \\x01\\x91PP`@Q\\x80\\x91\\x03\\x90\\xf3[4\\x15a\\x02\\xd1W`\\x00\\x80\\xfd[a\\x03\\x18`\\x04\\x80\\x805s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x90` \\x01\\x90\\x91\\x90\\x805o\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x90` \\x01\\x90\\x91\\x90PPa\\nBV[`@Q\\x80\\x82\\x15\\x15\\x15\\x15\\x81R` \\x01\\x91PP`@Q\\x80\\x91\\x03\\x90\\xf3[4\\x15a\\x03=W`\\x00\\x80\\xfd[a\\x03W`\\x04\\x80\\x805`\\x00\\x19\\x16\\x90` \\x01\\x90\\x91\\x90PPa\\nhV[\\x00[4\\x15a\\x03dW`\\x00\\x80\\xfd[a\\x03\\x8c`\\x04\\x80\\x805o\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x90` \\x01\\x90\\x91\\x90PPa\\n\\xacV[\\x00[4\\x15a\\x03\\x99W`\\x00\\x80\\xfd[a\\x03\\xc5`\\x04\\x80\\x805s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x90` \\x01\\x90\\x91\\x90PPa\\fmV[`@Q\\x80\\x82\\x81R` \\x01\\x91PP`@Q\\x80\\x91\\x03\\x90\\xf3[4\\x15a\\x03\\xe6W`\\x00\\x80\\xfd[a\\x03\\xeea\\f\\xb6V[`@Q\\x80\\x82\\x15\\x15\\x15\\x15\\x81R` \\x01\\x91PP`@Q\\x80\\x91\\x03\\x90\\xf3[4\\x15a\\x04\\x13W`\\x00\\x80\\xfd[a\\x04?`\\x04\\x80\\x805s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x90` \\x01\\x90\\x91\\x90PPa\\f\\xc9V[\\x00[4\\x15a\\x04LW`\\x00\\x80\\xfd[a\\x04\\x93`\\x04\\x80\\x805s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x90` \\x01\\x90\\x91\\x90\\x805o\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x90` \\x01\\x90\\x91\\x90PPa\\r\\xa8V[`@Q\\x80\\x82\\x15\\x15\\x15\\x15\\x81R` \\x01\\x91PP`@Q\\x80\\x91\\x03\\x90\\xf3[4\\x15a\\x04\\xb8W`\\x00\\x80\\xfd[a\\x04\\xc0a\\r\\xcfV[`@Q\\x80\\x82s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x81R` \\x01\\x91PP`@Q\\x80\\x91\\x03\\x90\\xf3[4\\x15a\\x05\\rW`\\x00\\x80\\xfd[a\\x055`\\x04\\x80\\x805o\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x90` \\x01\\x90\\x91\\x90PPa\\r\\xf5V[\\x00[4\\x15a\\x05BW`\\x00\\x80\\xfd[a\\x05Ja\\x0f\\xb6V[`@Q\\x80\\x82`\\x00\\x19\\x16`\\x00\\x19\\x16\\x81R` \\x01\\x91PP`@Q\\x80\\x91\\x03\\x90\\xf3[4\\x15a\\x05sW`\\x00\\x80\\xfd[a\\x05\\xa8`\\x04\\x80\\x805s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x90` \\x01\\x90\\x91\\x90\\x805\\x90` \\x01\\x90\\x91\\x90PPa\\x0f\\xbcV[`@Q\\x80\\x82\\x15\\x15\\x15\\x15\\x81R` \\x01\\x91PP`@Q\\x80\\x91\\x03\\x90\\xf3[4\\x15a\\x05\\xcdW`\\x00\\x80\\xfd[a\\x05\\xd5a\\x10\\x96V[\\x00[4\\x15a\\x05\\xe2W`\\x00\\x80\\xfd[a\\x05\\xeaa\\x11\\x96V[`@Q\\x80\\x82s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x81R` \\x01\\x91PP`@Q\\x80\\x91\\x03\\x90\\xf3[4\\x15a\\x067W`\\x00\\x80\\xfd[a\\x06\\x82`\\x04\\x80\\x805s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x90` \\x01\\x90\\x91\\x90\\x805s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x90` \\x01\\x90\\x91\\x90PPa\\x11\\xbcV[`@Q\\x80\\x82\\x81R` \\x01\\x91PP`@Q\\x80\\x91\\x03\\x90\\xf3[`\\x07T\\x81V[a\\x06\\xcc3`\\x005\\x7f\\xff\\xff\\xff\\xff\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x16a\\x12CV[\\x15\\x15a\\x06\\xd4W\\xfe[`\\x00\\x80`\\x045\\x91P`$5\\x90P\\x80`\\x00\\x19\\x16\\x82`\\x00\\x19\\x163s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16`\\x005\\x7f\\xff\\xff\\xff\\xff\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x16{\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x19\\x164`\\x006`@Q\\x80\\x84\\x81R` \\x01\\x80` \\x01\\x82\\x81\\x03\\x82R\\x84\\x84\\x82\\x81\\x81R` \\x01\\x92P\\x80\\x82\\x847\\x82\\x01\\x91PP\\x94PPPPP`@Q\\x80\\x91\\x03\\x90\\xa4`\\x01`\\x04`\\x14a\\x01\\x00\\n\\x81T\\x81`\\xff\\x02\\x19\\x16\\x90\\x83\\x15\\x15\\x02\\x17\\x90UPPPV[`\\x00`\\x04`\\x14\\x90T\\x90a\\x01\\x00\\n\\x90\\x04`\\xff\\x16\\x15\\x15\\x15a\\x07\\xb9W\\xfe[`\\x00\\x80`\\x045\\x91P`$5\\x90P\\x80`\\x00\\x19\\x16\\x82`\\x00\\x19\\x163s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16`\\x005\\x7f\\xff\\xff\\xff\\xff\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x16{\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x19\\x164`\\x006`@Q\\x80\\x84\\x81R` \\x01\\x80` \\x01\\x82\\x81\\x03\\x82R\\x84\\x84\\x82\\x81\\x81R` \\x01\\x92P\\x80\\x82\\x847\\x82\\x01\\x91PP\\x94PPPPP`@Q\\x80\\x91\\x03\\x90\\xa4a\\x08n\\x85\\x85a\\x14\\xa4V[\\x92PPP\\x92\\x91PPV[a\\x08\\xa63`\\x005\\x7f\\xff\\xff\\xff\\xff\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x16a\\x12CV[\\x15\\x15a\\x08\\xaeW\\xfe[\\x80`\\x04`\\x00a\\x01\\x00\\n\\x81T\\x81s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x02\\x19\\x16\\x90\\x83s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x02\\x17\\x90UP`\\x04`\\x00\\x90T\\x90a\\x01\\x00\\n\\x90\\x04s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x7f\\xce$\\x1d|\\xa1\\xf6i\\xfe\\xe4Ko\\xc0\\x0b\\x8e\\xba-\\xf3\\xbbQN\\xed\\x0fof\\x8f\\x8f\\x89\\tn\\x81\\xed\\x94`@Q`@Q\\x80\\x91\\x03\\x90\\xa2PV[`\\x00\\x80T\\x90P\\x90V[`\\x00`\\x04`\\x14\\x90T\\x90a\\x01\\x00\\n\\x90\\x04`\\xff\\x16\\x15\\x15\\x15a\\t{W\\xfe[`\\x00\\x80`\\x045\\x91P`$5\\x90P\\x80`\\x00\\x19\\x16\\x82`\\x00\\x19\\x163s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16`\\x005\\x7f\\xff\\xff\\xff\\xff\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x16{\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x19\\x164`\\x006`@Q\\x80\\x84\\x81R` \\x01\\x80` \\x01\\x82\\x81\\x03\\x82R\\x84\\x84\\x82\\x81\\x81R` \\x01\\x92P\\x80\\x82\\x847\\x82\\x01\\x91PP\\x94PPPPP`@Q\\x80\\x91\\x03\\x90\\xa4a\\n1\\x86\\x86\\x86a\\x15\\x96V[\\x92PPP\\x93\\x92PPPV[`\\x06T\\x81V[`\\x00a\\n`\\x83\\x83o\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16a\\x0f\\xbcV[\\x90P\\x92\\x91PPV[a\\n\\x963`\\x005\\x7f\\xff\\xff\\xff\\xff\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x16a\\x12CV[\\x15\\x15a\\n\\x9eW\\xfe[\\x80`\\x07\\x81`\\x00\\x19\\x16\\x90UPPV[a\\n\\xda3`\\x005\\x7f\\xff\\xff\\xff\\xff\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x16a\\x12CV[\\x15\\x15a\\n\\xe2W\\xfe[`\\x04`\\x14\\x90T\\x90a\\x01\\x00\\n\\x90\\x04`\\xff\\x16\\x15\\x15\\x15a\\n\\xfbW\\xfe[`\\x00\\x80`\\x045\\x91P`$5\\x90P\\x80`\\x00\\x19\\x16\\x82`\\x00\\x19\\x163s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16`\\x005\\x7f\\xff\\xff\\xff\\xff\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x16{\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x19\\x164`\\x006`@Q\\x80\\x84\\x81R` \\x01\\x80` \\x01\\x82\\x81\\x03\\x82R\\x84\\x84\\x82\\x81\\x81R` \\x01\\x92P\\x80\\x82\\x847\\x82\\x01\\x91PP\\x94PPPPP`@Q\\x80\\x91\\x03\\x90\\xa4a\\f\\x01`\\x01`\\x003s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x81R` \\x01\\x90\\x81R` \\x01`\\x00 T\\x84o\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16a\\x18\\xf9V[`\\x01`\\x003s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x81R` \\x01\\x90\\x81R` \\x01`\\x00 \\x81\\x90UPa\\fb`\\x00T\\x84o\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16a\\x18\\xf9V[`\\x00\\x81\\x90UPPPPV[`\\x00`\\x01`\\x00\\x83s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x81R` \\x01\\x90\\x81R` \\x01`\\x00 T\\x90P\\x91\\x90PV[`\\x04`\\x14\\x90T\\x90a\\x01\\x00\\n\\x90\\x04`\\xff\\x16\\x81V[a\\f\\xf73`\\x005\\x7f\\xff\\xff\\xff\\xff\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x16a\\x12CV[\\x15\\x15a\\f\\xffW\\xfe[\\x80`\\x03`\\x00a\\x01\\x00\\n\\x81T\\x81s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x02\\x19\\x16\\x90\\x83s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x02\\x17\\x90UP`\\x03`\\x00\\x90T\\x90a\\x01\\x00\\n\\x90\\x04s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x7f\\x1a\\xbe\\xbe\\xa8\\x1b\\xfa&7\\xf2\\x83X\\xc3q'\\x8f\\xb1^\\xde~\\xa8\\xdd(\\xd2\\xe0;\\x11/\\xf6\\xd96\\xad\\xa4`@Q`@Q\\x80\\x91\\x03\\x90\\xa2PV[`\\x00a\\r\\xc7\\x833\\x84o\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16a\\t`V[\\x90P\\x92\\x91PPV[`\\x04`\\x00\\x90T\\x90a\\x01\\x00\\n\\x90\\x04s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x81V[a\\x0e#3`\\x005\\x7f\\xff\\xff\\xff\\xff\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x16a\\x12CV[\\x15\\x15a\\x0e+W\\xfe[`\\x04`\\x14\\x90T\\x90a\\x01\\x00\\n\\x90\\x04`\\xff\\x16\\x15\\x15\\x15a\\x0eDW\\xfe[`\\x00\\x80`\\x045\\x91P`$5\\x90P\\x80`\\x00\\x19\\x16\\x82`\\x00\\x19\\x163s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16`\\x005\\x7f\\xff\\xff\\xff\\xff\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x16{\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x19\\x164`\\x006`@Q\\x80\\x84\\x81R` \\x01\\x80` \\x01\\x82\\x81\\x03\\x82R\\x84\\x84\\x82\\x81\\x81R` \\x01\\x92P\\x80\\x82\\x847\\x82\\x01\\x91PP\\x94PPPPP`@Q\\x80\\x91\\x03\\x90\\xa4a\\x0fJ`\\x01`\\x003s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x81R` \\x01\\x90\\x81R` \\x01`\\x00 T\\x84o\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16a\\x19\\x12V[`\\x01`\\x003s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x81R` \\x01\\x90\\x81R` \\x01`\\x00 \\x81\\x90UPa\\x0f\\xab`\\x00T\\x84o\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16a\\x19\\x12V[`\\x00\\x81\\x90UPPPPV[`\\x05T\\x81V[`\\x00`\\x04`\\x14\\x90T\\x90a\\x01\\x00\\n\\x90\\x04`\\xff\\x16\\x15\\x15\\x15a\\x0f\\xd7W\\xfe[`\\x00\\x80`\\x045\\x91P`$5\\x90P\\x80`\\x00\\x19\\x16\\x82`\\x00\\x19\\x163s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16`\\x005\\x7f\\xff\\xff\\xff\\xff\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x16{\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x19\\x164`\\x006`@Q\\x80\\x84\\x81R` \\x01\\x80` \\x01\\x82\\x81\\x03\\x82R\\x84\\x84\\x82\\x81\\x81R` \\x01\\x92P\\x80\\x82\\x847\\x82\\x01\\x91PP\\x94PPPPP`@Q\\x80\\x91\\x03\\x90\\xa4a\\x10\\x8c\\x85\\x85a\\x19+V[\\x92PPP\\x92\\x91PPV[a\\x10\\xc43`\\x005\\x7f\\xff\\xff\\xff\\xff\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x16a\\x12CV[\\x15\\x15a\\x10\\xccW\\xfe[`\\x00\\x80`\\x045\\x91P`$5\\x90P\\x80`\\x00\\x19\\x16\\x82`\\x00\\x19\\x163s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16`\\x005\\x7f\\xff\\xff\\xff\\xff\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x16{\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x19\\x164`\\x006`@Q\\x80\\x84\\x81R` \\x01\\x80` \\x01\\x82\\x81\\x03\\x82R\\x84\\x84\\x82\\x81\\x81R` \\x01\\x92P\\x80\\x82\\x847\\x82\\x01\\x91PP\\x94PPPPP`@Q\\x80\\x91\\x03\\x90\\xa4`\\x00`\\x04`\\x14a\\x01\\x00\\n\\x81T\\x81`\\xff\\x02\\x19\\x16\\x90\\x83\\x15\\x15\\x02\\x17\\x90UPPPV[`\\x03`\\x00\\x90T\\x90a\\x01\\x00\\n\\x90\\x04s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x81V[`\\x00`\\x02`\\x00\\x84s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x81R` \\x01\\x90\\x81R` \\x01`\\x00 `\\x00\\x83s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x81R` \\x01\\x90\\x81R` \\x01`\\x00 T\\x90P\\x92\\x91PPV[`\\x000s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x83s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x14\\x15a\\x12\\x82W`\\x01\\x90Pa\\x14\\x9eV[`\\x04`\\x00\\x90T\\x90a\\x01\\x00\\n\\x90\\x04s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x83s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x14\\x15a\\x12\\xe1W`\\x01\\x90Pa\\x14\\x9eV[`\\x00s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16`\\x03`\\x00\\x90T\\x90a\\x01\\x00\\n\\x90\\x04s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x14\\x15a\\x13AW`\\x00\\x90Pa\\x14\\x9eV[`\\x03`\\x00\\x90T\\x90a\\x01\\x00\\n\\x90\\x04s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16c\\xb7\\x00\\x96\\x13\\x840\\x85`\\x00`@Q` \\x01R`@Q\\x84c\\xff\\xff\\xff\\xff\\x16|\\x01\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x02\\x81R`\\x04\\x01\\x80\\x84s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x81R` \\x01\\x83s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x81R` \\x01\\x82{\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x19\\x16{\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x19\\x16\\x81R` \\x01\\x93PPPP` `@Q\\x80\\x83\\x03\\x81`\\x00\\x87\\x80;\\x15\\x15a\\x14\\x80W`\\x00\\x80\\xfd[a\\x02\\xc6Z\\x03\\xf1\\x15\\x15a\\x14\\x91W`\\x00\\x80\\xfd[PPP`@Q\\x80Q\\x90P\\x90P[\\x92\\x91PPV[`\\x00\\x81`\\x02`\\x003s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x81R` \\x01\\x90\\x81R` \\x01`\\x00 `\\x00\\x85s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x81R` \\x01\\x90\\x81R` \\x01`\\x00 \\x81\\x90UP\\x82s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x163s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x7f\\x8c[\\xe1\\xe5\\xeb\\xec}[\\xd1OqB}\\x1e\\x84\\xf3\\xdd\\x03\\x14\\xc0\\xf7\\xb2)\\x1e[ \\n\\xc8\\xc7\\xc3\\xb9%\\x84`@Q\\x80\\x82\\x81R` \\x01\\x91PP`@Q\\x80\\x91\\x03\\x90\\xa3`\\x01\\x90P\\x92\\x91PPV[`\\x00\\x81`\\x01`\\x00\\x86s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x81R` \\x01\\x90\\x81R` \\x01`\\x00 T\\x10\\x15\\x15\\x15a\\x15\\xe3W\\xfe[\\x81`\\x02`\\x00\\x86s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x81R` \\x01\\x90\\x81R` \\x01`\\x00 `\\x003s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x81R` \\x01\\x90\\x81R` \\x01`\\x00 T\\x10\\x15\\x15\\x15a\\x16kW\\xfe[a\\x16\\xf1`\\x02`\\x00\\x86s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x81R` \\x01\\x90\\x81R` \\x01`\\x00 `\\x003s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x81R` \\x01\\x90\\x81R` \\x01`\\x00 T\\x83a\\x19\\x12V[`\\x02`\\x00\\x86s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x81R` \\x01\\x90\\x81R` \\x01`\\x00 `\\x003s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x81R` \\x01\\x90\\x81R` \\x01`\\x00 \\x81\\x90UPa\\x17\\xba`\\x01`\\x00\\x86s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x81R` \\x01\\x90\\x81R` \\x01`\\x00 T\\x83a\\x19\\x12V[`\\x01`\\x00\\x86s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x81R` \\x01\\x90\\x81R` \\x01`\\x00 \\x81\\x90UPa\\x18F`\\x01`\\x00\\x85s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x81R` \\x01\\x90\\x81R` \\x01`\\x00 T\\x83a\\x18\\xf9V[`\\x01`\\x00\\x85s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x81R` \\x01\\x90\\x81R` \\x01`\\x00 \\x81\\x90UP\\x82s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x84s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x7f\\xdd\\xf2R\\xad\\x1b\\xe2\\xc8\\x9bi\\xc2\\xb0h\\xfc7\\x8d\\xaa\\x95+\\xa7\\xf1c\\xc4\\xa1\\x16(\\xf5ZM\\xf5#\\xb3\\xef\\x84`@Q\\x80\\x82\\x81R` \\x01\\x91PP`@Q\\x80\\x91\\x03\\x90\\xa3`\\x01\\x90P\\x93\\x92PPPV[`\\x00\\x82\\x82\\x84\\x01\\x91P\\x81\\x10\\x15\\x15\\x15a\\x19\\fW\\xfe[\\x92\\x91PPV[`\\x00\\x82\\x82\\x84\\x03\\x91P\\x81\\x11\\x15\\x15\\x15a\\x19%W\\xfe[\\x92\\x91PPV[`\\x00\\x81`\\x01`\\x003s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x81R` \\x01\\x90\\x81R` \\x01`\\x00 T\\x10\\x15\\x15\\x15a\\x19xW\\xfe[a\\x19\\xc1`\\x01`\\x003s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x81R` \\x01\\x90\\x81R` \\x01`\\x00 T\\x83a\\x19\\x12V[`\\x01`\\x003s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x81R` \\x01\\x90\\x81R` \\x01`\\x00 \\x81\\x90UPa\\x1aM`\\x01`\\x00\\x85s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x81R` \\x01\\x90\\x81R` \\x01`\\x00 T\\x83a\\x18\\xf9V[`\\x01`\\x00\\x85s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x81R` \\x01\\x90\\x81R` \\x01`\\x00 \\x81\\x90UP\\x82s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x163s\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\x16\\x7f\\xdd\\xf2R\\xad\\x1b\\xe2\\xc8\\x9bi\\xc2\\xb0h\\xfc7\\x8d\\xaa\\x95+\\xa7\\xf1c\\xc4\\xa1\\x16(\\xf5ZM\\xf5#\\xb3\\xef\\x84`@Q\\x80\\x82\\x81R` \\x01\\x91PP`@Q\\x80\\x91\\x03\\x90\\xa3`\\x01\\x90P\\x92\\x91PPV\\x00\\xa1ebzzr0X \\xfbU6n\\xce\\x8aDw\\xc99{ \\xe0\\x07\\x12\\x9a0\\x14\\x81\\x9co\\xb9\\x9d\\x9fQ\\xc9\\x90>$_\\xad\\xbc\\x00)\"\n      </code>\n      <storage>\n        STORAGE:Map #Implies STORAGE:Map [ keccak ( #buf ( 32 , GUY:Int ) +Bytes #buf ( 32 , keccak ( #buf ( 32 , CALLER_ID:Int ) +Bytes b\"\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x00\\x02\" ) ) ) <- WAD:Int ]\n      </storage>\n      ...\n    </account> ACCOUNTS_CELL_9b0b49d5:AccountCellMap\n  Path condition:\n    #Not ( { #range ( #buf ( 32 , #lookup ( STORAGE:Map , 4 ) /Int pow160 ) , maxUInt5 , 1 ) ~> .K #Equals b\"\\x00\" ~> .K } )\n\nJoin the Runtime Verification Discord server (https://discord.com/invite/CurfmXNtbN) or Telegram group (https://t.me/rv_kontrol) for support.\n",
+      "task": {
+        "createdAt": "2026-09-17T07:58:29.474483Z",
+        "error": null,
+        "finishedAt": "2026-09-17T08:04:33.586745Z",
+        "id": "07ef32f2-2041-4500-9e35-55b6052cc243",
+        "kind": "proof",
+        "result": {
+          "definitionId": "7_1_337-haskell-evm-4f4c3843076c-625f291695ca6bae756103ca3df29b3667a18f0131099d024bf8c0ce6b156d5d",
+          "outcome": "notProved",
+          "residual": null
+        },
+        "semantics": {
+          "commit": "4f4c3843076c",
+          "id": "evm"
+        },
+        "startedAt": "2026-09-17T07:58:33.033882Z",
+        "status": "completed",
+        "timing": {
+          "executionMilliseconds": 360552,
+          "queueMilliseconds": 3559,
+          "totalMilliseconds": 364112
+        },
+        "toolRuns": [
+          {
+            "durationMilliseconds": 359538,
+            "exitCode": 2,
+            "finishedAt": "2026-09-17T08:04:33.294950Z",
+            "outcome": "exit_error",
+            "startedAt": "2026-09-17T07:58:33.756178Z",
+            "tool": "kprove"
+          }
+        ]
+      }
+    },
+    "kind": "proof",
+    "role": "construction",
+    "operation": "proof-001",
+    "session": "504ef65f-e09d-448d-ad55-5e374d7ecf1c"
+  },
+  {
+    "record": {
+      "stderr": "WARNING 2026-09-17 03:07:32,167 kevm_pyk.__main__ - Ignoring --equation-max-local-steps for non-booster server: kore-rpc\n",
+      "stdout": "PROOF PASSED: SPEC.approve-stopped\nPROOF PASSED: SPEC.approve-success\nPROOF PASSED: SPEC.approve-nonpayable\n",
+      "task": {
+        "createdAt": "2026-09-17T08:07:27.817280Z",
+        "error": null,
+        "finishedAt": "2026-09-17T08:11:49.703817Z",
+        "id": "eb89fd87-e7d5-4a4f-90a3-94c3a4094226",
+        "kind": "proof",
+        "result": {
+          "definitionId": "7_1_337-haskell-evm-4f4c3843076c-0c9c406c3ac9e3c1a89f0b592cd2649f69591fbded11b7fc113aac9b751c75c7",
+          "outcome": "proved",
+          "residual": null
+        },
+        "semantics": {
+          "commit": "4f4c3843076c",
+          "id": "evm"
+        },
+        "startedAt": "2026-09-17T08:07:31.323646Z",
+        "status": "completed",
+        "timing": {
+          "executionMilliseconds": 258380,
+          "queueMilliseconds": 3506,
+          "totalMilliseconds": 261886
+        },
+        "toolRuns": [
+          {
+            "durationMilliseconds": 257579,
+            "exitCode": 0,
+            "finishedAt": "2026-09-17T08:11:49.411272Z",
+            "outcome": "success",
+            "startedAt": "2026-09-17T08:07:31.831663Z",
+            "tool": "kprove"
+          }
+        ]
+      }
+    },
+    "kind": "proof",
+    "role": "construction",
+    "operation": "proof-002",
+    "session": "504ef65f-e09d-448d-ad55-5e374d7ecf1c"
+  },
+  {
+    "record": {
+      "stderr": "[Error] Outer Parser: Lexical error at line 6, column 27.  Encountered: \"_\"\n(95), after : \"\" (TokenMgrException: Lexical error at line 6, column 27. \nEncountered: \"_\" (95), after : \"\")\n\tSource(/data/definitions/.7_1_337-haskell-evm-4f4c3843076c-ec197ea0490a981725f5c2fcffcc7b1ed45b0421774f68625961aa2f0a33d1c5.4b494409-5940-460d-8c48-23fc877747b8/source/bytecode.k)\n\tLocation(6,27,6,28)\n\t6 |\t  syntax Bytes ::= DSTOKEN_RUNTIME [function]\n\t  .\t                          ^\n[Error] Outer Parser: Lexical error at line 6, column 27.  Encountered: \"_\"\n(95), after : \"\" (TokenMgrException: Lexical error at line 6, column 27. \nEncountered: \"_\" (95), after : \"\")\n\tSource(/data/definitions/.7_1_337-haskell-evm-4f4c3843076c-ec197ea0490a981725f5c2fcffcc7b1ed45b0421774f68625961aa2f0a33d1c5.4b494409-5940-460d-8c48-23fc877747b8/source/bytecode.k)\n\tLocation(6,27,6,28)\n\t6 |\t  syntax Bytes ::= DSTOKEN_RUNTIME [function]\n\t  .\t                          ^\nTraceback (most recent call last):\n  File \"/opt/kevm/bin/kevm\", line 8, in <module>\n    sys.exit(main())\n  File \"/opt/kevm/lib/python3.10/site-packages/kevm_pyk/__main__.py\", line 110, in main\n    execute(options)\n  File \"/opt/kevm/lib/python3.10/site-packages/kevm_pyk/__main__.py\", line 132, in exec_kompile_spec\n    kevm_kompile(\n  File \"/opt/kevm/lib/python3.10/site-packages/kevm_pyk/kompile.py\", line 70, in kevm_kompile\n    return run_kompile(\n  File \"/opt/kevm/lib/python3.10/site-packages/kevm_pyk/kompile.py\", line 226, in run_kompile\n    [future.result() for future in futures]\n  File \"/opt/kevm/lib/python3.10/site-packages/kevm_pyk/kompile.py\", line 226, in <listcomp>\n    [future.result() for future in futures]\n  File \"/usr/lib/python3.10/concurrent/futures/_base.py\", line 458, in result\n    return self.__get_result()\n  File \"/usr/lib/python3.10/concurrent/futures/_base.py\", line 403, in __get_result\n    raise self._exception\n  File \"/usr/lib/python3.10/concurrent/futures/thread.py\", line 58, in run\n    result = self.fn(*self.args, **self.kwargs)\n  File \"/opt/kevm/lib/python3.10/site-packages/kevm_pyk/kompile.py\", line 202, in _kompile_llvm\n    kompile_llvm(\n  File \"/opt/kevm/lib/python3.10/site-packages/pyk/ktool/kompile.py\", line 335, in __call__\n    proc_res = run_process_2(\n  File \"/opt/kevm/lib/python3.10/site-packages/pyk/utils.py\", line 527, in run_process_2\n    res.check_returncode()\n  File \"/usr/lib/python3.10/subprocess.py\", line 457, in check_returncode\n    raise CalledProcessError(self.returncode, self.args, self.stdout,\nsubprocess.CalledProcessError: Command '('kompile', '/data/definitions/.7_1_337-haskell-evm-4f4c3843076c-ec197ea0490a981725f5c2fcffcc7b1ed45b0421774f68625961aa2f0a33d1c5.4b494409-5940-460d-8c48-23fc877747b8/source/verification.k', '--main-module', 'VERIFICATION', '--syntax-module', 'VERIFICATION', '-I', '/data/definitions/.7_1_337-haskell-evm-4f4c3843076c-ec197ea0490a981725f5c2fcffcc7b1ed45b0421774f68625961aa2f0a33d1c5.4b494409-5940-460d-8c48-23fc877747b8/source', '-I', '/opt/kevm/lib/python3.10/site-packages/kevm_pyk/kproj/evm-semantics', '-I', '/opt/kevm/lib/python3.10/site-packages/kevm_pyk/kproj/plugin', '--md-selector', 'k & ! symbolic', '--hook-namespaces', 'JSON KRYPTO', '--emit-json', '--backend', 'llvm', '--llvm-kompile-type', 'c', '-ccopt', '-std=c++20', '-ccopt', '-lssl', '-ccopt', '-lcrypto', '-ccopt', '-lsecp256k1', '-ccopt', '/opt/kevm/kdist/evm-semantics/plugin/krypto.a', '-ccopt', '-Wno-deprecated-declarations', '--output-definition', '/data/definitions/.7_1_337-haskell-evm-4f4c3843076c-ec197ea0490a981725f5c2fcffcc7b1ed45b0421774f68625961aa2f0a33d1c5.4b494409-5940-460d-8c48-23fc877747b8/definition/llvm-library', '--type-inference-mode', 'simplesub')' returned non-zero exit status 113.\n",
+      "stdout": "",
+      "task": {
+        "createdAt": "2026-09-17T07:50:15.351911Z",
+        "error": {
+          "code": "DEFINITION_COMPILATION_FAILED",
+          "details": {
+            "definitionId": "7_1_337-haskell-evm-4f4c3843076c-ec197ea0490a981725f5c2fcffcc7b1ed45b0421774f68625961aa2f0a33d1c5",
+            "exitCode": 1,
+            "reason": "exit_error"
+          },
+          "message": "The definition could not be compiled."
+        },
+        "finishedAt": "2026-09-17T07:50:29.373239Z",
+        "id": "7e912e63-bcc6-4d41-823b-78d6aaaecbf8",
+        "kind": "proofDryRun",
+        "result": null,
+        "semantics": {
+          "commit": "4f4c3843076c",
+          "id": "evm"
+        },
+        "startedAt": "2026-09-17T07:50:22.360380Z",
+        "status": "failed",
+        "timing": {
+          "executionMilliseconds": 7012,
+          "queueMilliseconds": 7008,
+          "totalMilliseconds": 14021
+        },
+        "toolRuns": [
+          {
+            "durationMilliseconds": 2172,
+            "exitCode": 1,
+            "finishedAt": "2026-09-17T07:50:28.943659Z",
+            "outcome": "exit_error",
+            "startedAt": "2026-09-17T07:50:26.771497Z",
+            "tool": "kompile"
+          }
+        ]
+      }
+    },
+    "kind": "validation",
+    "role": "construction",
+    "operation": "validation-001",
+    "session": "504ef65f-e09d-448d-ad55-5e374d7ecf1c"
+  },
+  {
+    "record": {
+      "stderr": "[Error] Inner Parser: Parse error: unexpected token 'CALLER' following token\n','.\n\tSource(/data/definitions/.7_1_337-haskell-evm-4f4c3843076c-27e29939565eb68e5cf8038806673eb11362e090b53e5fe81a9d0d5b6dd42df6.ecd17174-1f49-4a6c-ad40-7b2322e47c50/source/verification.k)\n\tLocation(30,29,30,35)\n\t30 |\t  rule approveNoteLog(ACCT, CALLER, GUY, WAD)\n\t   .\t                            ^~~~~~\n[Error] Inner Parser: Parse error: unexpected token 'CALLER' following token\n','.\n\tSource(/data/definitions/.7_1_337-haskell-evm-4f4c3843076c-27e29939565eb68e5cf8038806673eb11362e090b53e5fe81a9d0d5b6dd42df6.ecd17174-1f49-4a6c-ad40-7b2322e47c50/source/verification.k)\n\tLocation(40,26,40,32)\n\t40 |\t  rule approvalLog(ACCT, CALLER, GUY, WAD)\n\t   .\t                         ^~~~~~\n[Error] Compiler: Had 2 parsing errors.\n[Error] Inner Parser: Parse error: unexpected token 'CALLER' following token\n','.\n\tSource(/data/definitions/.7_1_337-haskell-evm-4f4c3843076c-27e29939565eb68e5cf8038806673eb11362e090b53e5fe81a9d0d5b6dd42df6.ecd17174-1f49-4a6c-ad40-7b2322e47c50/source/verification.k)\n\tLocation(30,29,30,35)\n\t30 |\t  rule approveNoteLog(ACCT, CALLER, GUY, WAD)\n\t   .\t                            ^~~~~~\n[Error] Inner Parser: Parse error: unexpected token 'CALLER' following token\n','.\n\tSource(/data/definitions/.7_1_337-haskell-evm-4f4c3843076c-27e29939565eb68e5cf8038806673eb11362e090b53e5fe81a9d0d5b6dd42df6.ecd17174-1f49-4a6c-ad40-7b2322e47c50/source/verification.k)\n\tLocation(40,26,40,32)\n\t40 |\t  rule approvalLog(ACCT, CALLER, GUY, WAD)\n\t   .\t                         ^~~~~~\n[Error] Compiler: Had 2 parsing errors.\nTraceback (most recent call last):\n  File \"/opt/kevm/bin/kevm\", line 8, in <module>\n    sys.exit(main())\n  File \"/opt/kevm/lib/python3.10/site-packages/kevm_pyk/__main__.py\", line 110, in main\n    execute(options)\n  File \"/opt/kevm/lib/python3.10/site-packages/kevm_pyk/__main__.py\", line 132, in exec_kompile_spec\n    kevm_kompile(\n  File \"/opt/kevm/lib/python3.10/site-packages/kevm_pyk/kompile.py\", line 70, in kevm_kompile\n    return run_kompile(\n  File \"/opt/kevm/lib/python3.10/site-packages/kevm_pyk/kompile.py\", line 226, in run_kompile\n    [future.result() for future in futures]\n  File \"/opt/kevm/lib/python3.10/site-packages/kevm_pyk/kompile.py\", line 226, in <listcomp>\n    [future.result() for future in futures]\n  File \"/usr/lib/python3.10/concurrent/futures/_base.py\", line 458, in result\n    return self.__get_result()\n  File \"/usr/lib/python3.10/concurrent/futures/_base.py\", line 403, in __get_result\n    raise self._exception\n  File \"/usr/lib/python3.10/concurrent/futures/thread.py\", line 58, in run\n    result = self.fn(*self.args, **self.kwargs)\n  File \"/opt/kevm/lib/python3.10/site-packages/kevm_pyk/kompile.py\", line 202, in _kompile_llvm\n    kompile_llvm(\n  File \"/opt/kevm/lib/python3.10/site-packages/pyk/ktool/kompile.py\", line 335, in __call__\n    proc_res = run_process_2(\n  File \"/opt/kevm/lib/python3.10/site-packages/pyk/utils.py\", line 527, in run_process_2\n    res.check_returncode()\n  File \"/usr/lib/python3.10/subprocess.py\", line 457, in check_returncode\n    raise CalledProcessError(self.returncode, self.args, self.stdout,\nsubprocess.CalledProcessError: Command '('kompile', '/data/definitions/.7_1_337-haskell-evm-4f4c3843076c-27e29939565eb68e5cf8038806673eb11362e090b53e5fe81a9d0d5b6dd42df6.ecd17174-1f49-4a6c-ad40-7b2322e47c50/source/verification.k', '--main-module', 'VERIFICATION', '--syntax-module', 'VERIFICATION', '-I', '/data/definitions/.7_1_337-haskell-evm-4f4c3843076c-27e29939565eb68e5cf8038806673eb11362e090b53e5fe81a9d0d5b6dd42df6.ecd17174-1f49-4a6c-ad40-7b2322e47c50/source', '-I', '/opt/kevm/lib/python3.10/site-packages/kevm_pyk/kproj/evm-semantics', '-I', '/opt/kevm/lib/python3.10/site-packages/kevm_pyk/kproj/plugin', '--md-selector', 'k & ! symbolic', '--hook-namespaces', 'JSON KRYPTO', '--emit-json', '--backend', 'llvm', '--llvm-kompile-type', 'c', '-ccopt', '-std=c++20', '-ccopt', '-lssl', '-ccopt', '-lcrypto', '-ccopt', '-lsecp256k1', '-ccopt', '/opt/kevm/kdist/evm-semantics/plugin/krypto.a', '-ccopt', '-Wno-deprecated-declarations', '--output-definition', '/data/definitions/.7_1_337-haskell-evm-4f4c3843076c-27e29939565eb68e5cf8038806673eb11362e090b53e5fe81a9d0d5b6dd42df6.ecd17174-1f49-4a6c-ad40-7b2322e47c50/definition/llvm-library', '--type-inference-mode', 'simplesub')' returned non-zero exit status 113.\n",
+      "stdout": "",
+      "task": {
+        "createdAt": "2026-09-17T07:50:54.234087Z",
+        "error": {
+          "code": "DEFINITION_COMPILATION_FAILED",
+          "details": {
+            "definitionId": "7_1_337-haskell-evm-4f4c3843076c-27e29939565eb68e5cf8038806673eb11362e090b53e5fe81a9d0d5b6dd42df6",
+            "exitCode": 1,
+            "reason": "exit_error"
+          },
+          "message": "The definition could not be compiled."
+        },
+        "finishedAt": "2026-09-17T07:51:18.510481Z",
+        "id": "3a15b859-e025-460d-876a-2a3e321ecf1e",
+        "kind": "proofDryRun",
+        "result": null,
+        "semantics": {
+          "commit": "4f4c3843076c",
+          "id": "evm"
+        },
+        "startedAt": "2026-09-17T07:50:58.542552Z",
+        "status": "failed",
+        "timing": {
+          "executionMilliseconds": 19967,
+          "queueMilliseconds": 4308,
+          "totalMilliseconds": 24276
+        },
+        "toolRuns": [
+          {
+            "durationMilliseconds": 17773,
+            "exitCode": 1,
+            "finishedAt": "2026-09-17T07:51:18.076321Z",
+            "outcome": "exit_error",
+            "startedAt": "2026-09-17T07:51:00.302430Z",
+            "tool": "kompile"
+          }
+        ]
+      }
+    },
+    "kind": "validation",
+    "role": "construction",
+    "operation": "validation-002",
+    "session": "504ef65f-e09d-448d-ad55-5e374d7ecf1c"
+  },
+  {
+    "record": {
+      "stderr": "[Warning] Compiler: Variable 'B2' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/definitions/.7_1_337-haskell-evm-4f4c3843076c-c5975f1afc4bea9e61f0661d249f644c251b10ffc51adb7ebcba8528136b9ba5.020dd79d-2c1e-4ca4-8a36-3b1c8f5621be/source/lemmas/bytes-simplification.k)\n\tLocation(301,25,301,27)\n\t301 |\t      ( B1:Bytes +Bytes B2:Bytes ) [ I:Int ] => B1 [ I ]\n\t    .\t                        ^~\n[Warning] Compiler: Non exhaustive match detected:\n`_<Gas__GAS-SYNTAX_Bool_Gas_Gas`(infGas(_),_)\n\tSource(/data/definitions/.7_1_337-haskell-evm-4f4c3843076c-c5975f1afc4bea9e61f0661d249f644c251b10ffc51adb7ebcba8528136b9ba5.020dd79d-2c1e-4ca4-8a36-3b1c8f5621be/source/gas.md)\n\tLocation(23,21,23,54)\n\t23 |\t    syntax Bool ::= Gas  \"<Gas\" Gas [function, total]\n\t   .\t                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n[Warning] Compiler: Non exhaustive match detected:\n`_<=Gas__GAS-SYNTAX_Bool_Gas_Gas`(infGas(_),infGas(_))\n\tSource(/data/definitions/.7_1_337-haskell-evm-4f4c3843076c-c5975f1afc4bea9e61f0661d249f644c251b10ffc51adb7ebcba8528136b9ba5.020dd79d-2c1e-4ca4-8a36-3b1c8f5621be/source/gas.md)\n\tLocation(24,21,24,54)\n\t24 |\t                  | Gas \"<=Gas\" Gas [function, total]\n\t   .\t                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n[Warning] Compiler: Variable 'B2' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/definitions/.7_1_337-haskell-evm-4f4c3843076c-c5975f1afc4bea9e61f0661d249f644c251b10ffc51adb7ebcba8528136b9ba5.020dd79d-2c1e-4ca4-8a36-3b1c8f5621be/source/lemmas/bytes-simplification.k)\n\tLocation(301,25,301,27)\n[Warning] Compiler: Variable '?WS' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/ff0b0ba7-7454-4956-beb2-419bb74f4b33/input/spec.k)\n\tLocation(19,31,19,34)\n\t19 |\t    <wordStack> .WordStack => ?WS:WordStack </wordStack>\n\t   .\t                              ^~~\n[Warning] Compiler: Variable '?MEM' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/ff0b0ba7-7454-4956-beb2-419bb74f4b33/input/spec.k)\n\tLocation(20,26,20,30)\n\t20 |\t    <localMem> .Bytes => ?MEM:Bytes </localMem>\n\t   .\t                         ^~~~\n[Warning] Compiler: Variable '?PC' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/ff0b0ba7-7454-4956-beb2-419bb74f4b33/input/spec.k)\n\tLocation(21,15,21,18)\n\t21 |\t    <pc> 0 => ?PC:Int </pc>\n\t   .\t              ^~~\n[Warning] Compiler: Variable '?GAS' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/ff0b0ba7-7454-4956-beb2-419bb74f4b33/input/spec.k)\n\tLocation(22,22,22,26)\n\t22 |\t    <gas> #gas(0) => ?GAS:Gas </gas>\n\t   .\t                     ^~~~\n[Warning] Compiler: Variable '?MEMUSED' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/ff0b0ba7-7454-4956-beb2-419bb74f4b33/input/spec.k)\n\tLocation(23,23,23,31)\n\t23 |\t    <memoryUsed> 0 => ?MEMUSED:Int </memoryUsed>\n\t   .\t                      ^~~~~~~~\n[Warning] Compiler: Variable '?WS' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/ff0b0ba7-7454-4956-beb2-419bb74f4b33/input/spec.k)\n\tLocation(63,31,63,34)\n\t63 |\t    <wordStack> .WordStack => ?WS:WordStack </wordStack>\n\t   .\t                              ^~~\n[Warning] Compiler: Variable '?MEM' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/ff0b0ba7-7454-4956-beb2-419bb74f4b33/input/spec.k)\n\tLocation(64,26,64,30)\n\t64 |\t    <localMem> .Bytes => ?MEM:Bytes </localMem>\n\t   .\t                         ^~~~\n[Warning] Compiler: Variable '?PC' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/ff0b0ba7-7454-4956-beb2-419bb74f4b33/input/spec.k)\n\tLocation(65,15,65,18)\n\t65 |\t    <pc> 0 => ?PC:Int </pc>\n\t   .\t              ^~~\n[Warning] Compiler: Variable '?GAS' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/ff0b0ba7-7454-4956-beb2-419bb74f4b33/input/spec.k)\n\tLocation(66,22,66,26)\n\t66 |\t    <gas> #gas(0) => ?GAS:Gas </gas>\n\t   .\t                     ^~~~\n[Warning] Compiler: Variable '?MEMUSED' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/ff0b0ba7-7454-4956-beb2-419bb74f4b33/input/spec.k)\n\tLocation(67,23,67,31)\n\t67 |\t    <memoryUsed> 0 => ?MEMUSED:Int </memoryUsed>\n\t   .\t                      ^~~~~~~~\n[Warning] Compiler: Variable 'LOGS' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/ff0b0ba7-7454-4956-beb2-419bb74f4b33/input/spec.k)\n\tLocation(70,11,70,15)\n\t70 |\t    <log> LOGS </log>\n\t   .\t          ^~~~\n[Warning] Compiler: Variable '?WS' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/ff0b0ba7-7454-4956-beb2-419bb74f4b33/input/spec.k)\n\tLocation(97,31,97,34)\n\t97 |\t    <wordStack> .WordStack => ?WS:WordStack </wordStack>\n\t   .\t                              ^~~\n[Warning] Compiler: Variable '?MEM' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/ff0b0ba7-7454-4956-beb2-419bb74f4b33/input/spec.k)\n\tLocation(98,26,98,30)\n\t98 |\t    <localMem> .Bytes => ?MEM:Bytes </localMem>\n\t   .\t                         ^~~~\n[Warning] Compiler: Variable '?PC' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/ff0b0ba7-7454-4956-beb2-419bb74f4b33/input/spec.k)\n\tLocation(99,15,99,18)\n\t99 |\t    <pc> 0 => ?PC:Int </pc>\n\t   .\t              ^~~\n[Warning] Compiler: Variable '?GAS' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/ff0b0ba7-7454-4956-beb2-419bb74f4b33/input/spec.k)\n\tLocation(100,22,100,26)\n\t100 |\t    <gas> #gas(0) => ?GAS:Gas </gas>\n\t    .\t                     ^~~~\n[Warning] Compiler: Variable '?MEMUSED' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/ff0b0ba7-7454-4956-beb2-419bb74f4b33/input/spec.k)\n\tLocation(101,23,101,31)\n\t101 |\t    <memoryUsed> 0 => ?MEMUSED:Int </memoryUsed>\n\t    .\t                      ^~~~~~~~\n[Warning] Compiler: Variable 'LOGS' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/ff0b0ba7-7454-4956-beb2-419bb74f4b33/input/spec.k)\n\tLocation(104,11,104,15)\n\t104 |\t    <log> LOGS </log>\n\t    .\t          ^~~~\n[Warning] Compiler: Variable 'STORAGE' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/ff0b0ba7-7454-4956-beb2-419bb74f4b33/input/spec.k)\n\tLocation(108,17,108,24)\n\t108 |\t      <storage> STORAGE </storage>\n\t    .\t                ^~~~~~~\n",
+      "stdout": "kore-exec /data/definitions/7_1_337-haskell-evm-4f4c3843076c-c5975f1afc4bea9e61f0661d249f644c251b10ffc51adb7ebcba8528136b9ba5/definition/definition.kore --module VERIFICATION --prove /tmp/.kprove-2026-09-17-02-52-52-981-44fceed6-5aa3-4791-9d21-7297d701cc03/spec.kore --spec-module SPEC --output /tmp/.kprove-2026-09-17-02-52-52-981-44fceed6-5aa3-4791-9d21-7297d701cc03/result.kore\n",
+      "task": {
+        "createdAt": "2026-09-17T07:51:55.255178Z",
+        "error": null,
+        "finishedAt": "2026-09-17T07:53:17.873825Z",
+        "id": "ff0b0ba7-7454-4956-beb2-419bb74f4b33",
+        "kind": "proofDryRun",
+        "result": {
+          "definitionId": "7_1_337-haskell-evm-4f4c3843076c-c5975f1afc4bea9e61f0661d249f644c251b10ffc51adb7ebcba8528136b9ba5",
+          "valid": true
+        },
+        "semantics": {
+          "commit": "4f4c3843076c",
+          "id": "evm"
+        },
+        "startedAt": "2026-09-17T07:51:58.576696Z",
+        "status": "completed",
+        "timing": {
+          "executionMilliseconds": 79297,
+          "queueMilliseconds": 3321,
+          "totalMilliseconds": 82618
+        },
+        "toolRuns": [
+          {
+            "durationMilliseconds": 50715,
+            "exitCode": 0,
+            "finishedAt": "2026-09-17T07:52:50.909907Z",
+            "outcome": "success",
+            "startedAt": "2026-09-17T07:52:00.194543Z",
+            "tool": "kompile"
+          },
+          {
+            "durationMilliseconds": 25062,
+            "exitCode": 0,
+            "finishedAt": "2026-09-17T07:53:17.586813Z",
+            "outcome": "success",
+            "startedAt": "2026-09-17T07:52:52.524127Z",
+            "tool": "kprove"
+          }
+        ]
+      }
+    },
+    "kind": "validation",
+    "role": "construction",
+    "operation": "validation-003",
+    "session": "504ef65f-e09d-448d-ad55-5e374d7ecf1c"
+  },
+  {
+    "record": {
+      "stderr": "[Warning] Compiler: Variable 'B2' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/definitions/.7_1_337-haskell-evm-4f4c3843076c-c5975f1afc4bea9e61f0661d249f644c251b10ffc51adb7ebcba8528136b9ba5.020dd79d-2c1e-4ca4-8a36-3b1c8f5621be/source/lemmas/bytes-simplification.k)\n\tLocation(301,25,301,27)\n[Warning] Compiler: Variable '?WS' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/e3c967ed-1ca1-472e-9263-2cc058db2de2/input/spec.k)\n\tLocation(19,31,19,34)\n\t19 |\t    <wordStack> .WordStack => ?WS:WordStack </wordStack>\n\t   .\t                              ^~~\n[Warning] Compiler: Variable '?MEM' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/e3c967ed-1ca1-472e-9263-2cc058db2de2/input/spec.k)\n\tLocation(20,26,20,30)\n\t20 |\t    <localMem> .Bytes => ?MEM:Bytes </localMem>\n\t   .\t                         ^~~~\n[Warning] Compiler: Variable '?PC' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/e3c967ed-1ca1-472e-9263-2cc058db2de2/input/spec.k)\n\tLocation(21,15,21,18)\n\t21 |\t    <pc> 0 => ?PC:Int </pc>\n\t   .\t              ^~~\n[Warning] Compiler: Variable '?GAS' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/e3c967ed-1ca1-472e-9263-2cc058db2de2/input/spec.k)\n\tLocation(22,22,22,26)\n\t22 |\t    <gas> #gas(0) => ?GAS:Gas </gas>\n\t   .\t                     ^~~~\n[Warning] Compiler: Variable '?MEMUSED' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/e3c967ed-1ca1-472e-9263-2cc058db2de2/input/spec.k)\n\tLocation(23,23,23,31)\n\t23 |\t    <memoryUsed> 0 => ?MEMUSED:Int </memoryUsed>\n\t   .\t                      ^~~~~~~~\n[Warning] Compiler: Variable '?WS' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/e3c967ed-1ca1-472e-9263-2cc058db2de2/input/spec.k)\n\tLocation(63,31,63,34)\n\t63 |\t    <wordStack> .WordStack => ?WS:WordStack </wordStack>\n\t   .\t                              ^~~\n[Warning] Compiler: Variable '?MEM' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/e3c967ed-1ca1-472e-9263-2cc058db2de2/input/spec.k)\n\tLocation(64,26,64,30)\n\t64 |\t    <localMem> .Bytes => ?MEM:Bytes </localMem>\n\t   .\t                         ^~~~\n[Warning] Compiler: Variable '?PC' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/e3c967ed-1ca1-472e-9263-2cc058db2de2/input/spec.k)\n\tLocation(65,15,65,18)\n\t65 |\t    <pc> 0 => ?PC:Int </pc>\n\t   .\t              ^~~\n[Warning] Compiler: Variable '?GAS' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/e3c967ed-1ca1-472e-9263-2cc058db2de2/input/spec.k)\n\tLocation(66,22,66,26)\n\t66 |\t    <gas> #gas(0) => ?GAS:Gas </gas>\n\t   .\t                     ^~~~\n[Warning] Compiler: Variable '?MEMUSED' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/e3c967ed-1ca1-472e-9263-2cc058db2de2/input/spec.k)\n\tLocation(67,23,67,31)\n\t67 |\t    <memoryUsed> 0 => ?MEMUSED:Int </memoryUsed>\n\t   .\t                      ^~~~~~~~\n[Warning] Compiler: Variable 'LOGS' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/e3c967ed-1ca1-472e-9263-2cc058db2de2/input/spec.k)\n\tLocation(70,11,70,15)\n\t70 |\t    <log> LOGS </log>\n\t   .\t          ^~~~\n[Warning] Compiler: Variable '?WS' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/e3c967ed-1ca1-472e-9263-2cc058db2de2/input/spec.k)\n\tLocation(97,31,97,34)\n\t97 |\t    <wordStack> .WordStack => ?WS:WordStack </wordStack>\n\t   .\t                              ^~~\n[Warning] Compiler: Variable '?MEM' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/e3c967ed-1ca1-472e-9263-2cc058db2de2/input/spec.k)\n\tLocation(98,26,98,30)\n\t98 |\t    <localMem> .Bytes => ?MEM:Bytes </localMem>\n\t   .\t                         ^~~~\n[Warning] Compiler: Variable '?PC' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/e3c967ed-1ca1-472e-9263-2cc058db2de2/input/spec.k)\n\tLocation(99,15,99,18)\n\t99 |\t    <pc> 0 => ?PC:Int </pc>\n\t   .\t              ^~~\n[Warning] Compiler: Variable '?GAS' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/e3c967ed-1ca1-472e-9263-2cc058db2de2/input/spec.k)\n\tLocation(100,22,100,26)\n\t100 |\t    <gas> #gas(0) => ?GAS:Gas </gas>\n\t    .\t                     ^~~~\n[Warning] Compiler: Variable '?MEMUSED' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/e3c967ed-1ca1-472e-9263-2cc058db2de2/input/spec.k)\n\tLocation(101,23,101,31)\n\t101 |\t    <memoryUsed> 0 => ?MEMUSED:Int </memoryUsed>\n\t    .\t                      ^~~~~~~~\n[Warning] Compiler: Variable 'LOGS' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/e3c967ed-1ca1-472e-9263-2cc058db2de2/input/spec.k)\n\tLocation(104,11,104,15)\n\t104 |\t    <log> LOGS </log>\n\t    .\t          ^~~~\n[Warning] Compiler: Variable 'STORAGE' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/e3c967ed-1ca1-472e-9263-2cc058db2de2/input/spec.k)\n\tLocation(108,17,108,24)\n\t108 |\t      <storage> STORAGE </storage>\n\t    .\t                ^~~~~~~\n",
+      "stdout": "kore-exec /data/definitions/7_1_337-haskell-evm-4f4c3843076c-c5975f1afc4bea9e61f0661d249f644c251b10ffc51adb7ebcba8528136b9ba5/definition/definition.kore --module VERIFICATION --prove /tmp/.kprove-2026-09-17-02-53-32-878-5de99843-6f7a-4eb8-98fe-36c09f7714a1/spec.kore --spec-module SPEC --output /tmp/.kprove-2026-09-17-02-53-32-878-5de99843-6f7a-4eb8-98fe-36c09f7714a1/result.kore\n",
+      "task": {
+        "createdAt": "2026-09-17T07:53:28.407486Z",
+        "error": null,
+        "finishedAt": "2026-09-17T07:54:09.295181Z",
+        "id": "e3c967ed-1ca1-472e-9263-2cc058db2de2",
+        "kind": "proofDryRun",
+        "result": {
+          "definitionId": "7_1_337-haskell-evm-4f4c3843076c-c5975f1afc4bea9e61f0661d249f644c251b10ffc51adb7ebcba8528136b9ba5",
+          "valid": true
+        },
+        "semantics": {
+          "commit": "4f4c3843076c",
+          "id": "evm"
+        },
+        "startedAt": "2026-09-17T07:53:31.909300Z",
+        "status": "completed",
+        "timing": {
+          "executionMilliseconds": 37385,
+          "queueMilliseconds": 3501,
+          "totalMilliseconds": 40887
+        },
+        "toolRuns": [
+          {
+            "durationMilliseconds": 36441,
+            "exitCode": 0,
+            "finishedAt": "2026-09-17T07:54:08.865598Z",
+            "outcome": "success",
+            "startedAt": "2026-09-17T07:53:32.424554Z",
+            "tool": "kprove"
+          }
+        ]
+      }
+    },
+    "kind": "validation",
+    "role": "construction",
+    "operation": "validation-004",
+    "session": "504ef65f-e09d-448d-ad55-5e374d7ecf1c"
+  },
+  {
+    "record": {
+      "stderr": "[Warning] Compiler: Variable 'B2' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/definitions/.7_1_337-haskell-evm-4f4c3843076c-625f291695ca6bae756103ca3df29b3667a18f0131099d024bf8c0ce6b156d5d.fe5b3ded-f8bf-44be-b6b0-618f6c7dc215/source/lemmas/bytes-simplification.k)\n\tLocation(301,25,301,27)\n\t301 |\t      ( B1:Bytes +Bytes B2:Bytes ) [ I:Int ] => B1 [ I ]\n\t    .\t                        ^~\n[Warning] Compiler: Non exhaustive match detected:\n`_<Gas__GAS-SYNTAX_Bool_Gas_Gas`(infGas(_),_)\n\tSource(/data/definitions/.7_1_337-haskell-evm-4f4c3843076c-625f291695ca6bae756103ca3df29b3667a18f0131099d024bf8c0ce6b156d5d.fe5b3ded-f8bf-44be-b6b0-618f6c7dc215/source/gas.md)\n\tLocation(23,21,23,54)\n\t23 |\t    syntax Bool ::= Gas  \"<Gas\" Gas [function, total]\n\t   .\t                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n[Warning] Compiler: Non exhaustive match detected:\n`_<=Gas__GAS-SYNTAX_Bool_Gas_Gas`(infGas(_),infGas(_))\n\tSource(/data/definitions/.7_1_337-haskell-evm-4f4c3843076c-625f291695ca6bae756103ca3df29b3667a18f0131099d024bf8c0ce6b156d5d.fe5b3ded-f8bf-44be-b6b0-618f6c7dc215/source/gas.md)\n\tLocation(24,21,24,54)\n\t24 |\t                  | Gas \"<=Gas\" Gas [function, total]\n\t   .\t                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n[Warning] Compiler: Variable 'B2' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/definitions/.7_1_337-haskell-evm-4f4c3843076c-625f291695ca6bae756103ca3df29b3667a18f0131099d024bf8c0ce6b156d5d.fe5b3ded-f8bf-44be-b6b0-618f6c7dc215/source/lemmas/bytes-simplification.k)\n\tLocation(301,25,301,27)\n[Warning] Compiler: Variable '?WS' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/fc3de887-8c2f-4252-bb39-fd6aed368b5b/input/spec.k)\n\tLocation(19,31,19,34)\n\t19 |\t    <wordStack> .WordStack => ?WS:WordStack </wordStack>\n\t   .\t                              ^~~\n[Warning] Compiler: Variable '?MEM' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/fc3de887-8c2f-4252-bb39-fd6aed368b5b/input/spec.k)\n\tLocation(20,26,20,30)\n\t20 |\t    <localMem> .Bytes => ?MEM:Bytes </localMem>\n\t   .\t                         ^~~~\n[Warning] Compiler: Variable '?PC' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/fc3de887-8c2f-4252-bb39-fd6aed368b5b/input/spec.k)\n\tLocation(21,15,21,18)\n\t21 |\t    <pc> 0 => ?PC:Int </pc>\n\t   .\t              ^~~\n[Warning] Compiler: Variable '?GAS' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/fc3de887-8c2f-4252-bb39-fd6aed368b5b/input/spec.k)\n\tLocation(22,22,22,26)\n\t22 |\t    <gas> #gas(0) => ?GAS:Gas </gas>\n\t   .\t                     ^~~~\n[Warning] Compiler: Variable '?MEMUSED' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/fc3de887-8c2f-4252-bb39-fd6aed368b5b/input/spec.k)\n\tLocation(23,23,23,31)\n\t23 |\t    <memoryUsed> 0 => ?MEMUSED:Int </memoryUsed>\n\t   .\t                      ^~~~~~~~\n[Warning] Compiler: Variable '?WS' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/fc3de887-8c2f-4252-bb39-fd6aed368b5b/input/spec.k)\n\tLocation(63,31,63,34)\n\t63 |\t    <wordStack> .WordStack => ?WS:WordStack </wordStack>\n\t   .\t                              ^~~\n[Warning] Compiler: Variable '?MEM' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/fc3de887-8c2f-4252-bb39-fd6aed368b5b/input/spec.k)\n\tLocation(64,26,64,30)\n\t64 |\t    <localMem> .Bytes => ?MEM:Bytes </localMem>\n\t   .\t                         ^~~~\n[Warning] Compiler: Variable '?PC' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/fc3de887-8c2f-4252-bb39-fd6aed368b5b/input/spec.k)\n\tLocation(65,15,65,18)\n\t65 |\t    <pc> 0 => ?PC:Int </pc>\n\t   .\t              ^~~\n[Warning] Compiler: Variable '?GAS' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/fc3de887-8c2f-4252-bb39-fd6aed368b5b/input/spec.k)\n\tLocation(66,22,66,26)\n\t66 |\t    <gas> #gas(0) => ?GAS:Gas </gas>\n\t   .\t                     ^~~~\n[Warning] Compiler: Variable '?MEMUSED' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/fc3de887-8c2f-4252-bb39-fd6aed368b5b/input/spec.k)\n\tLocation(67,23,67,31)\n\t67 |\t    <memoryUsed> 0 => ?MEMUSED:Int </memoryUsed>\n\t   .\t                      ^~~~~~~~\n[Warning] Compiler: Variable 'LOGS' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/fc3de887-8c2f-4252-bb39-fd6aed368b5b/input/spec.k)\n\tLocation(70,11,70,15)\n\t70 |\t    <log> LOGS </log>\n\t   .\t          ^~~~\n[Warning] Compiler: Variable '?WS' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/fc3de887-8c2f-4252-bb39-fd6aed368b5b/input/spec.k)\n\tLocation(97,31,97,34)\n\t97 |\t    <wordStack> .WordStack => ?WS:WordStack </wordStack>\n\t   .\t                              ^~~\n[Warning] Compiler: Variable '?MEM' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/fc3de887-8c2f-4252-bb39-fd6aed368b5b/input/spec.k)\n\tLocation(98,26,98,30)\n\t98 |\t    <localMem> .Bytes => ?MEM:Bytes </localMem>\n\t   .\t                         ^~~~\n[Warning] Compiler: Variable '?PC' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/fc3de887-8c2f-4252-bb39-fd6aed368b5b/input/spec.k)\n\tLocation(99,15,99,18)\n\t99 |\t    <pc> 0 => ?PC:Int </pc>\n\t   .\t              ^~~\n[Warning] Compiler: Variable '?GAS' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/fc3de887-8c2f-4252-bb39-fd6aed368b5b/input/spec.k)\n\tLocation(100,22,100,26)\n\t100 |\t    <gas> #gas(0) => ?GAS:Gas </gas>\n\t    .\t                     ^~~~\n[Warning] Compiler: Variable '?MEMUSED' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/fc3de887-8c2f-4252-bb39-fd6aed368b5b/input/spec.k)\n\tLocation(101,23,101,31)\n\t101 |\t    <memoryUsed> 0 => ?MEMUSED:Int </memoryUsed>\n\t    .\t                      ^~~~~~~~\n[Warning] Compiler: Variable 'LOGS' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/fc3de887-8c2f-4252-bb39-fd6aed368b5b/input/spec.k)\n\tLocation(104,11,104,15)\n\t104 |\t    <log> LOGS </log>\n\t    .\t          ^~~~\n[Warning] Compiler: Variable 'STORAGE' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/fc3de887-8c2f-4252-bb39-fd6aed368b5b/input/spec.k)\n\tLocation(108,17,108,24)\n\t108 |\t      <storage> STORAGE </storage>\n\t    .\t                ^~~~~~~\n",
+      "stdout": "kore-exec /data/definitions/7_1_337-haskell-evm-4f4c3843076c-625f291695ca6bae756103ca3df29b3667a18f0131099d024bf8c0ce6b156d5d/definition/definition.kore --module VERIFICATION --prove /tmp/.kprove-2026-09-17-02-56-33-581-a78d3d29-9721-4033-a5d8-4037dfccfa44/spec.kore --spec-module SPEC --output /tmp/.kprove-2026-09-17-02-56-33-581-a78d3d29-9721-4033-a5d8-4037dfccfa44/result.kore\n",
+      "task": {
+        "createdAt": "2026-09-17T07:55:34.624456Z",
+        "error": null,
+        "finishedAt": "2026-09-17T07:56:59.471041Z",
+        "id": "fc3de887-8c2f-4252-bb39-fd6aed368b5b",
+        "kind": "proofDryRun",
+        "result": {
+          "definitionId": "7_1_337-haskell-evm-4f4c3843076c-625f291695ca6bae756103ca3df29b3667a18f0131099d024bf8c0ce6b156d5d",
+          "valid": true
+        },
+        "semantics": {
+          "commit": "4f4c3843076c",
+          "id": "evm"
+        },
+        "startedAt": "2026-09-17T07:55:38.084928Z",
+        "status": "completed",
+        "timing": {
+          "executionMilliseconds": 81386,
+          "queueMilliseconds": 3460,
+          "totalMilliseconds": 84846
+        },
+        "toolRuns": [
+          {
+            "durationMilliseconds": 51762,
+            "exitCode": 0,
+            "finishedAt": "2026-09-17T07:56:31.596697Z",
+            "outcome": "success",
+            "startedAt": "2026-09-17T07:55:39.834042Z",
+            "tool": "kompile"
+          },
+          {
+            "durationMilliseconds": 26051,
+            "exitCode": 0,
+            "finishedAt": "2026-09-17T07:56:59.148452Z",
+            "outcome": "success",
+            "startedAt": "2026-09-17T07:56:33.097381Z",
+            "tool": "kprove"
+          }
+        ]
+      }
+    },
+    "kind": "validation",
+    "role": "construction",
+    "operation": "validation-005",
+    "session": "504ef65f-e09d-448d-ad55-5e374d7ecf1c"
+  },
+  {
+    "record": {
+      "stderr": "[Warning] Compiler: Variable 'B2' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/definitions/.7_1_337-haskell-evm-4f4c3843076c-0c9c406c3ac9e3c1a89f0b592cd2649f69591fbded11b7fc113aac9b751c75c7.a17d48ec-f1c1-4af2-9fe7-5a334771b454/source/lemmas/bytes-simplification.k)\n\tLocation(301,25,301,27)\n\t301 |\t      ( B1:Bytes +Bytes B2:Bytes ) [ I:Int ] => B1 [ I ]\n\t    .\t                        ^~\n[Warning] Compiler: Non exhaustive match detected:\n`_<Gas__GAS-SYNTAX_Bool_Gas_Gas`(infGas(_),_)\n\tSource(/data/definitions/.7_1_337-haskell-evm-4f4c3843076c-0c9c406c3ac9e3c1a89f0b592cd2649f69591fbded11b7fc113aac9b751c75c7.a17d48ec-f1c1-4af2-9fe7-5a334771b454/source/gas.md)\n\tLocation(23,21,23,54)\n\t23 |\t    syntax Bool ::= Gas  \"<Gas\" Gas [function, total]\n\t   .\t                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n[Warning] Compiler: Non exhaustive match detected:\n`_<=Gas__GAS-SYNTAX_Bool_Gas_Gas`(infGas(_),infGas(_))\n\tSource(/data/definitions/.7_1_337-haskell-evm-4f4c3843076c-0c9c406c3ac9e3c1a89f0b592cd2649f69591fbded11b7fc113aac9b751c75c7.a17d48ec-f1c1-4af2-9fe7-5a334771b454/source/gas.md)\n\tLocation(24,21,24,54)\n\t24 |\t                  | Gas \"<=Gas\" Gas [function, total]\n\t   .\t                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n[Warning] Compiler: Variable 'B2' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/definitions/.7_1_337-haskell-evm-4f4c3843076c-0c9c406c3ac9e3c1a89f0b592cd2649f69591fbded11b7fc113aac9b751c75c7.a17d48ec-f1c1-4af2-9fe7-5a334771b454/source/lemmas/bytes-simplification.k)\n\tLocation(301,25,301,27)\n[Warning] Compiler: Variable '?WS' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/7263056c-0884-4ffc-bd7f-4c5388ba44f7/input/spec.k)\n\tLocation(19,31,19,34)\n\t19 |\t    <wordStack> .WordStack => ?WS:WordStack </wordStack>\n\t   .\t                              ^~~\n[Warning] Compiler: Variable '?MEM' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/7263056c-0884-4ffc-bd7f-4c5388ba44f7/input/spec.k)\n\tLocation(20,26,20,30)\n\t20 |\t    <localMem> .Bytes => ?MEM:Bytes </localMem>\n\t   .\t                         ^~~~\n[Warning] Compiler: Variable '?PC' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/7263056c-0884-4ffc-bd7f-4c5388ba44f7/input/spec.k)\n\tLocation(21,15,21,18)\n\t21 |\t    <pc> 0 => ?PC:Int </pc>\n\t   .\t              ^~~\n[Warning] Compiler: Variable '?GAS' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/7263056c-0884-4ffc-bd7f-4c5388ba44f7/input/spec.k)\n\tLocation(22,22,22,26)\n\t22 |\t    <gas> #gas(0) => ?GAS:Gas </gas>\n\t   .\t                     ^~~~\n[Warning] Compiler: Variable '?MEMUSED' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/7263056c-0884-4ffc-bd7f-4c5388ba44f7/input/spec.k)\n\tLocation(23,23,23,31)\n\t23 |\t    <memoryUsed> 0 => ?MEMUSED:Int </memoryUsed>\n\t   .\t                      ^~~~~~~~\n[Warning] Compiler: Variable '?WS' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/7263056c-0884-4ffc-bd7f-4c5388ba44f7/input/spec.k)\n\tLocation(63,31,63,34)\n\t63 |\t    <wordStack> .WordStack => ?WS:WordStack </wordStack>\n\t   .\t                              ^~~\n[Warning] Compiler: Variable '?MEM' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/7263056c-0884-4ffc-bd7f-4c5388ba44f7/input/spec.k)\n\tLocation(64,26,64,30)\n\t64 |\t    <localMem> .Bytes => ?MEM:Bytes </localMem>\n\t   .\t                         ^~~~\n[Warning] Compiler: Variable '?PC' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/7263056c-0884-4ffc-bd7f-4c5388ba44f7/input/spec.k)\n\tLocation(65,15,65,18)\n\t65 |\t    <pc> 0 => ?PC:Int </pc>\n\t   .\t              ^~~\n[Warning] Compiler: Variable '?GAS' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/7263056c-0884-4ffc-bd7f-4c5388ba44f7/input/spec.k)\n\tLocation(66,22,66,26)\n\t66 |\t    <gas> #gas(0) => ?GAS:Gas </gas>\n\t   .\t                     ^~~~\n[Warning] Compiler: Variable '?MEMUSED' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/7263056c-0884-4ffc-bd7f-4c5388ba44f7/input/spec.k)\n\tLocation(67,23,67,31)\n\t67 |\t    <memoryUsed> 0 => ?MEMUSED:Int </memoryUsed>\n\t   .\t                      ^~~~~~~~\n[Warning] Compiler: Variable 'LOGS' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/7263056c-0884-4ffc-bd7f-4c5388ba44f7/input/spec.k)\n\tLocation(70,11,70,15)\n\t70 |\t    <log> LOGS </log>\n\t   .\t          ^~~~\n[Warning] Compiler: Variable '?WS' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/7263056c-0884-4ffc-bd7f-4c5388ba44f7/input/spec.k)\n\tLocation(97,31,97,34)\n\t97 |\t    <wordStack> .WordStack => ?WS:WordStack </wordStack>\n\t   .\t                              ^~~\n[Warning] Compiler: Variable '?MEM' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/7263056c-0884-4ffc-bd7f-4c5388ba44f7/input/spec.k)\n\tLocation(98,26,98,30)\n\t98 |\t    <localMem> .Bytes => ?MEM:Bytes </localMem>\n\t   .\t                         ^~~~\n[Warning] Compiler: Variable '?PC' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/7263056c-0884-4ffc-bd7f-4c5388ba44f7/input/spec.k)\n\tLocation(99,15,99,18)\n\t99 |\t    <pc> 0 => ?PC:Int </pc>\n\t   .\t              ^~~\n[Warning] Compiler: Variable '?GAS' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/7263056c-0884-4ffc-bd7f-4c5388ba44f7/input/spec.k)\n\tLocation(100,22,100,26)\n\t100 |\t    <gas> #gas(0) => ?GAS:Gas </gas>\n\t    .\t                     ^~~~\n[Warning] Compiler: Variable '?MEMUSED' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/7263056c-0884-4ffc-bd7f-4c5388ba44f7/input/spec.k)\n\tLocation(101,23,101,31)\n\t101 |\t    <memoryUsed> 0 => ?MEMUSED:Int </memoryUsed>\n\t    .\t                      ^~~~~~~~\n[Warning] Compiler: Variable 'LOGS' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/tasks/7263056c-0884-4ffc-bd7f-4c5388ba44f7/input/spec.k)\n\tLocation(104,11,104,15)\n\t104 |\t    <log> LOGS </log>\n\t    .\t          ^~~~\n[Warning] Compiler: Variable 'STORAGE' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/7263056c-0884-4ffc-bd7f-4c5388ba44f7/input/spec.k)\n\tLocation(108,17,108,24)\n\t108 |\t      <storage> STORAGE </storage>\n\t    .\t                ^~~~~~~\n",
+      "stdout": "kore-exec /data/definitions/7_1_337-haskell-evm-4f4c3843076c-0c9c406c3ac9e3c1a89f0b592cd2649f69591fbded11b7fc113aac9b751c75c7/definition/definition.kore --module VERIFICATION --prove /tmp/.kprove-2026-09-17-03-06-18-241-161d2b2a-166f-4ab6-bf13-7fbb0d5e55f9/spec.kore --spec-module SPEC --output /tmp/.kprove-2026-09-17-03-06-18-241-161d2b2a-166f-4ab6-bf13-7fbb0d5e55f9/result.kore\n",
+      "task": {
+        "createdAt": "2026-09-17T08:05:18.857237Z",
+        "error": null,
+        "finishedAt": "2026-09-17T08:06:42.472090Z",
+        "id": "7263056c-0884-4ffc-bd7f-4c5388ba44f7",
+        "kind": "proofDryRun",
+        "result": {
+          "definitionId": "7_1_337-haskell-evm-4f4c3843076c-0c9c406c3ac9e3c1a89f0b592cd2649f69591fbded11b7fc113aac9b751c75c7",
+          "valid": true
+        },
+        "semantics": {
+          "commit": "4f4c3843076c",
+          "id": "evm"
+        },
+        "startedAt": "2026-09-17T08:05:22.716339Z",
+        "status": "completed",
+        "timing": {
+          "executionMilliseconds": 79755,
+          "queueMilliseconds": 3859,
+          "totalMilliseconds": 83614
+        },
+        "toolRuns": [
+          {
+            "durationMilliseconds": 51713,
+            "exitCode": 0,
+            "finishedAt": "2026-09-17T08:06:16.318650Z",
+            "outcome": "success",
+            "startedAt": "2026-09-17T08:05:24.604844Z",
+            "tool": "kompile"
+          },
+          {
+            "durationMilliseconds": 24224,
+            "exitCode": 0,
+            "finishedAt": "2026-09-17T08:06:42.029089Z",
+            "outcome": "success",
+            "startedAt": "2026-09-17T08:06:17.804209Z",
+            "tool": "kprove"
+          }
+        ]
+      }
+    },
+    "kind": "validation",
+    "role": "construction",
+    "operation": "validation-006",
+    "session": "504ef65f-e09d-448d-ad55-5e374d7ecf1c"
+  }
+]

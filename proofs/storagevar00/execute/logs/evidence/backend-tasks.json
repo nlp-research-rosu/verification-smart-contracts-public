@@ -1,0 +1,485 @@
+[
+  {
+    "record": {
+      "stderr": "WARNING 2026-09-17 14:27:50,737 kevm_pyk.__main__ - Ignoring --equation-max-local-steps for non-booster server: kore-rpc\n",
+      "stdout": "PROOF PASSED: SPEC.execute-success\n",
+      "task": {
+        "createdAt": "2026-09-17T19:27:45.972360Z",
+        "error": null,
+        "finishedAt": "2026-09-17T19:28:46.061636Z",
+        "id": "5517bb54-408d-429f-b7f4-befec24bf64a",
+        "kind": "proof",
+        "result": {
+          "definitionId": "7_1_337-haskell-evm-4f4c3843076c-4d216aefaa5478a376dfab52bc287fc79f14db81dc1898b599733f18006561f1",
+          "outcome": "proved",
+          "residual": null
+        },
+        "semantics": {
+          "commit": "4f4c3843076c",
+          "id": "evm"
+        },
+        "startedAt": "2026-09-17T19:27:49.754171Z",
+        "status": "completed",
+        "timing": {
+          "executionMilliseconds": 56307,
+          "queueMilliseconds": 3781,
+          "totalMilliseconds": 60089
+        },
+        "toolRuns": [
+          {
+            "durationMilliseconds": 55233,
+            "exitCode": 0,
+            "finishedAt": "2026-09-17T19:28:45.631163Z",
+            "outcome": "success",
+            "startedAt": "2026-09-17T19:27:50.397632Z",
+            "tool": "kprove"
+          }
+        ]
+      }
+    },
+    "kind": "proof",
+    "role": "audit",
+    "operation": "proof-001",
+    "session": "371c6e0b-661a-4ca6-9a33-58fd02158e9b"
+  },
+  {
+    "record": {
+      "stderr": "WARNING 2026-09-17 14:29:40,152 kevm_pyk.__main__ - Ignoring --equation-max-local-steps for non-booster server: kore-rpc\n",
+      "stdout": "PROOF PASSED: SPEC.execute-nonpayable-revert\n",
+      "task": {
+        "createdAt": "2026-09-17T19:29:35.494613Z",
+        "error": null,
+        "finishedAt": "2026-09-17T19:30:32.151629Z",
+        "id": "ac596094-b651-4909-94f1-c4380ac2f5d2",
+        "kind": "proof",
+        "result": {
+          "definitionId": "7_1_337-haskell-evm-4f4c3843076c-4d216aefaa5478a376dfab52bc287fc79f14db81dc1898b599733f18006561f1",
+          "outcome": "proved",
+          "residual": null
+        },
+        "semantics": {
+          "commit": "4f4c3843076c",
+          "id": "evm"
+        },
+        "startedAt": "2026-09-17T19:29:39.316659Z",
+        "status": "completed",
+        "timing": {
+          "executionMilliseconds": 52834,
+          "queueMilliseconds": 3822,
+          "totalMilliseconds": 56657
+        },
+        "toolRuns": [
+          {
+            "durationMilliseconds": 52046,
+            "exitCode": 0,
+            "finishedAt": "2026-09-17T19:30:31.861812Z",
+            "outcome": "success",
+            "startedAt": "2026-09-17T19:29:39.815145Z",
+            "tool": "kprove"
+          }
+        ]
+      }
+    },
+    "kind": "proof",
+    "role": "audit",
+    "operation": "proof-002",
+    "session": "371c6e0b-661a-4ca6-9a33-58fd02158e9b"
+  },
+  {
+    "record": {
+      "stderr": "WARNING 2026-09-17 14:32:29,272 kevm_pyk.__main__ - Ignoring --equation-max-local-steps for non-booster server: kore-rpc\nWARNING 2026-09-17 14:33:25,113 pyk.proof.proof - Terminating proof early because fail_fast is set: SPEC-AUDIT-MUTATION.execute-success-false-output\n",
+      "stdout": "PROOF FAILED: SPEC-AUDIT-MUTATION.execute-success-false-output\n1 Failure nodes. (0 pending and 1 failing)\n\nFailing nodes:\n\n  Node id: 3\n  Failure reason:\n    Matching failed.\n    The following cells failed matching individually (antecedent #Implies consequent):\n    OUTPUT_CELL: #buf ( 32 , #lookup ( STORAGE:Map , 0 ) #Implies #lookup ( STORAGE:Map , 0 ) +Int 1 )\n  Path condition:\n    #Top\n\nJoin the Runtime Verification Discord server (https://discord.com/invite/CurfmXNtbN) or Telegram group (https://t.me/rv_kontrol) for support.\n",
+      "task": {
+        "createdAt": "2026-09-17T19:32:24.487072Z",
+        "error": null,
+        "finishedAt": "2026-09-17T19:33:37.790308Z",
+        "id": "1b1bb2ec-12d9-4dc6-9a4e-011e3f7792b7",
+        "kind": "proof",
+        "result": {
+          "definitionId": "7_1_337-haskell-evm-4f4c3843076c-4d216aefaa5478a376dfab52bc287fc79f14db81dc1898b599733f18006561f1",
+          "outcome": "notProved",
+          "residual": null
+        },
+        "semantics": {
+          "commit": "4f4c3843076c",
+          "id": "evm"
+        },
+        "startedAt": "2026-09-17T19:32:28.317563Z",
+        "status": "completed",
+        "timing": {
+          "executionMilliseconds": 69472,
+          "queueMilliseconds": 3830,
+          "totalMilliseconds": 73303
+        },
+        "toolRuns": [
+          {
+            "durationMilliseconds": 68396,
+            "exitCode": 1,
+            "finishedAt": "2026-09-17T19:33:37.360148Z",
+            "outcome": "exit_error",
+            "startedAt": "2026-09-17T19:32:28.963698Z",
+            "tool": "kprove"
+          }
+        ]
+      }
+    },
+    "kind": "proof",
+    "role": "audit",
+    "operation": "proof-003",
+    "session": "371c6e0b-661a-4ca6-9a33-58fd02158e9b"
+  },
+  {
+    "record": {
+      "stderr": "WARNING 2026-09-17 14:36:10,478 kevm_pyk.__main__ - Ignoring --equation-max-local-steps for non-booster server: kore-rpc\nWARNING 2026-09-17 14:36:52,915 pyk.proof.proof - Terminating proof early because fail_fast is set: SPEC-AUDIT-BODY-MUTATION.execute-success-wrong-body\n",
+      "stdout": "PROOF FAILED: SPEC-AUDIT-BODY-MUTATION.execute-success-wrong-body\n1 Failure nodes. (0 pending and 1 failing)\n\nFailing nodes:\n\n  Node id: 3\n  Failure reason:\n    Matching failed.\n    The following cells failed matching individually (antecedent #Implies consequent):\n    OUTPUT_CELL: b\"\" #Implies #buf ( 32 , #lookup ( STORAGE:Map , 0 ) )\n  Path condition:\n    #Top\n\nJoin the Runtime Verification Discord server (https://discord.com/invite/CurfmXNtbN) or Telegram group (https://t.me/rv_kontrol) for support.\n",
+      "task": {
+        "createdAt": "2026-09-17T19:36:04.837309Z",
+        "error": null,
+        "finishedAt": "2026-09-17T19:37:02.152767Z",
+        "id": "b9e484e1-fd3f-4806-9654-825515197db1",
+        "kind": "proof",
+        "result": {
+          "definitionId": "7_1_337-haskell-evm-4f4c3843076c-4d216aefaa5478a376dfab52bc287fc79f14db81dc1898b599733f18006561f1",
+          "outcome": "notProved",
+          "residual": null
+        },
+        "semantics": {
+          "commit": "4f4c3843076c",
+          "id": "evm"
+        },
+        "startedAt": "2026-09-17T19:36:09.612562Z",
+        "status": "completed",
+        "timing": {
+          "executionMilliseconds": 52540,
+          "queueMilliseconds": 4775,
+          "totalMilliseconds": 57315
+        },
+        "toolRuns": [
+          {
+            "durationMilliseconds": 51728,
+            "exitCode": 1,
+            "finishedAt": "2026-09-17T19:37:01.852541Z",
+            "outcome": "exit_error",
+            "startedAt": "2026-09-17T19:36:10.124157Z",
+            "tool": "kprove"
+          }
+        ]
+      }
+    },
+    "kind": "proof",
+    "role": "audit",
+    "operation": "proof-004",
+    "session": "371c6e0b-661a-4ca6-9a33-58fd02158e9b"
+  },
+  {
+    "record": {
+      "stderr": "[Warning] Compiler: Variable 'B2' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/definitions/.7_1_337-haskell-evm-4f4c3843076c-4d216aefaa5478a376dfab52bc287fc79f14db81dc1898b599733f18006561f1.32fec032-e977-4c59-951f-2a99402e5dce/source/lemmas/bytes-simplification.k)\n\tLocation(301,25,301,27)\n[Warning] Compiler: Variable '?FINAL_STACK' defined but not used. Prefix\nvariable name with underscore if this is intentional.\n\tSource(/data/tasks/eb10890e-d19a-4ca4-bae2-807dfed6cbd9/input/spec.k)\n\tLocation(17,31,17,43)\n\t17 |\t    <wordStack> .WordStack => ?FINAL_STACK:WordStack </wordStack>\n\t   .\t                              ^~~~~~~~~~~~\n[Warning] Compiler: Variable '?FINAL_MEMORY' defined but not used. Prefix\nvariable name with underscore if this is intentional.\n\tSource(/data/tasks/eb10890e-d19a-4ca4-bae2-807dfed6cbd9/input/spec.k)\n\tLocation(18,26,18,39)\n\t18 |\t    <localMem> .Bytes => ?FINAL_MEMORY:Bytes </localMem>\n\t   .\t                         ^~~~~~~~~~~~~\n[Warning] Compiler: Variable '?FINAL_PC' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/eb10890e-d19a-4ca4-bae2-807dfed6cbd9/input/spec.k)\n\tLocation(19,15,19,24)\n\t19 |\t    <pc> 0 => ?FINAL_PC:Int </pc>\n\t   .\t              ^~~~~~~~~\n[Warning] Compiler: Variable '?FINAL_GAS' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/eb10890e-d19a-4ca4-bae2-807dfed6cbd9/input/spec.k)\n\tLocation(20,16,20,26)\n\t20 |\t    <gas> 0 => ?FINAL_GAS:Gas </gas>\n\t   .\t               ^~~~~~~~~~\n[Warning] Compiler: Variable '?FINAL_MEMORY_USED' defined but not used. Prefix\nvariable name with underscore if this is intentional.\n\tSource(/data/tasks/eb10890e-d19a-4ca4-bae2-807dfed6cbd9/input/spec.k)\n\tLocation(21,23,21,41)\n\t21 |\t    <memoryUsed> 0 => ?FINAL_MEMORY_USED:Int </memoryUsed>\n\t   .\t                      ^~~~~~~~~~~~~~~~~~\n[Warning] Compiler: Variable '?FINAL_STACK' defined but not used. Prefix\nvariable name with underscore if this is intentional.\n\tSource(/data/tasks/eb10890e-d19a-4ca4-bae2-807dfed6cbd9/input/spec.k)\n\tLocation(40,31,40,43)\n\t40 |\t    <wordStack> .WordStack => ?FINAL_STACK:WordStack </wordStack>\n\t   .\t                              ^~~~~~~~~~~~\n[Warning] Compiler: Variable '?FINAL_MEMORY' defined but not used. Prefix\nvariable name with underscore if this is intentional.\n\tSource(/data/tasks/eb10890e-d19a-4ca4-bae2-807dfed6cbd9/input/spec.k)\n\tLocation(41,26,41,39)\n\t41 |\t    <localMem> .Bytes => ?FINAL_MEMORY:Bytes </localMem>\n\t   .\t                         ^~~~~~~~~~~~~\n[Warning] Compiler: Variable '?FINAL_PC' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/eb10890e-d19a-4ca4-bae2-807dfed6cbd9/input/spec.k)\n\tLocation(42,15,42,24)\n\t42 |\t    <pc> 0 => ?FINAL_PC:Int </pc>\n\t   .\t              ^~~~~~~~~\n[Warning] Compiler: Variable '?FINAL_GAS' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/eb10890e-d19a-4ca4-bae2-807dfed6cbd9/input/spec.k)\n\tLocation(43,16,43,26)\n\t43 |\t    <gas> 0 => ?FINAL_GAS:Gas </gas>\n\t   .\t               ^~~~~~~~~~\n[Warning] Compiler: Variable '?FINAL_MEMORY_USED' defined but not used. Prefix\nvariable name with underscore if this is intentional.\n\tSource(/data/tasks/eb10890e-d19a-4ca4-bae2-807dfed6cbd9/input/spec.k)\n\tLocation(44,23,44,41)\n\t44 |\t    <memoryUsed> 0 => ?FINAL_MEMORY_USED:Int </memoryUsed>\n\t   .\t                      ^~~~~~~~~~~~~~~~~~\n[Warning] Compiler: Variable 'STORAGE' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/eb10890e-d19a-4ca4-bae2-807dfed6cbd9/input/spec.k)\n\tLocation(47,17,47,24)\n\t47 |\t      <storage> STORAGE </storage>\n\t   .\t                ^~~~~~~\n",
+      "stdout": "kore-exec /data/definitions/7_1_337-haskell-evm-4f4c3843076c-4d216aefaa5478a376dfab52bc287fc79f14db81dc1898b599733f18006561f1/definition/definition.kore --module VERIFICATION --prove /tmp/.kprove-2026-09-17-14-27-05-229-5579f150-90a2-47af-a670-4a38e08cf769/spec.kore --spec-module SPEC --output /tmp/.kprove-2026-09-17-14-27-05-229-5579f150-90a2-47af-a670-4a38e08cf769/result.kore\n",
+      "task": {
+        "createdAt": "2026-09-17T19:27:00.140636Z",
+        "error": null,
+        "finishedAt": "2026-09-17T19:27:30.652346Z",
+        "id": "eb10890e-d19a-4ca4-bae2-807dfed6cbd9",
+        "kind": "proofDryRun",
+        "result": {
+          "definitionId": "7_1_337-haskell-evm-4f4c3843076c-4d216aefaa5478a376dfab52bc287fc79f14db81dc1898b599733f18006561f1",
+          "valid": true
+        },
+        "semantics": {
+          "commit": "4f4c3843076c",
+          "id": "evm"
+        },
+        "startedAt": "2026-09-17T19:27:04.162538Z",
+        "status": "completed",
+        "timing": {
+          "executionMilliseconds": 26489,
+          "queueMilliseconds": 4021,
+          "totalMilliseconds": 30511
+        },
+        "toolRuns": [
+          {
+            "durationMilliseconds": 25703,
+            "exitCode": 0,
+            "finishedAt": "2026-09-17T19:27:30.365726Z",
+            "outcome": "success",
+            "startedAt": "2026-09-17T19:27:04.662645Z",
+            "tool": "kprove"
+          }
+        ]
+      }
+    },
+    "kind": "validation",
+    "role": "audit",
+    "operation": "validation-001",
+    "session": "371c6e0b-661a-4ca6-9a33-58fd02158e9b"
+  },
+  {
+    "record": {
+      "stderr": "[Warning] Compiler: Variable 'B2' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/definitions/.7_1_337-haskell-evm-4f4c3843076c-4d216aefaa5478a376dfab52bc287fc79f14db81dc1898b599733f18006561f1.32fec032-e977-4c59-951f-2a99402e5dce/source/lemmas/bytes-simplification.k)\n\tLocation(301,25,301,27)\n[Warning] Compiler: Variable '?FINAL_STACK' defined but not used. Prefix\nvariable name with underscore if this is intentional.\n\tSource(/data/tasks/4b1ce8d2-f924-4df0-b283-32a3b8e3b7bb/input/audit-mutation.k)\n\tLocation(18,31,18,43)\n\t18 |\t    <wordStack> .WordStack => ?FINAL_STACK:WordStack </wordStack>\n\t   .\t                              ^~~~~~~~~~~~\n[Warning] Compiler: Variable '?FINAL_MEMORY' defined but not used. Prefix\nvariable name with underscore if this is intentional.\n\tSource(/data/tasks/4b1ce8d2-f924-4df0-b283-32a3b8e3b7bb/input/audit-mutation.k)\n\tLocation(19,26,19,39)\n\t19 |\t    <localMem> .Bytes => ?FINAL_MEMORY:Bytes </localMem>\n\t   .\t                         ^~~~~~~~~~~~~\n[Warning] Compiler: Variable '?FINAL_PC' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/4b1ce8d2-f924-4df0-b283-32a3b8e3b7bb/input/audit-mutation.k)\n\tLocation(20,15,20,24)\n\t20 |\t    <pc> 0 => ?FINAL_PC:Int </pc>\n\t   .\t              ^~~~~~~~~\n[Warning] Compiler: Variable '?FINAL_GAS' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/4b1ce8d2-f924-4df0-b283-32a3b8e3b7bb/input/audit-mutation.k)\n\tLocation(21,16,21,26)\n\t21 |\t    <gas> 0 => ?FINAL_GAS:Gas </gas>\n\t   .\t               ^~~~~~~~~~\n[Warning] Compiler: Variable '?FINAL_MEMORY_USED' defined but not used. Prefix\nvariable name with underscore if this is intentional.\n\tSource(/data/tasks/4b1ce8d2-f924-4df0-b283-32a3b8e3b7bb/input/audit-mutation.k)\n\tLocation(22,23,22,41)\n\t22 |\t    <memoryUsed> 0 => ?FINAL_MEMORY_USED:Int </memoryUsed>\n\t   .\t                      ^~~~~~~~~~~~~~~~~~\n",
+      "stdout": "kore-exec /data/definitions/7_1_337-haskell-evm-4f4c3843076c-4d216aefaa5478a376dfab52bc287fc79f14db81dc1898b599733f18006561f1/definition/definition.kore --module VERIFICATION --prove /tmp/.kprove-2026-09-17-14-31-45-449-69067054-30d4-4e78-adcb-7e071ab9b85a/spec.kore --spec-module SPEC-AUDIT-MUTATION --output /tmp/.kprove-2026-09-17-14-31-45-449-69067054-30d4-4e78-adcb-7e071ab9b85a/result.kore\n",
+      "task": {
+        "createdAt": "2026-09-17T19:31:40.636735Z",
+        "error": null,
+        "finishedAt": "2026-09-17T19:32:11.972542Z",
+        "id": "4b1ce8d2-f924-4df0-b283-32a3b8e3b7bb",
+        "kind": "proofDryRun",
+        "result": {
+          "definitionId": "7_1_337-haskell-evm-4f4c3843076c-4d216aefaa5478a376dfab52bc287fc79f14db81dc1898b599733f18006561f1",
+          "valid": true
+        },
+        "semantics": {
+          "commit": "4f4c3843076c",
+          "id": "evm"
+        },
+        "startedAt": "2026-09-17T19:31:44.511797Z",
+        "status": "completed",
+        "timing": {
+          "executionMilliseconds": 27460,
+          "queueMilliseconds": 3875,
+          "totalMilliseconds": 31335
+        },
+        "toolRuns": [
+          {
+            "durationMilliseconds": 26523,
+            "exitCode": 0,
+            "finishedAt": "2026-09-17T19:32:11.537265Z",
+            "outcome": "success",
+            "startedAt": "2026-09-17T19:31:45.013266Z",
+            "tool": "kprove"
+          }
+        ]
+      }
+    },
+    "kind": "validation",
+    "role": "audit",
+    "operation": "validation-002",
+    "session": "371c6e0b-661a-4ca6-9a33-58fd02158e9b"
+  },
+  {
+    "record": {
+      "stderr": "[Warning] Compiler: Variable 'B2' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/definitions/.7_1_337-haskell-evm-4f4c3843076c-4d216aefaa5478a376dfab52bc287fc79f14db81dc1898b599733f18006561f1.32fec032-e977-4c59-951f-2a99402e5dce/source/lemmas/bytes-simplification.k)\n\tLocation(301,25,301,27)\n[Warning] Compiler: Variable '?FINAL_STACK' defined but not used. Prefix\nvariable name with underscore if this is intentional.\n\tSource(/data/tasks/e3b16cdf-cf76-4451-8837-713edec9970e/input/audit-body-mutation.k)\n\tLocation(18,31,18,43)\n\t18 |\t    <wordStack> .WordStack => ?FINAL_STACK:WordStack </wordStack>\n\t   .\t                              ^~~~~~~~~~~~\n[Warning] Compiler: Variable '?FINAL_MEMORY' defined but not used. Prefix\nvariable name with underscore if this is intentional.\n\tSource(/data/tasks/e3b16cdf-cf76-4451-8837-713edec9970e/input/audit-body-mutation.k)\n\tLocation(19,26,19,39)\n\t19 |\t    <localMem> .Bytes => ?FINAL_MEMORY:Bytes </localMem>\n\t   .\t                         ^~~~~~~~~~~~~\n[Warning] Compiler: Variable '?FINAL_PC' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/e3b16cdf-cf76-4451-8837-713edec9970e/input/audit-body-mutation.k)\n\tLocation(20,15,20,24)\n\t20 |\t    <pc> 0 => ?FINAL_PC:Int </pc>\n\t   .\t              ^~~~~~~~~\n[Warning] Compiler: Variable '?FINAL_GAS' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/e3b16cdf-cf76-4451-8837-713edec9970e/input/audit-body-mutation.k)\n\tLocation(21,16,21,26)\n\t21 |\t    <gas> 0 => ?FINAL_GAS:Gas </gas>\n\t   .\t               ^~~~~~~~~~\n[Warning] Compiler: Variable '?FINAL_MEMORY_USED' defined but not used. Prefix\nvariable name with underscore if this is intentional.\n\tSource(/data/tasks/e3b16cdf-cf76-4451-8837-713edec9970e/input/audit-body-mutation.k)\n\tLocation(22,23,22,41)\n\t22 |\t    <memoryUsed> 0 => ?FINAL_MEMORY_USED:Int </memoryUsed>\n\t   .\t                      ^~~~~~~~~~~~~~~~~~\n",
+      "stdout": "kore-exec /data/definitions/7_1_337-haskell-evm-4f4c3843076c-4d216aefaa5478a376dfab52bc287fc79f14db81dc1898b599733f18006561f1/definition/definition.kore --module VERIFICATION --prove /tmp/.kprove-2026-09-17-14-35-26-694-10c5466e-a8f6-46e6-a078-de57871012be/spec.kore --spec-module SPEC-AUDIT-BODY-MUTATION --output /tmp/.kprove-2026-09-17-14-35-26-694-10c5466e-a8f6-46e6-a078-de57871012be/result.kore\n",
+      "task": {
+        "createdAt": "2026-09-17T19:35:21.854420Z",
+        "error": null,
+        "finishedAt": "2026-09-17T19:35:51.120098Z",
+        "id": "e3b16cdf-cf76-4451-8837-713edec9970e",
+        "kind": "proofDryRun",
+        "result": {
+          "definitionId": "7_1_337-haskell-evm-4f4c3843076c-4d216aefaa5478a376dfab52bc287fc79f14db81dc1898b599733f18006561f1",
+          "valid": true
+        },
+        "semantics": {
+          "commit": "4f4c3843076c",
+          "id": "evm"
+        },
+        "startedAt": "2026-09-17T19:35:25.638583Z",
+        "status": "completed",
+        "timing": {
+          "executionMilliseconds": 25481,
+          "queueMilliseconds": 3784,
+          "totalMilliseconds": 29265
+        },
+        "toolRuns": [
+          {
+            "durationMilliseconds": 24408,
+            "exitCode": 0,
+            "finishedAt": "2026-09-17T19:35:50.688572Z",
+            "outcome": "success",
+            "startedAt": "2026-09-17T19:35:26.280426Z",
+            "tool": "kprove"
+          }
+        ]
+      }
+    },
+    "kind": "validation",
+    "role": "audit",
+    "operation": "validation-003",
+    "session": "371c6e0b-661a-4ca6-9a33-58fd02158e9b"
+  },
+  {
+    "record": {
+      "stderr": "WARNING 2026-09-17 14:23:53,769 kevm_pyk.__main__ - Ignoring --equation-max-local-steps for non-booster server: kore-rpc\n",
+      "stdout": "PROOF PASSED: SPEC.execute-success\nPROOF PASSED: SPEC.execute-nonpayable-revert\n",
+      "task": {
+        "createdAt": "2026-09-17T19:23:48.846128Z",
+        "error": null,
+        "finishedAt": "2026-09-17T19:25:18.558155Z",
+        "id": "68b3f5d9-8239-4a62-ae54-e6934ca9adf4",
+        "kind": "proof",
+        "result": {
+          "definitionId": "7_1_337-haskell-evm-4f4c3843076c-4d216aefaa5478a376dfab52bc287fc79f14db81dc1898b599733f18006561f1",
+          "outcome": "proved",
+          "residual": null
+        },
+        "semantics": {
+          "commit": "4f4c3843076c",
+          "id": "evm"
+        },
+        "startedAt": "2026-09-17T19:23:52.688255Z",
+        "status": "completed",
+        "timing": {
+          "executionMilliseconds": 85869,
+          "queueMilliseconds": 3842,
+          "totalMilliseconds": 89712
+        },
+        "toolRuns": [
+          {
+            "durationMilliseconds": 84798,
+            "exitCode": 0,
+            "finishedAt": "2026-09-17T19:25:18.271805Z",
+            "outcome": "success",
+            "startedAt": "2026-09-17T19:23:53.473284Z",
+            "tool": "kprove"
+          }
+        ]
+      }
+    },
+    "kind": "proof",
+    "role": "construction",
+    "operation": "proof-001",
+    "session": "00599ca4-f253-4bff-8222-619c376a46e8"
+  },
+  {
+    "record": {
+      "stderr": "[Warning] Compiler: Variable 'B2' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/definitions/.7_1_337-haskell-evm-4f4c3843076c-ff50ffdb824f4112f50e097e488ee65a6dae83fe567d4bd4afe1c83c03e4d4aa.53e88886-a658-4593-981a-1f9178338351/source/lemmas/bytes-simplification.k)\n\tLocation(301,25,301,27)\n\t301 |\t      ( B1:Bytes +Bytes B2:Bytes ) [ I:Int ] => B1 [ I ]\n\t    .\t                        ^~\n[Warning] Compiler: Non exhaustive match detected:\n`_<Gas__GAS-SYNTAX_Bool_Gas_Gas`(infGas(_),_)\n\tSource(/data/definitions/.7_1_337-haskell-evm-4f4c3843076c-ff50ffdb824f4112f50e097e488ee65a6dae83fe567d4bd4afe1c83c03e4d4aa.53e88886-a658-4593-981a-1f9178338351/source/gas.md)\n\tLocation(23,21,23,54)\n\t23 |\t    syntax Bool ::= Gas  \"<Gas\" Gas [function, total]\n\t   .\t                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n[Warning] Compiler: Non exhaustive match detected:\n`_<=Gas__GAS-SYNTAX_Bool_Gas_Gas`(infGas(_),infGas(_))\n\tSource(/data/definitions/.7_1_337-haskell-evm-4f4c3843076c-ff50ffdb824f4112f50e097e488ee65a6dae83fe567d4bd4afe1c83c03e4d4aa.53e88886-a658-4593-981a-1f9178338351/source/gas.md)\n\tLocation(24,21,24,54)\n\t24 |\t                  | Gas \"<=Gas\" Gas [function, total]\n\t   .\t                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n[Error] Inner Parser: Parse error: unexpected token 'CALLVALUE' following token\n'<callValue>'.\n\tSource(/data/tasks/a4d22342-0037-472f-8539-04d506aa1fd2/input/spec.k)\n\tLocation(41,17,41,26)\n\t41 |\t    <callValue> CALLVALUE </callValue>\n\t   .\t                ^~~~~~~~~\n[Error] Compiler: Had 1 parsing errors.\n",
+      "stdout": "",
+      "task": {
+        "createdAt": "2026-09-17T19:17:37.034060Z",
+        "error": null,
+        "finishedAt": "2026-09-17T19:18:40.461878Z",
+        "id": "a4d22342-0037-472f-8539-04d506aa1fd2",
+        "kind": "proofDryRun",
+        "result": {
+          "definitionId": "7_1_337-haskell-evm-4f4c3843076c-ff50ffdb824f4112f50e097e488ee65a6dae83fe567d4bd4afe1c83c03e4d4aa",
+          "valid": false
+        },
+        "semantics": {
+          "commit": "4f4c3843076c",
+          "id": "evm"
+        },
+        "startedAt": "2026-09-17T19:17:40.823211Z",
+        "status": "completed",
+        "timing": {
+          "executionMilliseconds": 59638,
+          "queueMilliseconds": 3789,
+          "totalMilliseconds": 63427
+        },
+        "toolRuns": [
+          {
+            "durationMilliseconds": 49697,
+            "exitCode": 0,
+            "finishedAt": "2026-09-17T19:18:32.347753Z",
+            "outcome": "success",
+            "startedAt": "2026-09-17T19:17:42.650262Z",
+            "tool": "kompile"
+          },
+          {
+            "durationMilliseconds": 6210,
+            "exitCode": 113,
+            "finishedAt": "2026-09-17T19:18:40.039065Z",
+            "outcome": "exit_error",
+            "startedAt": "2026-09-17T19:18:33.828878Z",
+            "tool": "kprove"
+          }
+        ]
+      }
+    },
+    "kind": "validation",
+    "role": "construction",
+    "operation": "validation-001",
+    "session": "00599ca4-f253-4bff-8222-619c376a46e8"
+  },
+  {
+    "record": {
+      "stderr": "[Warning] Compiler: Variable 'B2' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/definitions/.7_1_337-haskell-evm-4f4c3843076c-ff50ffdb824f4112f50e097e488ee65a6dae83fe567d4bd4afe1c83c03e4d4aa.53e88886-a658-4593-981a-1f9178338351/source/lemmas/bytes-simplification.k)\n\tLocation(301,25,301,27)\n[Warning] Compiler: Variable '?FINAL_STACK' defined but not used. Prefix\nvariable name with underscore if this is intentional.\n\tSource(/data/tasks/589e90e5-1f0e-47c7-80c3-ea5535a05e5b/input/spec.k)\n\tLocation(17,31,17,43)\n\t17 |\t    <wordStack> .WordStack => ?FINAL_STACK:WordStack </wordStack>\n\t   .\t                              ^~~~~~~~~~~~\n[Warning] Compiler: Variable '?FINAL_MEMORY' defined but not used. Prefix\nvariable name with underscore if this is intentional.\n\tSource(/data/tasks/589e90e5-1f0e-47c7-80c3-ea5535a05e5b/input/spec.k)\n\tLocation(18,26,18,39)\n\t18 |\t    <localMem> .Bytes => ?FINAL_MEMORY:Bytes </localMem>\n\t   .\t                         ^~~~~~~~~~~~~\n[Warning] Compiler: Variable '?FINAL_PC' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/589e90e5-1f0e-47c7-80c3-ea5535a05e5b/input/spec.k)\n\tLocation(19,15,19,24)\n\t19 |\t    <pc> 0 => ?FINAL_PC:Int </pc>\n\t   .\t              ^~~~~~~~~\n[Warning] Compiler: Variable '?FINAL_GAS' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/589e90e5-1f0e-47c7-80c3-ea5535a05e5b/input/spec.k)\n\tLocation(20,16,20,26)\n\t20 |\t    <gas> 0 => ?FINAL_GAS:Gas </gas>\n\t   .\t               ^~~~~~~~~~\n[Warning] Compiler: Variable '?FINAL_MEMORY_USED' defined but not used. Prefix\nvariable name with underscore if this is intentional.\n\tSource(/data/tasks/589e90e5-1f0e-47c7-80c3-ea5535a05e5b/input/spec.k)\n\tLocation(21,23,21,41)\n\t21 |\t    <memoryUsed> 0 => ?FINAL_MEMORY_USED:Int </memoryUsed>\n\t   .\t                      ^~~~~~~~~~~~~~~~~~\n[Warning] Compiler: Variable '?FINAL_STACK' defined but not used. Prefix\nvariable name with underscore if this is intentional.\n\tSource(/data/tasks/589e90e5-1f0e-47c7-80c3-ea5535a05e5b/input/spec.k)\n\tLocation(42,31,42,43)\n\t42 |\t    <wordStack> .WordStack => ?FINAL_STACK:WordStack </wordStack>\n\t   .\t                              ^~~~~~~~~~~~\n[Warning] Compiler: Variable '?FINAL_MEMORY' defined but not used. Prefix\nvariable name with underscore if this is intentional.\n\tSource(/data/tasks/589e90e5-1f0e-47c7-80c3-ea5535a05e5b/input/spec.k)\n\tLocation(43,26,43,39)\n\t43 |\t    <localMem> .Bytes => ?FINAL_MEMORY:Bytes </localMem>\n\t   .\t                         ^~~~~~~~~~~~~\n[Warning] Compiler: Variable '?FINAL_PC' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/589e90e5-1f0e-47c7-80c3-ea5535a05e5b/input/spec.k)\n\tLocation(44,15,44,24)\n\t44 |\t    <pc> 0 => ?FINAL_PC:Int </pc>\n\t   .\t              ^~~~~~~~~\n[Warning] Compiler: Variable '?FINAL_GAS' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/589e90e5-1f0e-47c7-80c3-ea5535a05e5b/input/spec.k)\n\tLocation(45,16,45,26)\n\t45 |\t    <gas> 0 => ?FINAL_GAS:Gas </gas>\n\t   .\t               ^~~~~~~~~~\n[Warning] Compiler: Variable '?FINAL_MEMORY_USED' defined but not used. Prefix\nvariable name with underscore if this is intentional.\n\tSource(/data/tasks/589e90e5-1f0e-47c7-80c3-ea5535a05e5b/input/spec.k)\n\tLocation(46,23,46,41)\n\t46 |\t    <memoryUsed> 0 => ?FINAL_MEMORY_USED:Int </memoryUsed>\n\t   .\t                      ^~~~~~~~~~~~~~~~~~\n",
+      "stdout": "kore-exec /data/definitions/7_1_337-haskell-evm-4f4c3843076c-ff50ffdb824f4112f50e097e488ee65a6dae83fe567d4bd4afe1c83c03e4d4aa/definition/definition.kore --module VERIFICATION --prove /tmp/.kprove-2026-09-17-14-19-25-015-ed126a87-8a2b-4745-85ce-f4a215cd6a62/spec.kore --spec-module SPEC --output /tmp/.kprove-2026-09-17-14-19-25-015-ed126a87-8a2b-4745-85ce-f4a215cd6a62/result.kore\n",
+      "task": {
+        "createdAt": "2026-09-17T19:19:20.276911Z",
+        "error": null,
+        "finishedAt": "2026-09-17T19:19:48.498352Z",
+        "id": "589e90e5-1f0e-47c7-80c3-ea5535a05e5b",
+        "kind": "proofDryRun",
+        "result": {
+          "definitionId": "7_1_337-haskell-evm-4f4c3843076c-ff50ffdb824f4112f50e097e488ee65a6dae83fe567d4bd4afe1c83c03e4d4aa",
+          "valid": true
+        },
+        "semantics": {
+          "commit": "4f4c3843076c",
+          "id": "evm"
+        },
+        "startedAt": "2026-09-17T19:19:24.121191Z",
+        "status": "completed",
+        "timing": {
+          "executionMilliseconds": 24377,
+          "queueMilliseconds": 3844,
+          "totalMilliseconds": 28221
+        },
+        "toolRuns": [
+          {
+            "durationMilliseconds": 23461,
+            "exitCode": 0,
+            "finishedAt": "2026-09-17T19:19:48.075378Z",
+            "outcome": "success",
+            "startedAt": "2026-09-17T19:19:24.613712Z",
+            "tool": "kprove"
+          }
+        ]
+      }
+    },
+    "kind": "validation",
+    "role": "construction",
+    "operation": "validation-002",
+    "session": "00599ca4-f253-4bff-8222-619c376a46e8"
+  },
+  {
+    "record": {
+      "stderr": "[Warning] Compiler: Variable 'B2' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/definitions/.7_1_337-haskell-evm-4f4c3843076c-4d216aefaa5478a376dfab52bc287fc79f14db81dc1898b599733f18006561f1.32fec032-e977-4c59-951f-2a99402e5dce/source/lemmas/bytes-simplification.k)\n\tLocation(301,25,301,27)\n\t301 |\t      ( B1:Bytes +Bytes B2:Bytes ) [ I:Int ] => B1 [ I ]\n\t    .\t                        ^~\n[Warning] Compiler: Non exhaustive match detected:\n`_<Gas__GAS-SYNTAX_Bool_Gas_Gas`(infGas(_),_)\n\tSource(/data/definitions/.7_1_337-haskell-evm-4f4c3843076c-4d216aefaa5478a376dfab52bc287fc79f14db81dc1898b599733f18006561f1.32fec032-e977-4c59-951f-2a99402e5dce/source/gas.md)\n\tLocation(23,21,23,54)\n\t23 |\t    syntax Bool ::= Gas  \"<Gas\" Gas [function, total]\n\t   .\t                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n[Warning] Compiler: Non exhaustive match detected:\n`_<=Gas__GAS-SYNTAX_Bool_Gas_Gas`(infGas(_),infGas(_))\n\tSource(/data/definitions/.7_1_337-haskell-evm-4f4c3843076c-4d216aefaa5478a376dfab52bc287fc79f14db81dc1898b599733f18006561f1.32fec032-e977-4c59-951f-2a99402e5dce/source/gas.md)\n\tLocation(24,21,24,54)\n\t24 |\t                  | Gas \"<=Gas\" Gas [function, total]\n\t   .\t                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n[Warning] Compiler: Variable 'B2' defined but not used. Prefix variable name\nwith underscore if this is intentional.\n\tSource(/data/definitions/.7_1_337-haskell-evm-4f4c3843076c-4d216aefaa5478a376dfab52bc287fc79f14db81dc1898b599733f18006561f1.32fec032-e977-4c59-951f-2a99402e5dce/source/lemmas/bytes-simplification.k)\n\tLocation(301,25,301,27)\n[Warning] Compiler: Variable '?FINAL_STACK' defined but not used. Prefix\nvariable name with underscore if this is intentional.\n\tSource(/data/tasks/368dd962-b9cf-41ee-a03f-7ecf922e7020/input/spec.k)\n\tLocation(17,31,17,43)\n\t17 |\t    <wordStack> .WordStack => ?FINAL_STACK:WordStack </wordStack>\n\t   .\t                              ^~~~~~~~~~~~\n[Warning] Compiler: Variable '?FINAL_MEMORY' defined but not used. Prefix\nvariable name with underscore if this is intentional.\n\tSource(/data/tasks/368dd962-b9cf-41ee-a03f-7ecf922e7020/input/spec.k)\n\tLocation(18,26,18,39)\n\t18 |\t    <localMem> .Bytes => ?FINAL_MEMORY:Bytes </localMem>\n\t   .\t                         ^~~~~~~~~~~~~\n[Warning] Compiler: Variable '?FINAL_PC' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/368dd962-b9cf-41ee-a03f-7ecf922e7020/input/spec.k)\n\tLocation(19,15,19,24)\n\t19 |\t    <pc> 0 => ?FINAL_PC:Int </pc>\n\t   .\t              ^~~~~~~~~\n[Warning] Compiler: Variable '?FINAL_GAS' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/368dd962-b9cf-41ee-a03f-7ecf922e7020/input/spec.k)\n\tLocation(20,16,20,26)\n\t20 |\t    <gas> 0 => ?FINAL_GAS:Gas </gas>\n\t   .\t               ^~~~~~~~~~\n[Warning] Compiler: Variable '?FINAL_MEMORY_USED' defined but not used. Prefix\nvariable name with underscore if this is intentional.\n\tSource(/data/tasks/368dd962-b9cf-41ee-a03f-7ecf922e7020/input/spec.k)\n\tLocation(21,23,21,41)\n\t21 |\t    <memoryUsed> 0 => ?FINAL_MEMORY_USED:Int </memoryUsed>\n\t   .\t                      ^~~~~~~~~~~~~~~~~~\n[Warning] Compiler: Variable '?FINAL_STACK' defined but not used. Prefix\nvariable name with underscore if this is intentional.\n\tSource(/data/tasks/368dd962-b9cf-41ee-a03f-7ecf922e7020/input/spec.k)\n\tLocation(40,31,40,43)\n\t40 |\t    <wordStack> .WordStack => ?FINAL_STACK:WordStack </wordStack>\n\t   .\t                              ^~~~~~~~~~~~\n[Warning] Compiler: Variable '?FINAL_MEMORY' defined but not used. Prefix\nvariable name with underscore if this is intentional.\n\tSource(/data/tasks/368dd962-b9cf-41ee-a03f-7ecf922e7020/input/spec.k)\n\tLocation(41,26,41,39)\n\t41 |\t    <localMem> .Bytes => ?FINAL_MEMORY:Bytes </localMem>\n\t   .\t                         ^~~~~~~~~~~~~\n[Warning] Compiler: Variable '?FINAL_PC' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/368dd962-b9cf-41ee-a03f-7ecf922e7020/input/spec.k)\n\tLocation(42,15,42,24)\n\t42 |\t    <pc> 0 => ?FINAL_PC:Int </pc>\n\t   .\t              ^~~~~~~~~\n[Warning] Compiler: Variable '?FINAL_GAS' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/368dd962-b9cf-41ee-a03f-7ecf922e7020/input/spec.k)\n\tLocation(43,16,43,26)\n\t43 |\t    <gas> 0 => ?FINAL_GAS:Gas </gas>\n\t   .\t               ^~~~~~~~~~\n[Warning] Compiler: Variable '?FINAL_MEMORY_USED' defined but not used. Prefix\nvariable name with underscore if this is intentional.\n\tSource(/data/tasks/368dd962-b9cf-41ee-a03f-7ecf922e7020/input/spec.k)\n\tLocation(44,23,44,41)\n\t44 |\t    <memoryUsed> 0 => ?FINAL_MEMORY_USED:Int </memoryUsed>\n\t   .\t                      ^~~~~~~~~~~~~~~~~~\n[Warning] Compiler: Variable 'STORAGE' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/368dd962-b9cf-41ee-a03f-7ecf922e7020/input/spec.k)\n\tLocation(47,17,47,24)\n\t47 |\t      <storage> STORAGE </storage>\n\t   .\t                ^~~~~~~\n",
+      "stdout": "kore-exec /data/definitions/7_1_337-haskell-evm-4f4c3843076c-4d216aefaa5478a376dfab52bc287fc79f14db81dc1898b599733f18006561f1/definition/definition.kore --module VERIFICATION --prove /tmp/.kprove-2026-09-17-14-22-22-708-e684b623-cad6-4179-9452-11bddd12b529/spec.kore --spec-module SPEC --output /tmp/.kprove-2026-09-17-14-22-22-708-e684b623-cad6-4179-9452-11bddd12b529/result.kore\n",
+      "task": {
+        "createdAt": "2026-09-17T19:21:23.439293Z",
+        "error": null,
+        "finishedAt": "2026-09-17T19:22:47.420290Z",
+        "id": "368dd962-b9cf-41ee-a03f-7ecf922e7020",
+        "kind": "proofDryRun",
+        "result": {
+          "definitionId": "7_1_337-haskell-evm-4f4c3843076c-4d216aefaa5478a376dfab52bc287fc79f14db81dc1898b599733f18006561f1",
+          "valid": true
+        },
+        "semantics": {
+          "commit": "4f4c3843076c",
+          "id": "evm"
+        },
+        "startedAt": "2026-09-17T19:21:27.198596Z",
+        "status": "completed",
+        "timing": {
+          "executionMilliseconds": 80221,
+          "queueMilliseconds": 3759,
+          "totalMilliseconds": 83980
+        },
+        "toolRuns": [
+          {
+            "durationMilliseconds": 51511,
+            "exitCode": 0,
+            "finishedAt": "2026-09-17T19:22:20.685622Z",
+            "outcome": "success",
+            "startedAt": "2026-09-17T19:21:29.174065Z",
+            "tool": "kompile"
+          },
+          {
+            "durationMilliseconds": 24868,
+            "exitCode": 0,
+            "finishedAt": "2026-09-17T19:22:47.133482Z",
+            "outcome": "success",
+            "startedAt": "2026-09-17T19:22:22.264968Z",
+            "tool": "kprove"
+          }
+        ]
+      }
+    },
+    "kind": "validation",
+    "role": "construction",
+    "operation": "validation-003",
+    "session": "00599ca4-f253-4bff-8222-619c376a46e8"
+  }
+]

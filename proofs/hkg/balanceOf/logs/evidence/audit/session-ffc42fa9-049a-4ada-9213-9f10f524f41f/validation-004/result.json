@@ -1,0 +1,36 @@
+{
+  "stderr": "[Warning] Compiler: Variable '?FINALSTACK' defined but not used. Prefix\nvariable name with underscore if this is intentional.\n\tSource(/data/tasks/5b2dd797-7a35-499e-81f4-6c8910f424e5/input/false-status.k)\n\tLocation(19,31,19,42)\n\t19 |\t    <wordStack> .WordStack => ?FINALSTACK:WordStack </wordStack>\n\t   .\t                              ^~~~~~~~~~~\n[Warning] Compiler: Variable '?FINALMEM' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/5b2dd797-7a35-499e-81f4-6c8910f424e5/input/false-status.k)\n\tLocation(20,26,20,35)\n\t20 |\t    <localMem> .Bytes => ?FINALMEM:Bytes </localMem>\n\t   .\t                         ^~~~~~~~~\n[Warning] Compiler: Variable '?FINALPC' defined but not used. Prefix variable\nname with underscore if this is intentional.\n\tSource(/data/tasks/5b2dd797-7a35-499e-81f4-6c8910f424e5/input/false-status.k)\n\tLocation(21,15,21,23)\n\t21 |\t    <pc> 0 => ?FINALPC:Int </pc>\n\t   .\t              ^~~~~~~~\n[Warning] Compiler: Variable '?FINALMEMUSED' defined but not used. Prefix\nvariable name with underscore if this is intentional.\n\tSource(/data/tasks/5b2dd797-7a35-499e-81f4-6c8910f424e5/input/false-status.k)\n\tLocation(23,23,23,36)\n\t23 |\t    <memoryUsed> 0 => ?FINALMEMUSED:Int </memoryUsed>\n\t   .\t                      ^~~~~~~~~~~~~\n",
+  "stdout": "kore-exec /data/definitions/7_1_337-haskell-evm-4f4c3843076c-none/definition/definition.kore --module EDSL --prove /tmp/.kprove-2026-09-21-14-53-22-734-07a73ff5-42da-4767-b6be-84b7e454d3c0/spec.kore --spec-module FALSE-STATUS --output /tmp/.kprove-2026-09-21-14-53-22-734-07a73ff5-42da-4767-b6be-84b7e454d3c0/result.kore\n",
+  "task": {
+    "createdAt": "2026-09-21T19:53:17.113415Z",
+    "error": null,
+    "finishedAt": "2026-09-21T19:53:45.662260Z",
+    "id": "5b2dd797-7a35-499e-81f4-6c8910f424e5",
+    "kind": "proofDryRun",
+    "result": {
+      "definitionId": "7_1_337-haskell-evm-4f4c3843076c-none",
+      "valid": true
+    },
+    "semantics": {
+      "commit": "4f4c3843076c",
+      "id": "evm"
+    },
+    "startedAt": "2026-09-21T19:53:21.807343Z",
+    "status": "completed",
+    "timing": {
+      "executionMilliseconds": 23854,
+      "queueMilliseconds": 4693,
+      "totalMilliseconds": 28548
+    },
+    "toolRuns": [
+      {
+        "durationMilliseconds": 22917,
+        "exitCode": 0,
+        "finishedAt": "2026-09-21T19:53:45.223691Z",
+        "outcome": "success",
+        "startedAt": "2026-09-21T19:53:22.306042Z",
+        "tool": "kprove"
+      }
+    ]
+  }
+}
