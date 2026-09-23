@@ -2,7 +2,7 @@
 
 ## Program boundary
 
-The claims execute the complete 6,955-byte runtime bytecode in `/app/contract.bin` from program counter 0 through the dispatcher and the implemented `allowance(address,address)` body. The bytecode is named exactly by `#dstokenRuntime` in `runtime.k`; its SHA-256 is `65b311134fbf066c074dfd609dc8e1048629e20e885636da2ea3b52932231a82`. No source-level replacement or function summary bypasses EVM execution.
+The claims execute the complete 6,955-byte runtime bytecode in `contract.bin` from program counter 0 through the dispatcher and the implemented `allowance(address,address)` body. The bytecode is named exactly by `#dstokenRuntime` in `runtime.k`; its SHA-256 is `65b311134fbf066c074dfd609dc8e1048629e20e885636da2ea3b52932231a82`. No source-level replacement or function summary bypasses EVM execution.
 
 ## Input domain
 

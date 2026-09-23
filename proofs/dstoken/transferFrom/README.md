@@ -50,7 +50,7 @@ Offsets are hexadecimal. These excerpts identify dispatch; the claims execute th
 
 For a canonical zero-value call while running, `transferFrom` succeeds exactly when the source balance and caller allowance cover `WAD` and the destination addition does not overflow (self-transfer cannot overflow after the prior subtraction).  Success returns ABI `true`, decrements the caller's allowance, moves the balance for distinct addresses or restores it for a self-transfer, preserves every other storage entry, and appends the exact note and transfer logs.  A stopped token, insufficient balance, insufficient allowance, or destination overflow reaches the compiler's `INVALID`; the enclosing message-call rollback restores storage and logs and returns call-success flag zero.  A positive call value reaches the non-payable `REVERT` with the same rollback and zero call-success flag.
 
-The 7 symbolic claims are stated in [spec.k](spec.k). [PROOF.md](PROOF.md) records the successful proof and independent KIT proof audit. Audit reports and retained checks are in [audits/](audits/) and [logs/](logs/).
+The 7 symbolic claims are stated in [spec.k](spec.k). The validated result and limitations are summarized in [PROOF.md](PROOF.md); the final independent specification and proof audits are in [audits/](audits/).
 
 ### Scope
 

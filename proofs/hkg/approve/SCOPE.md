@@ -3,7 +3,7 @@
 ## Program boundary
 
 The entry computation is `#execute` at program counter zero over the exact
-2,091 runtime bytes in `/app/contract.bin` (SHA-256
+2,091 runtime bytes in [contract.bin](contract.bin) (SHA-256
 `71204113356f7543f06b867ef7e7eeacfb6d512f8f7c5eb5166a2f3022d46d73`).
 The call data is the canonical Solidity ABI encoding of
 `approve(address,uint256)`. The theorem covers dispatch, argument decoding,

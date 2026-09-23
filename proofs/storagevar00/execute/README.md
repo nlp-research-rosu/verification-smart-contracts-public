@@ -31,7 +31,7 @@ Offsets are hexadecimal. These excerpts identify dispatch; the claims execute th
 
 For every symbolic EVM storage map, a canonical zero-value call returns the slot-0 lookup as an ABI uint256 word (zero when absent) and preserves storage. The same call with any nonzero uint256 value reverts with empty output and unchanged storage.
 
-The 2 symbolic claims are stated in [spec.k](spec.k). [PROOF.md](PROOF.md) records the successful proof and independent KIT proof audit. Audit reports and retained checks are in [audits/](audits/) and [logs/](logs/).
+The 2 symbolic claims are stated in [spec.k](spec.k). [PROOF.md](PROOF.md) records their results and the independent proof audit. The specification reviews and proof audit are in [audits/](audits/).
 
 ### Scope
 
@@ -47,4 +47,4 @@ With `kprover`, Python 3 and access to Prover configured, run from this director
 ./prove.sh
 ```
 
-The command starts a fresh session, checks the pinned semantics revision and proves the unchanged specification. Results are saved under `.kprover/`; independent audit checks are recorded separately.
+The command starts a fresh session, checks the pinned semantics revision and proves the unchanged specification. Results are saved under `.kprover/`; the independent audit conclusions are recorded in [PROOF.md](PROOF.md) and [audits/](audits/).

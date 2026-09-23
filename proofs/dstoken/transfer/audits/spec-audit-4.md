@@ -1,36 +1,14 @@
-# Two-write storage specification review
+# Specification audit 4
 
-The same-slot success postconditions preserve the exact execution shape:
+## Scope checked
 
-```text
-STORAGE [sourceSlot <- SRCBAL - WAD] [destinationSlot <- SRCBAL]
-```
+Reviewed [contract.sol](../contract.sol), [contract.bin](../contract.bin), [spec.k](../spec.k), [verification.k](../verification.k), and [SCOPE.md](../SCOPE.md) under evm revision 4f4c3843076c and Byzantium.
 
-The unchanged precondition states that the two locations are equal.
-Consequently the second write overwrites the first and restores the
-original effective balance. Every other map entry is unchanged. This is
-mathematically equivalent to the one-write postcondition reviewed in
-`spec-audit-3.md`, including its handling of absent zero-valued entries.
-It is identical to the reference's unchanged storage on the reference's
-explicit-entry uint256 domain.
+## Adequacy findings
 
-The retained focused proof residual reached this two-write storage shape
-with the required return, status and logs. Its matching failure motivates
-the representation change; it does not justify a new proof axiom. No
-requires clause, claim label, imported module, or local rule was changed.
+All twelve approved claims remain present. For same-slot success, the exact two writes first subtract the amount and then restore the original effective balance; every other map value is preserved. This accurately states the supplied runtime's behavior even when a missing zero-valued entry becomes explicit. Distinct-slot, failure, event, and enclosing-call rollback claims remain unchanged.
 
-Validation command:
-
-```sh
-kprover validate --session 9de91c94-5dde-4768-8d0d-ed007c7d6069 \
-  --spec inputs/spec.k --spec-module SPEC \
-  --verification inputs/verification.k --verification-module VERIFICATION \
-  --source inputs/dstoken-bin.k
-```
-
-Executed with the case's isolated XDG configuration. Validation task
-`2ddb6d81-b635-4d06-aee1-60a9a37d7478` returned `valid: true`, exit 0.
-Evidence: `validation-004/result.json` in the construction session.
+The runtime definition is a byte constant, not an execution shortcut. The symbolic branch domains, source behavior, storage representation, and stated reference normalization and exclusions agree. Mechanical validation passed.
 
 VERDICT: PASS
-REASON: The exact two-write map preserves the effective-storage guarantee.
+REASON: The final two-write postcondition preserves effective storage and the approved reference domain.

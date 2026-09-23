@@ -2,9 +2,9 @@
 
 ## Program boundary
 
-The theorem executes the exact 2,091-byte runtime in `/app/contract.bin`, embedded directly as `#parseByteStack("…")`, from program counter 0 with an empty EVM stack and memory. It covers the dispatcher, canonical ABI decoding for `transfer(address,uint256)`, the complete selected function body, return-data encoding, storage operations, and event emission until `#halt`.
+The theorem executes the exact 2,091-byte runtime in [contract.bin](contract.bin), embedded directly as `#parseByteStack("…")`, from program counter 0 with an empty EVM stack and memory. It covers the dispatcher, canonical ABI decoding for `transfer(address,uint256)`, the complete selected function body, return-data encoding, storage operations, and event emission until `#halt`.
 
-The source-side function is `StandardToken.transfer` in `/app/contract.sol`. The supplied runtime is authoritative for implemented behavior; its dispatcher contains selector `0xa9059cbb` and routes it to the transfer body. Transaction-envelope processing after the current EVM frame halts is outside this boundary.
+The source-side function is `StandardToken.transfer` in [contract.sol](contract.sol). The supplied runtime is authoritative for implemented behavior; its dispatcher contains selector `0xa9059cbb` and routes it to the transfer body. Transaction-envelope processing after the current EVM frame halts is outside this boundary.
 
 ## Input domain
 

@@ -1,9 +1,0 @@
-{
-  "candidate/spec.k": "f07fcfde1b6fe74b98a235ce6258c8495b0c8046ff647bc93f30d9041b989188",
-  "candidate/verification.k": "b920c53e6e08f8690b50e4b14bbe61258ddb98ef5c7a948d67d6f759a83bbfd9",
-  "candidate/SCOPE.md": "218ac30b8634144032fb8a2e06b91b9e6e1884f6f8fb32c18aa8442c02e2477c",
-  "program/contract.sol": "cee59f7cb8d3245e61fab5bb037753500cf71e19be40184acb1a8306dc05106b",
-  "program/contract.bin": "7d99dff9e853eb7ed2a4fb086b3ea5ac7cfcf749a230729534f7d3dbc40530a1",
-  "reference/specs/balanceOf-spec.k": "0d1cdaa06048251c35e9c0126e9cde00a7d1200b4fe1a5d2a4be600fbf75eed1",
-  "reference/verification.k": "319391683ee2c184482e7172e778a2bf1e7f788141b17bb8b49f919fb6eadba6"
-}

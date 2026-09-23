@@ -34,7 +34,7 @@ uint256 stored at slot 0 without changing storage.  A canonical call carrying
 any nonzero uint256 value is rejected by the compiler-generated nonpayable
 guard with empty revert data and without changing storage.
 
-The 2 symbolic claims are stated in [spec.k](spec.k). [PROOF.md](PROOF.md) records the successful proof and independent KIT proof audit. Audit reports and retained checks are in [audits/](audits/) and [logs/](logs/).
+The 2 symbolic claims are stated in [spec.k](spec.k). The validated result and limitations are summarized in [PROOF.md](PROOF.md); the final independent specification and proof audits are in [audits/](audits/).
 
 ### Scope
 

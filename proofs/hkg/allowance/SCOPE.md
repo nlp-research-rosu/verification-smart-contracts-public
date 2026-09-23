@@ -61,10 +61,9 @@ output and does not mutate storage.
 
 ## Pins
 
-- Construction session: `547121a7-36d3-4228-9b32-a494d0d3ed15`
 - Semantics ID: `evm`
 - Repository: `https://github.com/nlp-research-rosu/semantics-evm`
 - Revision: `4f4c3843076c`
-- Supplied `/app/semantics` core files were hash-checked against the fetched
+- Supplied semantics core files were hash-checked against the fetched
   pinned sources (`abi.md`, `edsl.md`, `evm.md`, and `driver.md`) and
   matched byte-for-byte.

@@ -3,7 +3,7 @@
 ## Program boundary
 
 The claims begin at byte offset 0 of the exact 6,955-byte runtime image in
-`/app/contract.bin`, with an empty EVM stack and memory, program counter zero,
+`contract.bin`, with an empty EVM stack and memory, program counter zero,
 and canonical ABI calldata for `approve(address,uint256)`. They execute the
 runtime dispatcher, the DSToken `stoppable` and `note` modifiers, and the
 inherited DSTokenBase `approve` implementation through an EVM halt.

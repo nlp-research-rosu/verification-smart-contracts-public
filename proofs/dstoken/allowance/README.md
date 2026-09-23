@@ -31,7 +31,7 @@ Offsets are hexadecimal. These excerpts identify dispatch; the claims execute th
 
 A zero-value canonical call to `allowance(src,guy)` returns `_approvals[src][guy]` without modifying storage. A canonical call carrying nonzero Ether is rejected by the generated nonpayable guard, returns no data, and does not modify storage.
 
-The 2 symbolic claims are stated in [spec.k](spec.k). [PROOF.md](PROOF.md) records the successful proof and independent KIT proof audit. Audit reports and retained checks are in [audits/](audits/) and [logs/](logs/).
+The 2 symbolic claims are stated in [spec.k](spec.k). The validated result and limitations are summarized in [PROOF.md](PROOF.md); the final independent specification and proof audits are in [audits/](audits/).
 
 ### Scope
 
