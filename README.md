@@ -37,7 +37,7 @@ A proof checks the statement that was written. A person still needs to decide wh
 ## Evidence and next measurements
 
 - [HKG proof packages](proofs/hkg/): six selected first-pass targets, their 15 checked candidate claims, and the published specifications and proofs.
-- [Optimism L1 pausability](proofs/optimism-pause/pausability/): six proved paused-operation claims, withdrawal-proof arrays of lengths 0–10, and four proved pause-dependency claims under their stated conditions.
+- [Optimism L1 pausability](proofs/optimism-pause/): six proved paused-operation functions, withdrawal-proof arrays of lengths 0–10, and four proved pause-dependency functions under their stated conditions.
 - [Verification status](STATUS.md): each selected function, its proof result, and its independent KIT audit.
 - [Counting and cost](METRICS.md): claim counts, aggregate measurements, token use, and the AI-cost estimate.
 - [Initial-pass results](#first-pass-and-feedback-pass): the selected targets and their checked claims.
@@ -51,7 +51,7 @@ The project team estimates **more than 10× lower verification time and cost** a
 | DSToken | [Source](proofs/dstoken/allowance/contract.sol) | [Packages](proofs/dstoken/) | [Status](STATUS.md) | [Metrics](METRICS.md) |
 | DSValue | [Source](proofs/dsvalue/peek-read/contract.sol) | [Package](proofs/dsvalue/peek-read/) | [Status](STATUS.md) | [Metrics](METRICS.md) |
 | storagevar00 | [Source](proofs/storagevar00/execute/contract.sol) | [Package](proofs/storagevar00/execute/) | [Status](STATUS.md) | [Metrics](METRICS.md) |
-| Optimism L1 pausability | [Source](proofs/optimism-pause/pausability/contracts/) | [Package](proofs/optimism-pause/pausability/) | [Status](STATUS.md) | — |
+| Optimism L1 pausability | [Source](proofs/optimism-pause/proveWithdrawalTransaction/contract.sol) | [Packages](proofs/optimism-pause/) | [Status](STATUS.md) | — |
 
 ### Verified functions
 
@@ -63,7 +63,11 @@ The project team estimates **more than 10× lower verification time and cost** a
   [transfer](proofs/dstoken/transfer/), [transferFrom](proofs/dstoken/transferFrom/).
 - **DSValue:** [peek and read](proofs/dsvalue/peek-read/).
 - **storagevar00:** [execute](proofs/storagevar00/execute/).
-- **Optimism L1 pausability:** [six paused operations and pause dependencies](proofs/optimism-pause/pausability/).
+- **Optimism L1 pausability:** [proveWithdrawalTransaction](proofs/optimism-pause/proveWithdrawalTransaction/), [finalizeWithdrawalTransaction](proofs/optimism-pause/finalizeWithdrawalTransaction/),
+  [finalizeBridgeETH](proofs/optimism-pause/finalizeBridgeETH/), [finalizeBridgeERC20](proofs/optimism-pause/finalizeBridgeERC20/),
+  [finalizeBridgeERC721](proofs/optimism-pause/finalizeBridgeERC721/), [relayMessage](proofs/optimism-pause/relayMessage/),
+  [SuperchainConfig.pause](proofs/optimism-pause/superchainConfigPause/), [SuperchainConfig.isLocalOrGlobalPaused](proofs/optimism-pause/isLocalOrGlobalPaused/),
+  [ETHLockbox.paused](proofs/optimism-pause/ethLockboxPaused/), [SystemConfig.paused](proofs/optimism-pause/systemConfigPaused/).
 
 [STATUS.md](STATUS.md) lists each published proof and audit result.
 
