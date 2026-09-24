@@ -1,7 +1,7 @@
 # Verification metrics
 
-The published proof packages cover 15 selected function targets and 50 proved
-claims across four projects. All 14 packages have complete proofs and passing
+The four-project measurement below covers 15 selected function targets and 50 proved
+claims. All 14 packages in that measurement have complete proofs and passing
 independent KIT audits. [Verification status](STATUS.md) links each target to
 its proof package.
 
@@ -13,7 +13,7 @@ its proof package.
 | storagevar00 | 1 / 1 | 2 / 2 | 13.3 / 29.4 | 10,883,735 | 10,631,936 | 45,900 | $6.18 |
 | **Total** | **15 / 15** | **50 / 50** | — | **330,327,463** | **324,550,528** | **950,875** | **$171.95** |
 
-The proved target and claim counts describe the published proof packages. Time
+The proved target and claim counts describe these four projects. Time
 and token counts are recorded GPT-5.6 Sol measurements for these targets. Proof time is
 measured to the first complete candidate proof, while verification time covers
 the whole measured activity. Proof-time medians include only completed candidate
