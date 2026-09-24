@@ -1,17 +1,67 @@
 # `L1ERC721Bridge:finalizeBridgeERC721`
 
 - kind: EVM function; behavior: **paused ERC721 bridge finalization reverts with `L1ERC721Bridge: paused`**
-- source: [contract.sol:86](contract.sol#L86)
+- source: [contract.sol:86](contract.sol#L86), [contract.sol:66](contract.sol#L66)
 - artifact: [contract.bin](contract.bin), the complete 6,186-byte implementation runtime
 - semantics: [`evm`](https://github.com/nlp-research-rosu/semantics-evm/tree/4f4c3843076c) at `4f4c3843076c`; `LONDON`; unbounded gas
 
 ## Source
 
-The target function is [`finalizeBridgeERC721`](contract.sol#L86) in the supplied `L1ERC721Bridge` implementation. The claim executes the implementation runtime in [contract.bin](contract.bin).
+```solidity
+function finalizeBridgeERC721(
+    address _localToken,
+    address _remoteToken,
+    address _from,
+    address _to,
+    uint256 _tokenId,
+    bytes calldata _extraData
+)
+    external
+    onlyOtherBridge
+{
+    require(paused() == false, "L1ERC721Bridge: paused");
+    require(_localToken != address(this), "L1ERC721Bridge: local token cannot be self");
+
+    // Checks that the L1/L2 NFT pair has a token ID that is escrowed in the L1 Bridge.
+    require(
+        deposits[_localToken][_remoteToken][_tokenId] == true,
+        "L1ERC721Bridge: Token ID is not escrowed in the L1 Bridge"
+    );
+
+    // Mark that the token ID for this L1/L2 token pair is no longer escrowed in the L1
+    // Bridge.
+    deposits[_localToken][_remoteToken][_tokenId] = false;
+
+    // When a withdrawal is finalized on L1, the L1 Bridge transfers the NFT to the
+    // withdrawer.
+    IERC721(_localToken).safeTransferFrom({ from: address(this), to: _to, tokenId: _tokenId });
+
+    // slither-disable-next-line reentrancy-events
+    emit ERC721BridgeFinalized(_localToken, _remoteToken, _from, _to, _tokenId, _extraData);
+}
+```
+
+The L1 implementation supplies the [pause check](contract.sol#L66):
+
+```solidity
+function paused() public view override returns (bool) {
+    return systemConfig.paused();
+}
+```
 
 ## Bytecode (from the runtime)
 
-Execution starts at program counter 0 and passes through the runtime dispatcher. [verification.k](verification.k) defines the supplied program bytes; [contract.bin](contract.bin) contains the complete runtime.
+Dispatch for `finalizeBridgeERC721` (`0x761f4493`):
+
+```text
+0x007d  DUP1
+0x007e  PUSH4 0x761f4493
+0x0083  EQ
+0x0084  PUSH2 0x026d
+0x0087  JUMPI
+```
+
+Offsets are hexadecimal. These excerpts identify dispatch; the claims execute the complete [runtime](contract.bin).
 
 ## Claim
 

@@ -7,11 +7,36 @@
 
 ## Source
 
-The target function is [`pause`](contract.sol#L81) in the supplied `SuperchainConfig` implementation. The claim executes the implementation runtime in [contract.bin](contract.bin).
+```solidity
+function pause(address _identifier) external {
+    // Only the Guardian can pause the system.
+    _assertOnlyGuardian();
+
+    // Cannot pause if the identifier is already paused to prevent re-pausing without either
+    // unpausing, extending, or resetting the pause timestamp.
+    if (pauseTimestamps[_identifier] != 0) {
+        revert SuperchainConfig_AlreadyPaused(_identifier);
+    }
+
+    // Set the pause timestamp.
+    pauseTimestamps[_identifier] = block.timestamp;
+    emit Paused(_identifier);
+}
+```
 
 ## Bytecode (from the runtime)
 
-Execution starts at program counter 0 and passes through the runtime dispatcher. [verification.k](verification.k) defines the supplied program bytes; [contract.bin](contract.bin) contains the complete runtime.
+Dispatch for `pause` (`0x76a67a51`):
+
+```text
+0x007d  DUP1
+0x007e  PUSH4 0x76a67a51
+0x0083  EQ
+0x0084  PUSH2 0x028f
+0x0087  JUMPI
+```
+
+Offsets are hexadecimal. These excerpts identify dispatch; the claims execute the complete [runtime](contract.bin).
 
 ## Claim
 

@@ -1,17 +1,60 @@
 # `L1StandardBridge:finalizeBridgeETH`
 
 - kind: EVM function; behavior: **paused ETH bridge finalization reverts with `StandardBridge: paused`**
-- source: [helpers/StandardBridge.sol:239](helpers/StandardBridge.sol#L239)
+- source: [helpers/StandardBridge.sol:239](helpers/StandardBridge.sol#L239), [contract.sol:123](contract.sol#L123)
 - artifact: [contract.bin](contract.bin), the complete 12,620-byte implementation runtime
 - semantics: [`evm`](https://github.com/nlp-research-rosu/semantics-evm/tree/4f4c3843076c) at `4f4c3843076c`; `LONDON`; unbounded gas
 
 ## Source
 
-The target function is [`finalizeBridgeETH`](helpers/StandardBridge.sol#L239) in the supplied `L1StandardBridge` implementation. The claim executes the implementation runtime in [contract.bin](contract.bin).
+```solidity
+function finalizeBridgeETH(
+    address _from,
+    address _to,
+    uint256 _amount,
+    bytes calldata _extraData
+)
+    public
+    payable
+    onlyOtherBridge
+{
+    require(paused() == false, "StandardBridge: paused");
+    require(msg.value == _amount, "StandardBridge: amount sent does not match amount required");
+    require(_to != address(this), "StandardBridge: cannot send to self");
+    require(_to != address(messenger), "StandardBridge: cannot send to messenger");
+
+    // Emit the correct events. By default this will be _amount, but child
+    // contracts may override this function in order to emit legacy events as well.
+    _emitETHBridgeFinalized(_from, _to, _amount, _extraData);
+
+    bool success = SafeCall.call(_to, gasleft(), _amount, hex"");
+    require(success, "StandardBridge: ETH transfer failed");
+}
+```
+
+The L1 implementation supplies the [pause check](contract.sol#L123):
+
+```solidity
+function paused() public view override returns (bool) {
+    return systemConfig.paused();
+}
+```
+
+The target function is inherited from [helpers/StandardBridge.sol](helpers/StandardBridge.sol#L239); `contract.sol` contains the L1 implementation.
 
 ## Bytecode (from the runtime)
 
-Execution starts at program counter 0 and passes through the runtime dispatcher. [verification.k](verification.k) defines the supplied program bytes; [contract.bin](contract.bin) contains the complete runtime.
+Dispatch for `finalizeBridgeETH` (`0x1635f5fd`):
+
+```text
+0x015a  DUP1
+0x015b  PUSH4 0x1635f5fd
+0x0160  EQ
+0x0161  PUSH2 0x02ae
+0x0164  JUMPI
+```
+
+Offsets are hexadecimal. These excerpts identify dispatch; the claims execute the complete [runtime](contract.bin).
 
 ## Claim
 

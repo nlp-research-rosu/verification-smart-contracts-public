@@ -7,11 +7,125 @@
 
 ## Source
 
-The target function is [`proveWithdrawalTransaction`](contract.sol#L386) in the supplied `OptimismPortal2` implementation. The claim executes the implementation runtime in [contract.bin](contract.bin).
+```solidity
+function proveWithdrawalTransaction(
+    Types.WithdrawalTransaction memory _tx,
+    uint256 _disputeGameIndex,
+    Types.OutputRootProof calldata _outputRootProof,
+    bytes[] calldata _withdrawalProof
+)
+    external
+{
+    // Cannot prove withdrawal transactions while the system is paused.
+    _assertNotPaused();
+
+    // Make sure that the target address is safe.
+    if (_isUnsafeTarget(_tx.target)) {
+        revert OptimismPortal_BadTarget();
+    }
+
+    // Cannot prove withdrawal with value when custom gas token mode is enabled.
+    if (_isUsingCustomGasToken()) {
+        if (_tx.value > 0) revert OptimismPortal_NotAllowedOnCGTMode();
+    }
+
+    // Fetch the dispute game proxy from the `DisputeGameFactory` contract.
+    (,, IDisputeGame disputeGameProxy) = disputeGameFactory().gameAtIndex(_disputeGameIndex);
+
+    // Game must be a Proper Game.
+    if (!anchorStateRegistry.isGameProper(disputeGameProxy)) {
+        revert OptimismPortal_ImproperDisputeGame();
+    }
+
+    // Game must have been respected game type when created.
+    if (!anchorStateRegistry.isGameRespected(disputeGameProxy)) {
+        revert OptimismPortal_InvalidDisputeGame();
+    }
+
+    // Game must not have resolved in favor of the Challenger (invalid root claim).
+    if (disputeGameProxy.status() == GameStatus.CHALLENGER_WINS) {
+        revert OptimismPortal_InvalidDisputeGame();
+    }
+
+    // As a sanity check, we make sure that the current timestamp is not less than or equal to
+    // the dispute game's creation timestamp. Not strictly necessary but extra layer of
+    // safety against weird bugs. Note that this blocks withdrawals from being proven in the
+    // same block that a dispute game is created.
+    if (block.timestamp <= disputeGameProxy.createdAt().raw()) {
+        revert OptimismPortal_InvalidProofTimestamp();
+    }
+
+    // Extract the output root claim. Super game types use rootClaimByChainId to extract
+    // the per-chain output root from the super root. Legacy game types use rootClaim directly.
+    // TODO(#19816): Post interop clean up the legacy rootClaim() usage in OptimismPortal2.
+    Claim outputRootClaim;
+    if (GameTypes.isSuperGame(disputeGameProxy.gameType())) {
+        outputRootClaim = disputeGameProxy.rootClaimByChainId(systemConfig.l2ChainId());
+    } else {
+        outputRootClaim = disputeGameProxy.rootClaim();
+    }
+
+    // Verify that the output root can be generated with the elements in the proof.
+    if (outputRootClaim.raw() != Hashing.hashOutputRootProof(_outputRootProof)) {
+        revert OptimismPortal_InvalidOutputRootProof();
+    }
+
+    // Load the ProvenWithdrawal into memory, using the withdrawal hash as a unique identifier.
+    bytes32 withdrawalHash = Hashing.hashWithdrawal(_tx);
+
+    // Compute the storage slot of the withdrawal hash in the L2ToL1MessagePasser contract.
+    // Refer to the Solidity documentation for more information on how storage layouts are
+    // computed for mappings.
+    bytes32 storageKey = keccak256(
+        abi.encode(
+            withdrawalHash,
+            uint256(0) // The withdrawals mapping is at the first slot in the layout.
+        )
+    );
+
+    // Verify that the hash of this withdrawal was stored in the L2toL1MessagePasser contract
+    // on L2. If this is true, under the assumption that the SecureMerkleTrie does not have
+    // bugs, then we know that this withdrawal was actually triggered on L2 and can therefore
+    // be relayed on L1.
+    if (
+        SecureMerkleTrie.verifyInclusionProof({
+            _key: abi.encode(storageKey),
+            _value: hex"01",
+            _proof: _withdrawalProof,
+            _root: _outputRootProof.messagePasserStorageRoot
+        }) == false
+    ) {
+        revert OptimismPortal_InvalidMerkleProof();
+    }
+
+    // Designate the withdrawalHash as proven by storing the disputeGameProxy and timestamp in
+    // the provenWithdrawals mapping. A given user may re-prove a withdrawalHash multiple
+    // times, but each proof will reset the proof timer.
+    provenWithdrawals[withdrawalHash][msg.sender] =
+        ProvenWithdrawal({ disputeGameProxy: disputeGameProxy, timestamp: uint64(block.timestamp) });
+
+    // Add the proof submitter to the list of proof submitters for this withdrawal hash.
+    proofSubmitters[withdrawalHash].push(msg.sender);
+
+    // Emit a WithdrawalProven events.
+    emit WithdrawalProven(withdrawalHash, _tx.sender, _tx.target);
+    emit WithdrawalProvenExtension1(withdrawalHash, msg.sender);
+}
+```
 
 ## Bytecode (from the runtime)
 
-Execution starts at program counter 0 and passes through the runtime dispatcher. [verification.k](verification.k) defines the supplied program bytes; [contract.bin](contract.bin) contains the complete runtime.
+Dispatch for `proveWithdrawalTransaction` (`0x4870496f`):
+
+```text
+0x0165  DUP1
+0x0166  PUSH4 0x4870496f
+0x016b  EQ
+0x016c  PUSH2 0x0362
+0x016f  JUMPI
+```
+
+Offsets are hexadecimal. These excerpts identify dispatch; the claims execute the complete [runtime](contract.bin).
 
 ## Claim
 

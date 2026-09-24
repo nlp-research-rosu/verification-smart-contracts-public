@@ -7,11 +7,25 @@
 
 ## Source
 
-The target function is [`paused`](contract.sol#L112) in the supplied `ETHLockbox` implementation. The claim executes the implementation runtime in [contract.bin](contract.bin).
+```solidity
+function paused() public view returns (bool) {
+    return superchainConfig.isLocalOrGlobalPaused(address(this));
+}
+```
 
 ## Bytecode (from the runtime)
 
-Execution starts at program counter 0 and passes through the runtime dispatcher. [verification.k](verification.k) defines the supplied program bytes; [contract.bin](contract.bin) contains the complete runtime.
+Dispatch for `paused` (`0x5c975abb`):
+
+```text
+0x0070  DUP1
+0x0071  PUSH4 0x5c975abb
+0x0076  EQ
+0x0077  PUSH2 0x02a5
+0x007a  JUMPI
+```
+
+Offsets are hexadecimal. These excerpts identify dispatch; the claims execute the complete [runtime](contract.bin).
 
 ## Claim
 

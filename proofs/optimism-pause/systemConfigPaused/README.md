@@ -7,11 +7,25 @@
 
 ## Source
 
-The target function is [`paused`](contract.sol#L568) in the supplied `SystemConfig` implementation. The claim executes the implementation runtime in [contract.bin](contract.bin).
+```solidity
+function paused() public view returns (bool) {
+    return IOptimismPortal2(payable(optimismPortal())).ethLockbox().paused();
+}
+```
 
 ## Bytecode (from the runtime)
 
-Execution starts at program counter 0 and passes through the runtime dispatcher. [verification.k](verification.k) defines the supplied program bytes; [contract.bin](contract.bin) contains the complete runtime.
+Dispatch for `paused` (`0x5c975abb`):
+
+```text
+0x0221  DUP1
+0x0222  PUSH4 0x5c975abb
+0x0227  EQ
+0x0228  PUSH2 0x0671
+0x022b  JUMPI
+```
+
+Offsets are hexadecimal. These excerpts identify dispatch; the claims execute the complete [runtime](contract.bin).
 
 ## Claim
 

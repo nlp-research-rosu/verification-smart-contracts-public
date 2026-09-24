@@ -7,11 +7,25 @@
 
 ## Source
 
-The target function is [`isLocalOrGlobalPaused`](contract.sol#L152) in the supplied `SuperchainConfig` implementation. The claim executes the implementation runtime in [contract.bin](contract.bin).
+```solidity
+function isLocalOrGlobalPaused(address _identifier) external view returns (bool) {
+    return paused(address(0)) || paused(_identifier);
+}
+```
 
 ## Bytecode (from the runtime)
 
-Execution starts at program counter 0 and passes through the runtime dispatcher. [verification.k](verification.k) defines the supplied program bytes; [contract.bin](contract.bin) contains the complete runtime.
+Dispatch for `isLocalOrGlobalPaused` (`0x9956fd9e`):
+
+```text
+0x0036  DUP1
+0x0037  PUSH4 0x9956fd9e
+0x003c  EQ
+0x003d  PUSH2 0x02b5
+0x0040  JUMPI
+```
+
+Offsets are hexadecimal. These excerpts identify dispatch; the claims execute the complete [runtime](contract.bin).
 
 ## Claim
 
