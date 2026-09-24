@@ -26,7 +26,7 @@ The first pass below uses one selected initial run for every target. AI could re
 
 Within the first-pass totals, target claims were **39 / 44** checked, including **17 / 22** for DSToken; auxiliary proof claims were **1 / 6** checked. Complete candidate packages: **13 / 14** jobs.
 
-Both claim columns include target and auxiliary claims. After the targeted follow-up, DSToken has **22 / 22** target claims and **6 / 6** auxiliary `transfer` claims proved. Across the 14 published packages, all **50 / 50** claims are proved, with passing independent KIT audits.
+Both claim columns include target and auxiliary claims. After the targeted follow-up, DSToken has **22 / 22** target claims and **6 / 6** auxiliary `transfer` claims proved. Across the 14 packages in this four-case measurement, all **50 / 50** claims are proved, with passing independent KIT audits.
 
 **How to read the counts.** A function target is complete when the retained candidate package has a complete machine-checked proof for its stated claims. A target claim is one labeled statement about the requested behavior; auxiliary claims support the proof and are counted separately. These numbers measure the submitted specifications, not complete coverage of a contract or acceptance of the intended requirements. HKG includes a requested `totalSupply()` interface behavior whose correct outcome is rejection because that getter is absent. DSValue's two functions share one run.
 
@@ -37,6 +37,7 @@ A proof checks the statement that was written. A person still needs to decide wh
 ## Evidence and next measurements
 
 - [HKG proof packages](proofs/hkg/): six selected first-pass targets, their 15 checked candidate claims, and the published specifications and proofs.
+- [Optimism L1 pausability](proofs/optimism-pause/pausability/): six proved paused-operation claims, withdrawal-proof arrays of lengths 0–10, and four proved pause-dependency claims under their stated conditions.
 - [Verification status](STATUS.md): each selected function, its proof result, and its independent KIT audit.
 - [Counting and cost](METRICS.md): claim counts, aggregate measurements, token use, and the AI-cost estimate.
 - [Initial-pass results](#first-pass-and-feedback-pass): the selected targets and their checked claims.
@@ -50,6 +51,7 @@ The project team estimates **more than 10× lower verification time and cost** a
 | DSToken | [Source](proofs/dstoken/allowance/contract.sol) | [Packages](proofs/dstoken/) | [Status](STATUS.md) | [Metrics](METRICS.md) |
 | DSValue | [Source](proofs/dsvalue/peek-read/contract.sol) | [Package](proofs/dsvalue/peek-read/) | [Status](STATUS.md) | [Metrics](METRICS.md) |
 | storagevar00 | [Source](proofs/storagevar00/execute/contract.sol) | [Package](proofs/storagevar00/execute/) | [Status](STATUS.md) | [Metrics](METRICS.md) |
+| Optimism L1 pausability | [Source](proofs/optimism-pause/pausability/contracts/) | [Package](proofs/optimism-pause/pausability/) | [Status](STATUS.md) | — |
 
 ### Verified functions
 
@@ -61,6 +63,7 @@ The project team estimates **more than 10× lower verification time and cost** a
   [transfer](proofs/dstoken/transfer/), [transferFrom](proofs/dstoken/transferFrom/).
 - **DSValue:** [peek and read](proofs/dsvalue/peek-read/).
 - **storagevar00:** [execute](proofs/storagevar00/execute/).
+- **Optimism L1 pausability:** [six paused operations and pause dependencies](proofs/optimism-pause/pausability/).
 
 [STATUS.md](STATUS.md) lists each published proof and audit result.
 

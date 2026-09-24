@@ -17,8 +17,20 @@
 | dsvalue | [peek](proofs/dsvalue/peek-read/) | Proved | PASS |
 | dsvalue | [read](proofs/dsvalue/peek-read/) | Proved | PASS |
 | storagevar00 | [execute](proofs/storagevar00/execute/) | Proved | PASS |
+| optimism-pause | [OptimismPortal2.proveWithdrawalTransaction](proofs/optimism-pause/pausability/) | Proved for array lengths 0–10 | SOUND-BUT-LIMITED |
+| optimism-pause | [OptimismPortal2.finalizeWithdrawalTransaction](proofs/optimism-pause/pausability/) | Proved | SOUND-BUT-LIMITED |
+| optimism-pause | [L1StandardBridge.finalizeBridgeETH](proofs/optimism-pause/pausability/) | Proved | SOUND-BUT-LIMITED |
+| optimism-pause | [L1StandardBridge.finalizeBridgeERC20](proofs/optimism-pause/pausability/) | Proved | SOUND-BUT-LIMITED |
+| optimism-pause | [L1ERC721Bridge.finalizeBridgeERC721](proofs/optimism-pause/pausability/) | Proved | SOUND-BUT-LIMITED |
+| optimism-pause | [L1CrossDomainMessenger.relayMessage](proofs/optimism-pause/pausability/) | Proved | SOUND-BUT-LIMITED |
+| optimism-pause | [SuperchainConfig.pause](proofs/optimism-pause/pausability/) | Proved under stated guardian conditions | No separate audit |
+| optimism-pause | [SuperchainConfig.paused](proofs/optimism-pause/pausability/) | Proved under stated timestamp conditions | No separate audit |
+| optimism-pause | [ETHLockbox.paused](proofs/optimism-pause/pausability/) | Proved under stated pause conditions | No separate audit |
+| optimism-pause | [SystemConfig.paused](proofs/optimism-pause/pausability/) | Proved under stated pause conditions | No separate audit |
 
 HKG `totalSupply` proves rejection of an unsupported selector.
 
-The repository contains 14 proof packages covering 15 function targets;
-DSValue `peek` and `read` share one package.
+The first four projects contain 14 proof packages covering 15 function targets;
+DSValue `peek` and `read` share one package. The Optimism package adds six
+paused-operation targets and four separate pause-dependency claims under the
+limits stated in its [scope](proofs/optimism-pause/pausability/SCOPE.md).
