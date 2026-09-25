@@ -13,21 +13,10 @@ package and audit result.
 | Optimism L1 pausability | 6 / 6 | 20 / 20 | 149.1 / 521.2 | 180,719,796 | 178,968,064 | 188,646 | $82.37 |
 | **Total** | **21 / 21** | **70 / 70** | — | **511,047,259** | **503,518,592** | **1,139,521** | **$254.32** |
 
-The Optimism row counts six paused-operation targets. Its 20 claims comprise
-six operation claims, ten additional withdrawal-array claims and four separate
-pause-dependency claims.
-
-Time and token counts are recorded GPT-5.6 Sol measurements. For the first four
-projects, the time figures are per-target medians. Optimism's 149.1 minutes
-reached its first complete six-operation proof; 521.2 minutes is total agent
-verification time for its published claims. Proof-time medians include only
-completed candidate proofs (five of six measured DSToken targets);
-verification-time medians include all measured targets. DSValue's
-measurements cover `peek` and `read` together. Input tokens include cached
-input; output tokens include reasoning tokens. DSToken's 28 proved claims
-comprise 22 target claims and six auxiliary `transfer` claims; the first-pass
-results count target claims separately.
-
-Estimated AI cost uses the recorded input, cached input and output tokens at
-[published GPT-5.6 Sol API prices](https://developers.openai.com/api/docs/models/gpt-5.6-sol).
-It is an estimate for the measured activity, not a billed charge.
+Optimism used one agent across six functions and continued the same work after
+feedback. HKG and DSToken used a fresh agent per function, repeatedly loading
+the verification skill and contract context (input tokens) and repeating setup
+and reasoning (output tokens); this helps explain their higher output totals.
+The first four projects report time medians across their selected runs, while
+Optimism reports 149.1 minutes to its first complete six-function proof and
+521.2 minutes across its initial work and feedback continuations.
