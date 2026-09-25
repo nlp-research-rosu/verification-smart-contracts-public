@@ -30,6 +30,4 @@
 
 HKG `totalSupply` proves rejection of an unsupported selector.
 
-The first four projects contain 14 proof packages covering 15 function targets;
-DSValue `peek` and `read` share one package. The Optimism packages add six paused-operation targets and four separate
-pause-dependency claims under the limits stated in their function scopes.
+DSValue `peek` and `read` share one proof package.
